@@ -2,83 +2,70 @@ import React from "react";
 import Social from "../Social";
 import ReactTyped from "react-typed";
 import Image from "next/image";
-import shapeImage from "../../public/img/hero/cg_1.jpg";
-import heroImage from "../../public/img/hero/cg_1.jpg";
-
-const heroContent = {
-  shapeImage: shapeImage,
-  heroImage: heroImage,
-  name: "MEDIALOGIS S.A",
-  description: `I'm a Full Stack Developer based In USA, with over 8 years of
-  professional experience.`,
-};
+import heroImage1 from "../../public/img/hero/home1.jpg";
+import heroImage2 from "../../public/img/hero/home2.jpg";
 
 const Hero = () => {
   return (
     //    HERO
     <div className="edina_tm_hero" id="home">
       <div className="content">
-        <div className="img-shape" data-aos="fade-up" data-aos-duration="1200">
-          <Image src={heroContent.heroImage} alt="brand" />
-        </div>
-        <div className="extra">
-          <h5
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="100"
-            className="hello"
-          >
-            Welcome to my resume site
-          </h5>
-          <h1
-            className="name"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          >
-            <span className="typer-toper">
-              <ReactTyped
-                loop
-                typeSpeed={150}
-                backSpeed={60}
-                strings={["Web Developer", "App Developer", "Graphic Designer"]}
-                smartBackspace
-                shuffle={false}
-                backDelay={1}
-                fadeOut={false}
-                fadeOutDelay={100}
-                loopCount={0}
-                showCursor
-                cursorChar="|"
-              />
-            </span>
-          </h1>
-          <p
-            className="text"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="300"
-          >
-            {heroContent.description}
-          </p>
-
+        <div>
           <div
-            className="social"
+            className="img-shape"
             data-aos="fade-up"
             data-aos-duration="1200"
-            data-aos-delay="400"
           >
-            <Social />
+            <Image src={heroImage1} alt="brand" />
           </div>
+          <div className="extra">
+            <h5
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+              className="hello"
+            >
+              Médecin Libéral
+            </h5>
+            <p
+              className="text"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="300"
+            >
+              Née de plus de 10 années de coopération étroite avec des
+              praticiens, MEDIALOGIS est une solution complète destinée aux
+              médecins libéraux.
+            </p>
+          </div>
+        </div>
+        <div>
           <div
-            className="edina_tm_button"
+            className="img-shape"
             data-aos="fade-up"
             data-aos-duration="1200"
-            data-aos-delay="500"
           >
-            <a href="img/CG-Resume-2022.pdf" download className="color">
-              Download CV
-            </a>
+            <Image src={heroImage2} alt="brand" />
+          </div>
+          <div className="extra">
+            <h5
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+              className="hello"
+            >
+              ETABLISSEMENTS DE SANTE
+            </h5>
+            <p
+              className="text"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="300"
+            >
+              Un traitement médical de qualité et une gestion efficace d’un
+              établissement de santé imposent un nombre croissant d’exigences
+              aux systèmes d’information médicale.
+            </p>
           </div>
         </div>
       </div>

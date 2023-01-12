@@ -1,6 +1,11 @@
 module.exports = [
   { icon: "home", itemName: "Home", itemRoute: "#home", activeClass: "active" },
-  { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
+  {
+    icon: "human",
+    itemName: "De nous",
+    itemRoute: "#about",
+    activeClass: "",
+  },
   {
     icon: "service",
     itemName: "Service",

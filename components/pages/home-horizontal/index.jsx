@@ -78,7 +78,7 @@ const EdinaHorizontal = () => {
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>What I Do</h3>
+            <h3>Voici ce que nous pouvons</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               ipsum sit nibh amet egestas tellus.
@@ -110,7 +110,8 @@ const EdinaHorizontal = () => {
           <div className="edina_tm_title">
             <h3>Testimonials</h3>
             <p>
-              These are some of the people that I have had the pleasure to work alongside with and worked for.
+              These are some of the people that I have had the pleasure to work
+              alongside with and worked for.
             </p>
           </div>
           {/* End edian_tm_title */}
@@ -128,7 +129,8 @@ const EdinaHorizontal = () => {
           <div className="edina_tm_title">
             <h3>Contact</h3>
             <p>
-              I am always looking to start on new projects. Don't hesitate to reach out if you have any questions.
+              I am always looking to start on new projects. Don't hesitate to
+              reach out if you have any questions.
             </p>
           </div>
           <div className="extra_info">
@@ -151,7 +153,7 @@ const EdinaHorizontal = () => {
               </div>
               {/* End title */}
               <div className="fields">
-                <FeedbackForm />              
+                <FeedbackForm />
               </div>
               {/* End Contact Form */}
             </div>

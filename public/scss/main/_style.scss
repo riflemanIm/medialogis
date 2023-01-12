@@ -639,7 +639,15 @@ body.dark .loader_line:after {
   }
 }
 .edina_tm_hero .content {
-  padding: 100px 20px;
+  
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.edina_tm_hero .content > div {
+    padding: 150px 20px 20px 20px ;
 }
 .edina_tm_hero .image {
   display: inline-block;
@@ -692,6 +700,7 @@ body.dark .loader_line:after {
 
 .edina_tm_hero .text {
   max-width: 500px;
+  text-align: left;
   margin: 0px auto 32px auto;
   font-size: 17px;
   @media screen and (max-width: 575px) {
@@ -2960,16 +2969,16 @@ a {
   }
 }
 .img-shape {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 375px;
   margin: 0 auto 15px;
   @media screen and (max-width: 1599px) {
-    width: 245px;
-    height: 245px;
-  }
+    width: 500px;
+    height: 375px;
+    }
   @media screen and (max-width: 768px) {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 262px;
   }
   img {
     -webkit-mask-position: center center;
@@ -3298,6 +3307,7 @@ a {
         justify-content: space-between;
         height: 80px;
         padding: 0 40px;
+        white-space: nowrap;
       }
       .menu ul {
         display: flex;

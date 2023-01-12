@@ -16,7 +16,7 @@ const About = () => {
     <div className="edina_tm_about" id="about">
       <div className="container">
         <div className="about_title">
-          <h3>About Me</h3>
+          <h3>Médecin Libéral</h3>
         </div>
         <div className="content">
           <div
@@ -27,34 +27,30 @@ const About = () => {
           >
             <div className="info">
               <h3>
-                Hi, Im <span>MEDIALOGIS S.A</span>
+                <span>MEDIALOGIS S.A</span>
               </h3>
               <p>
-                Im a Web and App Developer with 8+ years of experience in
-                front-end and back-end development. I am Passionate about
-                building excellent web elements utilizing innovative and
-                cutting-edge solutions.
+                Fruit de plus de 20 années de collaboration étroite avec des
+                praticiens, MEDIALOGIS est une solution complète destinée aux
+                médecins libéraux. S’adaptant aux besoins de chacun, MEDIALOGIS
+                est également une gamme de produits qui se décline en fonction
+                de votre spécialité médicale. Que vous soyez généraliste ou
+                spécialiste, vous trouverez chez MEDIALOGIS des fonctionnalités
+                indispensables pour tout médecin libéral, ainsi que des
+                paramétrages et outils spécifiques pour votre spécialisation.
+                MEDIALOGIS se présente donc comme un outil de travail riche,
+                fiable, évolutif et flexible d’une importance majeure pour vous
+                et pour vos patients.
               </p>
             </div>
             <div className="my_skills">
-              <h3 className="title">What is my skill level?</h3>
-              <p className="desc">
-                I code with various languages and frameworks depending on the
-                project's need and vision. I also create graphics, visual styles
-                and icons for an aesthetically pleasing end product.
-              </p>
-              <div className="wrapper">
-                <div className="dodo_progress">
-                  <Skills />
-                </div>
-              </div>
               <div className="edina_tm_button">
                 <button
                   type="submit"
                   className="color"
                   onClick={toggleModalOne}
                 >
-                  See More
+                  EN SAVOIR PLUS
                 </button>
               </div>
             </div>
@@ -68,7 +64,7 @@ const About = () => {
               <div
                 className="main"
                 style={{
-                  backgroundImage: "url(img/about/cg_rect.jpg)",
+                  backgroundImage: "url(img/about/about.jpg)",
                 }}
                 data-aos="fade-left"
                 data-aos-duration="1200"
@@ -82,8 +78,8 @@ const About = () => {
                 data-aos-delay="300"
               >
                 <div className="info">
-                  <h3>6+ Years</h3>
-                  <span>Of Experiance</span>
+                  <h3>+ De 20 Ans</h3>
+                  <span> D'Expérience</span>
                 </div>
               </div>
             </div>

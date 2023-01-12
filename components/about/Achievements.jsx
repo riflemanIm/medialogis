@@ -8,7 +8,7 @@ const Achievements = () => {
           <div className="box-stats with-margin">
             <h3 className="poppins-font position-relative">{val.title}</h3>
             <p className="open-sans-font m-0 position-relative text-uppercase">
-              {val.subTitle1} <span className="d-block">{val.subTitle2}</span>
+              {val.subTitle1}
             </p>
           </div>
         </div>
