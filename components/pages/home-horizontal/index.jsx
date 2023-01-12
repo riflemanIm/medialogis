@@ -78,10 +78,12 @@ const EdinaHorizontal = () => {
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Voici ce que nous pouvons</h3>
+            <h3>Que pouvons-nous faire</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              MEDIALOGIS est composé de plusieurs modules nécessaires à
+              l’automatisation de toutes les activités d'un médecin libéral, y
+              compris un système d’archivage des images obtenues par
+              l’équipement de diagnostic.
             </p>
           </div>
           {/* End edian_tm_title */}

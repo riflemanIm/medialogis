@@ -29,7 +29,7 @@ const Service = () => {
                 <div className="hover">
                   <img className="svg custom" src={item.imgIcon} alt="icon" />
                   <div className="service_title">
-                    <h2>{item.title}</h2>
+                    <h3>{item.title}</h3>
                   </div>
                   <div className="learn_more">
                     {item.subtitle}
