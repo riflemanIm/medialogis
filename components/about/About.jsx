@@ -16,7 +16,7 @@ const About = () => {
     <div className="edina_tm_about" id="about">
       <div className="container">
         <div className="about_title">
-          <h3>Médecin Libéral</h3>
+          <h3>MEDIALOGIS S.A</h3>
         </div>
         <div className="content">
           <div
@@ -26,9 +26,6 @@ const About = () => {
             data-aos-delay="100"
           >
             <div className="info">
-              <h3>
-                <span>MEDIALOGIS S.A</span>
-              </h3>
               <p>
                 Fruit de plus de 20 années de collaboration étroite avec des
                 praticiens, MEDIALOGIS est une solution complète destinée aux

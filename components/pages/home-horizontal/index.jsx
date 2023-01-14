@@ -78,7 +78,7 @@ const EdinaHorizontal = () => {
       <div className="edina_tm_services" id="service">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Que pouvons-nous faire</h3>
+            <h3>Médecin Libéral</h3>
             <p>
               MEDIALOGIS est composé de plusieurs modules nécessaires à
               l’automatisation de toutes les activités d'un médecin libéral, y
@@ -95,10 +95,17 @@ const EdinaHorizontal = () => {
       <div className="edina_tm_portfolio" id="portfolio">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Portfolio</h3>
+            <h3>ETABLISSEMENTS DE SANTE</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              Un traitement médical de qualité et une gestion efficace d’un
+              établissement de santé imposent un nombre croissant d’exigences
+              aux systèmes d’information médicale. Le système d’information
+              médicale MEDIALOGIS gère toutes les étapes de l’assistance
+              médicale. Il réduit d’une manière significative les dépenses
+              horaires du personnel soignant en facilitant la documentation. Il
+              assure un niveau innovant d’optimisation des ressources de
+              l’établissement de santé. Résultat : un traitement médical d’une
+              qualité élevée.
             </p>
           </div>
           {/* End edian_tm_title */}

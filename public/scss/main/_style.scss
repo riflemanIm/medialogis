@@ -785,8 +785,9 @@ body.dark .loader_line:after {
   line-height: 1;
 }
 .hello {
-  color: #666;
+  color: rgb(180, 118, 118);
   font-weight: 500;
+  margin-bottom: 18px;
 }
 .edina_tm_about .color {
   border-radius: 6px;
@@ -1235,7 +1236,7 @@ body.dark .loader_line:after {
   line-height: 1;
 }
 .edina_tm_title p {
-  max-width: 600px;
+  max-width: 800px;
 }
 .edina_tm_services {
   width: 100%;

@@ -75,11 +75,6 @@ const HeaderHorizontal = () => {
             >
               <ul className="anchor_nav">
                 {sidebarContent.map((val, i) => {
-                  console.log(
-                    "val.activeClass",
-                    val.activeClass,
-                    val.itemRoute
-                  );
                   return (
                     <li key={i}>
                       <div className="list_inner">

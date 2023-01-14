@@ -3,13 +3,13 @@ module.exports = [
   { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
   {
     icon: "service",
-    itemName: "Service",
+    itemName: "Médecin Libéral",
     itemRoute: "#service",
     activeClass: "",
   },
   {
     icon: "portfolio",
-    itemName: "Portfolio",
+    itemName: "ETABLISSEMENTS DE SANTE",
     itemRoute: "#portfolio",
     activeClass: "",
   },
