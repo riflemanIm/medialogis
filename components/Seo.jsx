@@ -9,7 +9,7 @@ const Seo = ({ pageTitle, font }) => (
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta
         name="keywords"
-        content="	cv, portfolio, react nextjs portfolio, resume"
+        content="	MEDIALOGIS Système d'information médicals"
       />
       <meta
         name="description"

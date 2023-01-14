@@ -8,9 +8,9 @@ import logo2 from "../../public/img/logo/cg-logo-white.png";
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
-  name: "Cesar",
-  email: "cezart27@gmail.com",
-  emailRef: "mailto:cezart27@gmail.com",
+  name: "aaa",
+  email: "ssss@gmail.com",
+  emailRef: "mailto:ssss@gmail.com",
 };
 
 const HeaderHorizontal = () => {
@@ -29,8 +29,11 @@ const HeaderHorizontal = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
   }, []);
-
+  //  console.log("navbar", navbar);
   return (
     <div className={`horizontal-menu ${navbar ? "fixed-header" : ""}`}>
       <div className="mob-header">
@@ -61,6 +64,7 @@ const HeaderHorizontal = () => {
               scrollTargetIds={[
                 "home",
                 "about",
+                "service",
                 "portfolio",
                 "testimonial",
                 "contact",
@@ -70,24 +74,31 @@ const HeaderHorizontal = () => {
               scrollDuration="100"
             >
               <ul className="anchor_nav">
-                {sidebarContent.map((val, i) => (
-                  <li key={i}>
-                    <div className="list_inner">
-                      <a
-                        href={val.itemRoute}
-                        className={val.activeClass}
-                        onClick={handleClick}
-                      >
-                        <img
-                          className="svg custom"
-                          src={`img/svg/${val.icon}.svg`}
-                          alt="icon"
-                        />
-                        {val.itemName}
-                      </a>
-                    </div>
-                  </li>
-                ))}
+                {sidebarContent.map((val, i) => {
+                  console.log(
+                    "val.activeClass",
+                    val.activeClass,
+                    val.itemRoute
+                  );
+                  return (
+                    <li key={i}>
+                      <div className="list_inner">
+                        <a
+                          href={val.itemRoute}
+                          className={val.activeClass}
+                          onClick={handleClick}
+                        >
+                          <img
+                            className="svg custom"
+                            src={`img/svg/${val.icon}.svg`}
+                            alt="icon"
+                          />
+                          {val.itemName}
+                        </a>
+                      </div>
+                    </li>
+                  );
+                })}
               </ul>
             </ScrollspyNav>
           </div>
