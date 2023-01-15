@@ -1,23 +1,56 @@
 module.exports = [
   {
     img: "1",
-    desc: `It was a pleasure working with Cesar on various web apps together. He is very professional and has an extrodinary ability to find solutions to complex coding problems.`,
-    name: "Adam Rosseau",
-    designation: "App Developer",
+    desc: "Je confirme l’intérêt évident de Pneumologis dans mon activité quotidienne de pneumologue: simplicité, rapidité et efficacité. Le logiciel est très pratique à utiliser, il n’y a de remarques majeures à faire en comparaison avec d’autres logiciels. Un aspect très IMPORTANT : ce logiciel est totalement paramétrable à sa demande et à ses besoins propres. En toute honnêteté, je n’ai pas de reproche à donner. Nous sommes équipés depuis 3 ans et pourquoi pas jusqu’à la retraite...",
+    name: "Docteur Philippe de Tauriac Douai",
+    designation: "de Pneumologue",
     delayAnimation: "",
   },
   {
     img: "2",
-    desc: `I have worked with Cesar over many years and he has created numerous web apps for my business all within the timeframes I set. He is very punctual and efficient with his time.`,
-    name: "Ed Hong",
-    designation: "Senior Developer",
+    name: "Docteur Marc Dedieu Carpentras",
+    designation: "de Pneumologue",
+    desc: (
+      <>
+        <p>Parce qu’il est génial!</p>
+        <div className="in_list">
+          <ul>
+            <li>Complet pour la gestion du cabinet,</li>
+            <li>
+              Travail essentiellement avec la souris : glossaires puissants,
+            </li>
+            <li>
+              Evolutif, programmation facile, adaptation a chaque cas
+              particulier sans langage de programmation
+            </li>
+            <li>Equipe compétente, ouverte, disponible</li>
+          </ul>
+        </div>
+      </>
+    ),
     delayAnimation: "100",
   },
   {
     img: "3",
-    desc: `I loved the site that Cesar did for my organization. He gave me what I wanted and more. He really knew what he was doing and provided the best solution that my organization required.`,
     name: "Jeffrey Hardy",
-    designation: "Web Developer",
+    designation: "de Pneumologue",
+    desc: (
+      <>
+        <p>
+          J’utilise Pneumologis depuis le début. C’est un plaisir de travailler
+          avec un outil si fiable et agréablement conçu pour et par des
+          pneumologues. Son utilisation a éclairé ma pratique et m ‘a permis,
+          j’en suis convaincu, de conserver mon intérêt et mon dynamisme intact
+          donc plus le plus grand bénéfice du patient.
+        </p>
+        <p>
+          Enfin l’équipe de Pneumologis est compétente, sympathique et
+          disponible. Je ne suis jamais reste en « rideau » plus d’une heure ou
+          deux malgré les nombreuses évolutions qui ont eu lieu depuis le
+          début."
+        </p>
+      </>
+    ),
     delayAnimation: "200",
   },
 ];

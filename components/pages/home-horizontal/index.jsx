@@ -117,11 +117,8 @@ const EdinaHorizontal = () => {
       <div className="edina_tm_testimonials" id="testimonial">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Testimonials</h3>
-            <p>
-              These are some of the people that I have had the pleasure to work
-              alongside with and worked for.
-            </p>
+            <h3>Témoignages d'utilisateurs</h3>
+            <p>Ce que les gens disent et écrivent sur nous</p>
           </div>
           {/* End edian_tm_title */}
           <div className="list ">

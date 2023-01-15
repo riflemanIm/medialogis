@@ -5,7 +5,7 @@ import testimonialContent from "../../data/testimonial";
 export default function Testimonial() {
   var settings = {
     dots: true,
-    arrow: false,
+    arrow: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -15,7 +15,7 @@ export default function Testimonial() {
       {
         breakpoint: 575,
         settings: {
-          arrow: false,
+          arrow: true,
           slidesToShow: 1,
           speed: 300,
         },

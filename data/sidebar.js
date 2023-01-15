@@ -1,8 +1,8 @@
 module.exports = [
   { icon: "home", itemName: "Home", itemRoute: "#home", activeClass: "active" },
-  { icon: "human", itemName: "About", itemRoute: "#about", activeClass: "" },
+  { icon: "service", itemName: "About", itemRoute: "#about", activeClass: "" },
   {
-    icon: "service",
+    icon: "human",
     itemName: "Médecin Libéral",
     itemRoute: "#service",
     activeClass: "",
@@ -15,7 +15,7 @@ module.exports = [
   },
   {
     icon: "testimonial",
-    itemName: "Testimonial",
+    itemName: "Témoignages",
     itemRoute: "#testimonial",
     activeClass: "",
   },

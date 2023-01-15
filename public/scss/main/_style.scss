@@ -1760,7 +1760,39 @@ body.dark .loader_line:after {
 /*---------------------------------------------------*/
 /*	08) EDINA TESTIMONIALS
 /*---------------------------------------------------*/
-
+.edina_tm_testimonials .in_list {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.edina_tm_testimonials .in_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.edina_tm_testimonials .in_list ul li {
+  margin: 0px 0px 15px 0px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+}
+.edina_tm_testimonials .in_list ul li:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #7e7e7e;
+  left: 0px;
+  top: 13px;
+}
+.edina_tm_testimonials .in_list ul li:last-child {
+  margin-bottom: 0px;
+}
+.edina_tm_testimonials .in_list ul li p {
+  margin-bottom: 0px;
+}
 .edina_tm_testimonials {
   width: 100%;
   height: auto;
