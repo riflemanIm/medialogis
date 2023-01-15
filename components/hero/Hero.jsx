@@ -38,6 +38,16 @@ const Hero = () => {
               médecins libéraux.
             </p>
           </div>
+          <div
+            className="edina_tm_button"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <a href="#service" className="color">
+              En savoir plus
+            </a>
+          </div>
         </div>
         <div>
           <div
@@ -66,6 +76,16 @@ const Hero = () => {
               établissement de santé imposent un nombre croissant d’exigences
               aux systèmes d’information médicale.
             </p>
+          </div>
+          <div
+            className="edina_tm_button"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <a href="#clinics" className="color">
+              En savoir plus
+            </a>
           </div>
         </div>
       </div>

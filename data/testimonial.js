@@ -2,14 +2,14 @@ module.exports = [
   {
     img: "1",
     desc: "Je confirme l’intérêt évident de Pneumologis dans mon activité quotidienne de pneumologue: simplicité, rapidité et efficacité. Le logiciel est très pratique à utiliser, il n’y a de remarques majeures à faire en comparaison avec d’autres logiciels. Un aspect très IMPORTANT : ce logiciel est totalement paramétrable à sa demande et à ses besoins propres. En toute honnêteté, je n’ai pas de reproche à donner. Nous sommes équipés depuis 3 ans et pourquoi pas jusqu’à la retraite...",
-    name: "Docteur Philippe de Tauriac Douai",
-    designation: "de Pneumologue",
+    name: "Docteur Philippe de Tauriac DOUAI",
+    designation: "Pneumologue",
     delayAnimation: "",
   },
   {
     img: "2",
-    name: "Docteur Marc Dedieu Carpentras",
-    designation: "de Pneumologue",
+    name: "Docteur Marc Dedieu CARPENTRAS",
+    designation: "Pneumologue",
     desc: (
       <>
         <p>Parce qu’il est génial!</p>
@@ -32,7 +32,7 @@ module.exports = [
   },
   {
     img: "3",
-    name: "Jeffrey Hardy",
+    name: "Docteur Olivier Gervais PARIS",
     designation: "de Pneumologue",
     desc: (
       <>

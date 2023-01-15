@@ -1291,7 +1291,7 @@ body.dark .loader_line:after {
     content: "";
     left: 0;
     top: 0;
-    background: #000;
+    background: #004178;
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     width: 100%;
@@ -2880,7 +2880,7 @@ a {
     transition: 0.5s;
   }
   &:hover {
-    background: #111;
+    background: #023b7e;
     border-color: #fff;
     &::after {
       filter: invert(1);
@@ -2890,7 +2890,7 @@ a {
 .slick-prev {
   @media screen and (max-width: 1599px) {
     left: 0;
-    background: #111;
+    background: #023b7e;
     border-color: #fff;
     &::after {
       filter: invert(1);
@@ -2911,7 +2911,7 @@ a {
 .slick-next {
   @media screen and (max-width: 1599px) {
     right: 0;
-    background: #111;
+    background: #023b7e;
     border-color: #fff;
     &::after {
       filter: invert(1);
