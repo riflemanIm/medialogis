@@ -47,7 +47,7 @@ const Sidebar = () => {
                 "home",
                 "about",
                 "service",
-                "portfolio",
+                "clinics",
                 "testimonial",
                 "blog",
                 "contact",

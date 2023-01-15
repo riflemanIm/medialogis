@@ -75,7 +75,7 @@ const EdinaPreview = () => {
         <div className="container">
           <div className="main_title">
             <img src="img/intro/logo.png" alt="brand" />
-            <p>Personal Portfolio React NextJS Template + RTL</p>
+            <p>Personal Clinics React NextJS Template + RTL</p>
           </div>
           {/* End main_title */}
 

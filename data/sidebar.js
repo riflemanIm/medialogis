@@ -8,9 +8,9 @@ module.exports = [
     activeClass: "",
   },
   {
-    icon: "portfolio",
+    icon: "clinics",
     itemName: "Etablissements de sante",
-    itemRoute: "#portfolio",
+    itemRoute: "#clinics",
     activeClass: "",
   },
   {

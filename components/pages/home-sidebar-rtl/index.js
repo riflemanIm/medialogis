@@ -5,7 +5,7 @@ import Sidebar from "../../header/Sidebar";
 import Hero from "../../hero/Hero";
 import About from "../../about/About";
 import Service from "../../service/Service";
-import Portfolio from "../../portfolio/Portfolio";
+import Clinics from "../../clinics/Clinics";
 import Testimonial from "../../testimonial/Testimonial";
 import Blog from "../../blog/Blog";
 import Contact from "../../Contact";
@@ -86,20 +86,20 @@ const EdinaHomeRtl = () => {
       </div>
       {/* End Services */}
 
-      <div className="edina_tm_portfolio" id="portfolio">
+      <div className="edina_tm_clinics" id="clinics">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>Portfolio</h3>
+            <h3>Clinics</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
           {/* End edian_tm_title */}
-          <Portfolio />
+          <Clinics />
         </div>
       </div>
-      {/* End Portfolio */}
+      {/* End Clinics */}
 
       <div className="edina_tm_testimonials" id="testimonial">
         <div className="container">

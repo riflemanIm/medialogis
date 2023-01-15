@@ -10,7 +10,7 @@
 04) EDINA HERO
 05) EDINA ABOUT
 06) EDINA SERVICE
-07) EDINA PORTFOLIO
+07) EDINA CLINICS
 08) EDINA TESTIMONIALS
 09) EDINA NEWS
 10) EDINA CONTACT
@@ -1519,10 +1519,10 @@ body.dark .loader_line:after {
 }
 
 /*---------------------------------------------------*/
-/*	07) EDINA PORTFOLIO
+/*	07) EDINA CLINICS
 /*---------------------------------------------------*/
 
-.edina_tm_portfolio {
+.edina_tm_clinics {
   width: 100%;
   height: auto;
   clear: both;
@@ -1538,7 +1538,7 @@ body.dark .loader_line:after {
     height: auto;
   }
 }
-.edina_tm_portfolio .portfolio_inner {
+.edina_tm_clinics .clinics_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -2931,7 +2931,7 @@ a {
   -webkit-transform: scale(0.7);
   transform: scale(0.7);
 }
-.portfolio_inner {
+.clinics_inner {
   .slick-prev,
   .slick-next {
     top: 50%;
@@ -3177,7 +3177,7 @@ a {
   margin: 0 auto;
 }
 
-// portfolio
+// clinics
 .portfoiol_content-inner {
   display: flex;
   flex-wrap: wrap;

@@ -3,11 +3,11 @@ import Modal from "react-modal";
 import ReactTooltip from "react-tooltip";
 import Slider from "react-slick";
 import Social from "../Social";
-import portfolioData from "../../data/portfolio";
+import clinicsData from "../../data/clinics";
 
 Modal.setAppElement("#__next");
 
-const Portfolio = () => {
+const Clinics = () => {
   var settings = {
     dots: false,
     arrow: true,
@@ -35,21 +35,21 @@ const Portfolio = () => {
   const [singleData, setSingleData] = useState({});
   const [isOpen, setIsOpen] = useState(false);
 
-  const handlePortfolioData = (id) => {
-    const find = portfolioData.find((item) => item?.id === id);
+  const handleClinicsData = (id) => {
+    const find = clinicsData.find((item) => item?.id === id);
     setSingleData(find);
     setIsOpen(true);
   };
 
   const handleModle = (id) => {
-    handlePortfolioData(id);
+    handleClinicsData(id);
   };
 
   return (
-    <div className="portfolio_inner my_carousel gallery_zoom">
+    <div className="clinics_inner my_carousel gallery_zoom">
       <ul data-aos="fade-right" data-aos-duration="1200">
         <Slider {...settings}>
-          {portfolioData.map((item) => (
+          {clinicsData.map((item) => (
             <li key={item.id}>
               <div className="list_inner">
                 <div className="image">
@@ -58,10 +58,10 @@ const Portfolio = () => {
                     className="details"
                   >
                     <img
-                      src={item.portfolioImage}
+                      src={item.clinicsImage}
                       data-tip
                       data-for={item.tooltipId}
-                      alt="portfolio"
+                      alt="clinics"
                     />
 
                     <ReactTooltip
@@ -106,7 +106,7 @@ const Portfolio = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: `url(${singleData?.portfolioImage})`,
+                    backgroundImage: `url(${singleData?.clinicsImage})`,
                   }}
                 ></div>
               </div>
@@ -138,11 +138,11 @@ const Portfolio = () => {
                       <h5>Link</h5>
                       <span>
                         <a
-                          href={singleData?.portfolioLink}
+                          href={singleData?.clinicsLink}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {singleData?.portfolioLink}
+                          {singleData?.clinicsLink}
                         </a>
                       </span>
                     </li>
@@ -167,4 +167,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Clinics;
