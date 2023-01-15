@@ -3,8 +3,7 @@ import Link from "next/link";
 import ScrollspyNav from "react-scrollspy-nav";
 import sidebarContent from "../../data/sidebar";
 import Image from "next/image";
-import logo from "../../public/img/logo/dark.png";
-import logo2 from "../../public/img/logo/light.png";
+import logo from "../../public/img/logo/logo_medialogis.png";
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
@@ -35,8 +34,12 @@ const Sidebar = () => {
         <div className="sidebar_inner">
           <div className="logo">
             <Link href="/">
-              <Image className="logo_light" src={logo} alt="brand" />
-              <Image className="logo_dark" src={logo2} alt="brand" />
+              <Image
+                className="logo_light"
+                src={logo}
+                alt="brand"
+                height={32}
+              />
             </Link>
           </div>
           {/* End .logo */}
