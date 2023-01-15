@@ -1,6 +1,6 @@
 import React from "react";
-//import Social from "../Social";
-//import ReactTyped from "react-typed";
+import Social from "../Social";
+import ReactTyped from "react-typed";
 import Image from "next/image";
 import heroImage1 from "../../public/img/hero/home1.jpg";
 import heroImage2 from "../../public/img/hero/home2.jpg";
@@ -54,7 +54,7 @@ const Hero = () => {
               data-aos-delay="100"
               className="hello"
             >
-              ETABLISSEMENTS DE SANTE
+              Les établissements de santé
             </h5>
             <p
               className="text"

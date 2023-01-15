@@ -9,7 +9,7 @@ module.exports = [
   },
   {
     icon: "portfolio",
-    itemName: "ETABLISSEMENTS DE SANTE",
+    itemName: "Etablissements de sante",
     itemRoute: "#portfolio",
     activeClass: "",
   },

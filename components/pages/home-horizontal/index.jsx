@@ -95,7 +95,7 @@ const EdinaHorizontal = () => {
       <div className="edina_tm_portfolio" id="portfolio">
         <div className="container">
           <div className="edina_tm_title">
-            <h3>ETABLISSEMENTS DE SANTE</h3>
+            <h3>Les établissements de santé</h3>
             <p>
               Un traitement médical de qualité et une gestion efficace d’un
               établissement de santé imposent un nombre croissant d’exigences
