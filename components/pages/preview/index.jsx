@@ -53,14 +53,14 @@ var settings = {
   ],
 };
 
-const EdinaPreview = () => {
+const MedialogisPreview = () => {
   useEffect(() => {
     document.querySelector("body").classList.remove("theme-dark");
   }, []);
 
   return (
     <div
-      className="edina_tm_intro bg-image"
+      className="ml_intro bg-image"
       style={{
         backgroundImage: `url(img/1.jpg)`,
       }}
@@ -94,7 +94,7 @@ const EdinaPreview = () => {
                       <img src={`img/intro/${val.img}.jpg`} alt="demo" />
                       <h3>{val.title}</h3>
                       <Link
-                        className="edina_tm_full_link"
+                        className="ml_full_link"
                         href={val.routerPath}
                         target="_blank"
                         rel="noreferrer"
@@ -127,4 +127,4 @@ const EdinaPreview = () => {
   );
 };
 
-export default EdinaPreview;
+export default MedialogisPreview;

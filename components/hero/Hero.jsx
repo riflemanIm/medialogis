@@ -8,7 +8,7 @@ import heroImage2 from "../../public/img/hero/home2.jpg";
 const Hero = () => {
   return (
     //    HERO
-    <div className="edina_tm_hero" id="home">
+    <div className="ml_hero" id="home">
       <div className="content">
         <div>
           <div
@@ -39,7 +39,7 @@ const Hero = () => {
             </p>
           </div>
           <div
-            className="edina_tm_button"
+            className="ml_button"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="500"
@@ -78,7 +78,7 @@ const Hero = () => {
             </p>
           </div>
           <div
-            className="edina_tm_button"
+            className="ml_button"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="500"

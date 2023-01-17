@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     //    ABOUT
-    <div className="edina_tm_about" id="about">
+    <div className="ml_about" id="about">
       <div className="container">
         <div className="about_title">
           <h3>MEDIALOGIS S.A</h3>
@@ -41,7 +41,7 @@ const About = () => {
               </p>
             </div>
             <div className="my_skills">
-              <div className="edina_tm_button">
+              <div className="ml_button">
                 <button
                   type="submit"
                   className="color"
@@ -94,7 +94,7 @@ const About = () => {
         overlayClassName="custom-overlay "
         closeTimeoutMS={500}
       >
-        <div className="edina_tm_modalbox">
+        <div className="ml_modalbox">
           <button className="close-modal" onClick={toggleModalOne}>
             <img src="/img/svg/cancel.svg" alt="close icon" />
           </button>

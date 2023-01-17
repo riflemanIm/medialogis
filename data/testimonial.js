@@ -96,9 +96,79 @@ module.exports = [
           notre cahier des charges (largement confirme au cours de l’évolution),
           avec convivialité ++.
         </p>
-        <p></p>
+        <p>Les Plus:</p>
+        <div className="in_list">
+          <ul>
+            <li>
+              Hotline +++++ : disponibilité+++, résolution rapide de tous
+              problèmes +++
+            </li>
+            <li>
+              Pratique pour les taches répétitives (ordonnances, convocations,
+              certifs, consentements, etc.); plus de dossiers à sortir ni a
+              ranger++++
+            </li>
+            <li>
+              Télétransmission : un régal. Gestion des 1/3 payants : impossible
+              de s’en passer (gain de plusieurs jours de comptabilité et de
+              secrétariat, permettant aux secrétaires de s’occuper de l’accueil
+              et aide technique)
+            </li>
+            <li>
+              Facilite de consultation des dossiers par chaque médecin, de
+              n’importe quel poste
+            </li>
+          </ul>
+        </div>
+        <p>Les moins :</p>
+        <div className="in_list">
+          <u>
+            <li>Quelques petits bugs comme tout logiciel utilisant Windows</li>
+            <li>
+              La crainte : se faire voler l’informatique... et refaire toutes
+              ces taches répétitives a la main
+            </li>
+          </u>
+        </div>
+        <p>Un grand plus pour notre cabinet de pneumologie (4 pneumologues).</p>
       </>
     ),
     delayAnimation: "400",
+  },
+  {
+    img: "6",
+    name: "Docteur Michel Yacono NIMES",
+    designation: "Pneumologue",
+    desc: (
+      <>
+        <p>
+          Apres l’essai de 3 logiciels médicaux, je voudrais dire merci pour :
+        </p>
+        <div className="in_list">
+          <ul>
+            <li>
+              La simplicité et la rapidité d’utilisation, importante dans notre
+              activité quotidienne de consultation, il ne nécessite ni de
+              connaitre le clavier les yeux fermes, ni une dextérité manuelle
+              importante, grâce aux glossaires.
+            </li>
+            <li>La possibilité aisée de personnaliser le bureau.</li>
+            <li>
+              La réactivité de son équipe aux questions et suggestions des
+              utilisateurs.
+            </li>
+            <li>La disponibilité en cas de problème de logiciel.</li>
+            <li>Le rapport coût/qualité.</li>
+          </ul>
+        </div>
+
+        <p>
+          Et surtout merci a Pneumologis d’exister, sinon, il faudrait
+          l’inventer...Mais ce programme n’est pas fige et nous sommes la, en
+          communauté, pour le faire progresser en fonction de nos besoins.
+        </p>
+      </>
+    ),
+    delayAnimation: "500",
   },
 ];

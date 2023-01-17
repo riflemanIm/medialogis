@@ -5,14 +5,14 @@ import FeedbackForm from "@components/FeedbackForm";
 import JokeBlock from "@components/JokeBlock";
 import dynamic from "next/dynamic";
 import Seo from "../components/Seo";
-import EdinaPreview from "../components/pages/preview";
+import MedialogisPreview from "../components/pages/preview";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
         <Seo pageTitle="Preview" />
-        <EdinaPreview />        
+        <MedialogisPreview />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

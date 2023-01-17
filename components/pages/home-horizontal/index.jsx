@@ -14,7 +14,7 @@ import Address from "../../Address";
 import Map from "../../Map";
 import HeaderMobile from "../../header/HeaderMobile";
 
-const EdinaHorizontal = () => {
+const MedialogisHorizontal = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -75,9 +75,9 @@ const EdinaHorizontal = () => {
       <About />
       {/* End Hero */}
 
-      <div className="edina_tm_services" id="service">
+      <div className="ml_services" id="service">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Médecin Libéral</h3>
             <p>
               MEDIALOGIS est composé de plusieurs modules nécessaires à
@@ -92,9 +92,9 @@ const EdinaHorizontal = () => {
       </div>
       {/* End Services */}
 
-      <div className="edina_tm_clinics" id="clinics">
+      <div className="ml_clinics" id="clinics">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Les établissements de santé</h3>
             <p>
               Un traitement médical de qualité et une gestion efficace d’un
@@ -114,9 +114,9 @@ const EdinaHorizontal = () => {
       </div>
       {/* End Clinics */}
 
-      <div className="edina_tm_testimonials" id="testimonial">
+      <div className="ml_testimonials" id="testimonial">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Témoignages d'utilisateurs</h3>
             <p>Ce que les gens disent et écrivent sur nous</p>
           </div>
@@ -130,9 +130,9 @@ const EdinaHorizontal = () => {
       </div>
       {/* End Testimonial */}
 
-      <div className="edina_tm_contact" id="contact">
+      <div className="ml_contact" id="contact">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Contact</h3>
             <p>
               I am always looking to start on new projects. Don't hesitate to
@@ -180,4 +180,4 @@ const EdinaHorizontal = () => {
   );
 };
 
-export default EdinaHorizontal;
+export default MedialogisHorizontal;
