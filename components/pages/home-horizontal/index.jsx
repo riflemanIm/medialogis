@@ -69,8 +69,8 @@ const MedialogisHorizontal = () => {
       <HeaderHorizontal />
       {/* End Header */}
 
-      <Hero />
-      {/* End Hero */}
+      {/* <Hero />
+      End Hero */}
 
       <About />
       {/* End Hero */}

@@ -64,7 +64,7 @@ const HeaderHorizontal = () => {
           <div className="menu">
             <ScrollspyNav
               scrollTargetIds={[
-                "home",
+                //"home",
                 "about",
                 "service",
                 "clinics",

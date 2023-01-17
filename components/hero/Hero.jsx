@@ -2,8 +2,8 @@ import React from "react";
 import Social from "../Social";
 import ReactTyped from "react-typed";
 import Image from "next/image";
-import heroImage1 from "../../public/img/hero/home1.jpg";
-import heroImage2 from "../../public/img/hero/home2.jpg";
+import heroImage1 from "../../public/img/hero/hero1.png";
+import heroImage2 from "../../public/img/hero/hero2.png";
 
 const Hero = () => {
   return (
