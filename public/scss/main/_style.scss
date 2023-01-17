@@ -4,20 +4,20 @@
 /*	Author: ib-themes
 /*	This file is made for CURRENT TEMPLATE
 
-01)	EDINA BASE
-02) EDINA MOBILE MENU
-03) EDINA SIDEBAR
-04) EDINA HERO
-05) EDINA ABOUT
-06) EDINA SERVICE
-07) EDINA CLINICS
-08) EDINA TESTIMONIALS
-09) EDINA NEWS
-10) EDINA CONTACT
-11) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
+01)	MEDIALOGIS BASE
+02) MEDIALOGIS MOBILE MENU
+03) MEDIALOGIS SIDEBAR
+04) MEDIALOGIS HERO
+05) MEDIALOGIS ABOUT
+06) MEDIALOGIS SERVICE
+07) MEDIALOGIS CLINICS
+08) MEDIALOGIS TESTIMONIALS
+09) MEDIALOGIS NEWS
+10) MEDIALOGIS CONTACT
+11) MEDIALOGIS MEDIA QUERIES (FOR SMALL DEVIVES)
 
 /*--------------------------------f-------------------*/
-/*	01) EDINA BASE
+/*	01) MEDIALOGIS BASE
 /*---------------------------------------------------*/
 
 html {
@@ -39,21 +39,33 @@ body {
     font-size: 16px;
   }
 }
-body::-webkit-scrollbar {
-  width: 11px;
+@mixin scrollbars($foreground-color, $background-color) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: 11px;
+  }
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: $foreground-color $background-color;
+  }
+  &:-webkit-scrollbar-track {
+    background: $background-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $foreground-color;
+    border-radius: 6px;
+    border: 3px solid $background-color;
+  }
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
 }
 body {
-  scrollbar-width: thin;
-  scrollbar-color: #999 #fff;
+  @include scrollbars(#999, #fff);
 }
-body:-webkit-scrollbar-track {
-  background: #fff;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #999;
-  border-radius: 6px;
-  border: 3px solid #fff;
-}
+
 svg {
   width: 15px;
   height: 15px;
@@ -135,20 +147,20 @@ h6 {
   font-size: 16px;
 }
 
-.edina_tm_all_wrap {
+.ml_all_wrap {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   position: relative;
 }
-.edina_tm_all_wrap,
-.edina_tm_all_wrap * {
+.ml_all_wrap,
+.ml_all_wrap * {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box; /* Opera/IE 8+ */
 }
-.edina_tm_section {
+.ml_section {
   width: 100%;
   height: auto;
   clear: both;
@@ -324,10 +336,10 @@ body.dark .loader_line:after {
 }
 
 /*---------------------------------------------------*/
-/*	02) EDINA MOBILE MENU
+/*	02) MEDIALOGIS MOBILE MENU
 /*---------------------------------------------------*/
 
-.edina_tm_mobile_menu {
+.ml_mobile_menu {
   width: 100%;
   height: auto;
   position: fixed;
@@ -336,12 +348,12 @@ body.dark .loader_line:after {
   display: none;
   z-index: 10;
 }
-.edina_tm_mobile_menu .my_trigger {
+.ml_mobile_menu .my_trigger {
   line-height: 1;
   position: relative;
   right: -10px;
 }
-.edina_tm_mobile_menu .mobile_menu_inner {
+.ml_mobile_menu .mobile_menu_inner {
   width: 100%;
   height: auto;
   float: left;
@@ -350,7 +362,7 @@ body.dark .loader_line:after {
   padding: 15px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
 }
-.edina_tm_mobile_menu .mobile_in {
+.ml_mobile_menu .mobile_in {
   width: 100%;
   height: auto;
   clear: both;
@@ -359,7 +371,7 @@ body.dark .loader_line:after {
   align-items: center;
   justify-content: space-between;
 }
-.edina_tm_mobile_menu .mobile_in .logo img {
+.ml_mobile_menu .mobile_in .logo img {
   max-width: 100px;
 }
 .my_trigger .hamburger-box {
@@ -381,7 +393,7 @@ body.dark .loader_line:after {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edina_tm_mobile_menu .dropdown {
+.ml_mobile_menu .dropdown {
   width: 100%;
   height: auto;
   clear: both;
@@ -390,23 +402,23 @@ body.dark .loader_line:after {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   display: none;
 }
-.edina_tm_mobile_menu .dropdown .dropdown_inner {
+.ml_mobile_menu .dropdown .dropdown_inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   padding: 25px 0px;
 }
-.edina_tm_mobile_menu .dropdown .dropdown_inner ul {
+.ml_mobile_menu .dropdown .dropdown_inner ul {
   margin: 0px;
   list-style-type: none;
 }
-.edina_tm_mobile_menu .dropdown .dropdown_inner ul li {
+.ml_mobile_menu .dropdown .dropdown_inner ul li {
   margin: 0px;
   float: left;
   width: 100%;
 }
-.edina_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+.ml_mobile_menu .dropdown .dropdown_inner ul li a {
   text-decoration: none;
   color: #000;
   display: inline-block;
@@ -416,10 +428,10 @@ body.dark .loader_line:after {
 }
 
 /*---------------------------------------------------*/
-/*	03) EDINA SIDEBAR
+/*	03) MEDIALOGIS SIDEBAR
 /*---------------------------------------------------*/
 
-.edina_tm_sidebar {
+.ml_sidebar {
   width: 320px;
   height: 100vh;
   position: fixed;
@@ -446,7 +458,7 @@ body.dark .loader_line:after {
     width: 240px;
   }
 }
-.edina_tm_sidebar .logo {
+.ml_sidebar .logo {
   width: 100%;
   height: auto;
   clear: both;
@@ -457,7 +469,7 @@ body.dark .loader_line:after {
     padding: 20px;
   }
 }
-.edina_tm_sidebar .logo img,
+.ml_sidebar .logo img,
 .header-inner .logo img {
   // max-width: 120px;
   @media screen and (max-width: 1199px) {
@@ -470,7 +482,7 @@ body.dark .loader_line:after {
   }
 }
 
-.edina_tm_sidebar .menu {
+.ml_sidebar .menu {
   width: 100%;
   height: auto;
   clear: both;
@@ -480,19 +492,19 @@ body.dark .loader_line:after {
     padding: 35px 20px 20px;
   }
 }
-.edina_tm_sidebar .menu ul {
+.ml_sidebar .menu ul {
   margin: 0px;
   list-style-type: none;
 }
-.edina_tm_sidebar .menu ul li {
+.ml_sidebar .menu ul li {
   margin: 0px 0px 8px 0px;
   width: 100%;
   float: left;
 }
-.edina_tm_sidebar .menu ul li:last-child {
+.ml_sidebar .menu ul li:last-child {
   margin-bottom: 0px;
 }
-.edina_tm_sidebar .menu ul li a {
+.ml_sidebar .menu ul li a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -508,7 +520,7 @@ body.dark .loader_line:after {
     padding: 5px 15px;
   }
 }
-.edina_tm_sidebar .menu ul li a:before {
+.ml_sidebar .menu ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -524,14 +536,14 @@ body.dark .loader_line:after {
   z-index: -1;
   transition: all 0.3s ease;
 }
-.edina_tm_sidebar .menu ul li a:hover:before,
-.edina_tm_sidebar .menu ul li .list_inner a.active:before {
+.ml_sidebar .menu ul li a:hover:before,
+.ml_sidebar .menu ul li .list_inner a.active:before {
   transform: scaleX(1);
   transform-origin: left;
   transition: transform 0.5s;
 }
 
-.edina_tm_sidebar .menu ul li .svg {
+.ml_sidebar .menu ul li .svg {
   width: 22px;
   height: 22px;
   margin-right: 15px;
@@ -543,14 +555,14 @@ body.dark .loader_line:after {
     margin-right: 10px;
   }
 }
-.edina_tm_sidebar .author {
+.ml_sidebar .author {
   position: absolute;
   bottom: 0px;
   left: 0px;
   right: 0px;
   border-top: 1px solid #cbd3d9;
 }
-.edina_tm_sidebar .author .inner {
+.ml_sidebar .author .inner {
   width: 100%;
   height: auto;
   display: flex;
@@ -560,14 +572,14 @@ body.dark .loader_line:after {
     padding: 20px;
   }
 }
-.edina_tm_sidebar .author .image {
+.ml_sidebar .author .image {
   position: relative;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   display: inline-block;
 }
-.edina_tm_sidebar .author .main {
+.ml_sidebar .author .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -579,15 +591,15 @@ body.dark .loader_line:after {
   border-radius: 100%;
   border: 1px solid #34495e;
 }
-.edina_tm_sidebar .short {
+.ml_sidebar .short {
   padding-left: 13px;
 }
-.edina_tm_sidebar .short h3 {
+.ml_sidebar .short h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
 }
-.edina_tm_sidebar .short a {
+.ml_sidebar .short a {
   text-decoration: none;
   color: #7e7e7e;
   font-size: 14px;
@@ -602,10 +614,10 @@ body.dark .loader_line:after {
   display: none;
 }
 /*---------------------------------------------------*/
-/*	04) EDINA HERO
+/*	04) MEDIALOGIS HERO
 /*---------------------------------------------------*/
 
-.edina_tm_mainpart {
+.ml_mainpart {
   width: 100%;
   height: auto;
   clear: both;
@@ -617,7 +629,7 @@ body.dark .loader_line:after {
   }
 }
 
-.edina_tm_hero {
+.ml_hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -627,7 +639,7 @@ body.dark .loader_line:after {
   justify-content: center;
   text-align: center;
 
-  .edina_tm_button {
+  .ml_button {
     margin-top: 25px;
     a {
       border-radius: 30px;
@@ -638,17 +650,17 @@ body.dark .loader_line:after {
     }
   }
 }
-.edina_tm_hero .content {
+.ml_hero .content {
   display: flex;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 }
-.edina_tm_hero .content > div {
+.ml_hero .content > div {
   padding: 150px 20px 20px 20px;
 }
-.edina_tm_hero .image {
+.ml_hero .image {
   display: inline-block;
   width: 300px;
   height: 300px;
@@ -661,7 +673,7 @@ body.dark .loader_line:after {
   transition: all 1s ease;
 }
 
-.edina_tm_hero .image .main {
+.ml_hero .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -672,7 +684,7 @@ body.dark .loader_line:after {
   background-size: cover;
   border-radius: 100%;
 }
-.edina_tm_hero .image:before {
+.ml_hero .image:before {
   content: "";
   position: absolute;
   top: -10px;
@@ -682,13 +694,13 @@ body.dark .loader_line:after {
   background-color: #e2e2e2;
   border-radius: 100%;
 }
-.edina_tm_hero .name {
+.ml_hero .name {
   font-size: 44px;
   font-weight: 700;
   line-height: 1.2;
   margin: 10px 0 12px;
 }
-.edina_tm_hero .extra {
+.ml_hero .extra {
   position: relative;
   opacity: 1;
   visibility: visible;
@@ -697,7 +709,7 @@ body.dark .loader_line:after {
   transition: all 1s ease;
 }
 
-.edina_tm_hero .text {
+.ml_hero .text {
   max-width: 500px;
   text-align: left;
   margin: 0px auto 32px auto;
@@ -706,16 +718,16 @@ body.dark .loader_line:after {
     font-size: 15px;
   }
 }
-.edina_tm_hero .social ul {
+.ml_hero .social ul {
   margin: 0px;
   list-style-type: none;
   list-style: none;
 }
-.edina_tm_hero .social ul li {
+.ml_hero .social ul li {
   margin: 0px;
   display: inline-block;
 }
-.edina_tm_hero .social ul li a {
+.ml_hero .social ul li a {
   text-decoration: none;
   color: #e7e7e7;
   display: inline-block;
@@ -736,7 +748,7 @@ body.dark .loader_line:after {
     height: 22px;
   }
 }
-.edina_tm_hero .social ul li a:after {
+.ml_hero .social ul li a:after {
   position: absolute;
   content: "";
   width: 1px;
@@ -745,10 +757,10 @@ body.dark .loader_line:after {
   top: 0px;
   right: 0px;
 }
-.edina_tm_hero .social ul li:last-child a:after {
+.ml_hero .social ul li:last-child a:after {
   display: none;
 }
-.edina_tm_hero .social ul li .svg {
+.ml_hero .social ul li .svg {
   width: 19px;
   height: 19px;
 
@@ -760,10 +772,10 @@ body.dark .loader_line:after {
 }
 
 /*---------------------------------------------------*/
-/*	05) EDINA ABOUT
+/*	05) MEDIALOGIS ABOUT
 /*---------------------------------------------------*/
 
-.edina_tm_about {
+.ml_about {
   width: 100%;
   height: auto;
   clear: both;
@@ -775,11 +787,11 @@ body.dark .loader_line:after {
     padding-top: 90px;
   }
 }
-.edina_tm_about .about_title {
+.ml_about .about_title {
   width: 100%;
   float: left;
 }
-.edina_tm_about .about_title h3 {
+.ml_about .about_title h3 {
   font-size: 45px;
   font-weight: 700;
   line-height: 1;
@@ -789,7 +801,7 @@ body.dark .loader_line:after {
   font-weight: 500;
   margin-bottom: 18px;
 }
-.edina_tm_about .color {
+.ml_about .color {
   border-radius: 6px;
   padding: 13px 30px;
   background: #fff;
@@ -808,42 +820,42 @@ body.dark .loader_line:after {
     color: #fff;
   }
 }
-.edina_tm_about .content {
+.ml_about .content {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
   padding-top: 60px;
 }
-.edina_tm_about .leftpart {
+.ml_about .leftpart {
   width: 50%;
 }
-.edina_tm_about .leftpart .info {
+.ml_about .leftpart .info {
   width: 100%;
   float: left;
   margin-bottom: 55px;
 }
-.edina_tm_about .leftpart .info h3 {
+.ml_about .leftpart .info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 15px;
 }
-.edina_tm_about .leftpart .info h3 span {
+.ml_about .leftpart .info h3 span {
   font-weight: 600;
 }
-.edina_tm_about .leftpart .info p {
+.ml_about .leftpart .info p {
   max-width: 90%;
 }
-.edina_tm_about .my_skills {
+.ml_about .my_skills {
   width: 100%;
   float: left;
 }
-.edina_tm_about .my_skills .title {
+.ml_about .my_skills .title {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-.edina_tm_about .dodo_progress {
+.ml_about .dodo_progress {
   width: 100%;
   display: flex;
   padding-top: 40px;
@@ -854,10 +866,10 @@ body.dark .loader_line:after {
     margin: 0;
   }
 }
-.edina_tm_about .desc {
+.ml_about .desc {
   max-width: 90%;
 }
-.edina_tm_about .wrapper .progress_inner {
+.ml_about .wrapper .progress_inner {
   width: 50%;
   padding: 0 20px;
   @media screen and (max-width: 575px) {
@@ -865,7 +877,7 @@ body.dark .loader_line:after {
     padding: 0;
   }
 }
-.edina_tm_about .wrapper .right {
+.ml_about .wrapper .right {
   width: 50%;
   padding-left: 20px;
 }
@@ -935,19 +947,19 @@ body.dark .loader_line:after {
   }
 }
 
-.edina_tm_about .rightpart {
+.ml_about .rightpart {
   width: 50%;
   padding-left: 200px;
 }
-.edina_tm_about .rightpart .image {
+.ml_about .rightpart .image {
   position: relative;
 }
-.edina_tm_about .rightpart .image img {
+.ml_about .rightpart .image img {
   position: relative;
   min-width: 100%;
   opacity: 0;
 }
-.edina_tm_about .rightpart .image .main {
+.ml_about .rightpart .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -958,7 +970,7 @@ body.dark .loader_line:after {
   background-size: cover;
   border-radius: 10px;
 }
-.edina_tm_about .experience {
+.ml_about .experience {
   position: absolute;
   bottom: -50px;
   left: -50px;
@@ -968,7 +980,7 @@ body.dark .loader_line:after {
   border-radius: 100%;
   background-color: #003b7e;
 }
-.edina_tm_about .experience .info {
+.ml_about .experience .info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -977,12 +989,12 @@ body.dark .loader_line:after {
   transform: translate(-50%, -50%);
   padding: 10px;
 }
-.edina_tm_about .experience .info h3 {
+.ml_about .experience .info h3 {
   font-size: 45px;
   font-weight: 700;
   color: #fff;
 }
-.edina_tm_about .experience .info span {
+.ml_about .experience .info span {
   font-size: 22px;
   font-weight: 500;
   color: #fff;
@@ -1010,7 +1022,7 @@ body.dark .loader_line:after {
       width: 320px;
     }
   }
-  .edina_tm_modalbox .description_wrap {
+  .ml_modalbox .description_wrap {
     padding: 0 50px;
     @media (max-width: 460px) {
       padding: 0 20px;
@@ -1018,7 +1030,7 @@ body.dark .loader_line:after {
   }
 }
 .about-popup-wrapper {
-  .edina_tm_button {
+  .ml_button {
     margin-top: 15px;
     a {
       border-radius: 30px;
@@ -1221,25 +1233,25 @@ body.dark .loader_line:after {
 }
 
 /*---------------------------------------------------*/
-/*	06) EDINA SERVICE
+/*	06) MEDIALOGIS SERVICE
 /*---------------------------------------------------*/
 
-.edina_tm_title {
+.ml_title {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.edina_tm_title h3 {
+.ml_title h3 {
   font-size: 45px;
   font-weight: 800;
   margin-bottom: 25px;
   line-height: 1;
 }
-.edina_tm_title p {
+.ml_title p {
   max-width: 800px;
 }
-.edina_tm_services {
+.ml_services {
   width: 100%;
   height: auto;
   clear: both;
@@ -1250,20 +1262,20 @@ body.dark .loader_line:after {
     padding: 90px 0px 60px 0px;
   }
 }
-.edina_tm_services .service_list {
+.ml_services .service_list {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   padding-top: 60px;
 }
-.edina_tm_services ul {
+.ml_services ul {
   margin: 0px 0px 0px -30px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
-.edina_tm_services ul li {
+.ml_services ul li {
   margin: 0px 0px 30px 0px;
   width: 33%;
   padding-left: 30px;
@@ -1271,7 +1283,7 @@ body.dark .loader_line:after {
   cursor: pointer;
   position: relative;
 }
-.edina_tm_services ul li .list_inner {
+.ml_services ul li .list_inner {
   width: 100%;
   height: 100%;
   min-height: 405px;
@@ -1320,37 +1332,37 @@ body.dark .loader_line:after {
     transform: none;
   }
 }
-.edina_tm_services ul li .list_inner:hover {
+.ml_services ul li .list_inner:hover {
   .svg,
   .service_title,
   .learn_more {
     animation: slideLeft 0.7s ease-in-out 0s 1 normal none running !important;
   }
 }
-.edina_tm_services ul li .svg {
+.ml_services ul li .svg {
   width: 50px;
   height: 50px;
   margin-bottom: 25px;
   transition: all 0.3s ease-in-out;
 }
-.edina_tm_services ul li .list_inner:hover .svg {
+.ml_services ul li .list_inner:hover .svg {
   color: #fff;
   filter: invert(1);
 }
-.edina_tm_services ul li .list_inner:hover .svg.custom {
+.ml_services ul li .list_inner:hover .svg.custom {
   stroke: #fff;
 }
-.edina_tm_services ul li h3 {
+.ml_services ul li h3 {
   font-weight: 600;
   font-size: 24px;
   color: #1a1a1a;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
-.edina_tm_services ul li .list_inner:hover h3 {
+.ml_services ul li .list_inner:hover h3 {
   color: #fff;
 }
-.edina_tm_services ul li .learn_more {
+.ml_services ul li .learn_more {
   text-decoration: none;
   color: #7e7e7e;
   font-size: 18px;
@@ -1363,7 +1375,7 @@ body.dark .loader_line:after {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edina_tm_services ul li .learn_more span {
+.ml_services ul li .learn_more span {
   position: absolute;
   display: inline-block;
   width: 10px;
@@ -1376,7 +1388,7 @@ body.dark .loader_line:after {
 
   transition: all 0.7s ease;
 }
-.edina_tm_services ul li .learn_more span:before {
+.ml_services ul li .learn_more span:before {
   position: absolute;
   content: "";
   width: 6px;
@@ -1388,7 +1400,7 @@ body.dark .loader_line:after {
   border-radius: 50px;
   transition: all 0.7s ease;
 }
-.edina_tm_services ul li .learn_more span:after {
+.ml_services ul li .learn_more span:after {
   position: absolute;
   content: "";
   width: 6px;
@@ -1400,18 +1412,18 @@ body.dark .loader_line:after {
   border-radius: 50px;
   transition: all 0.7s ease;
 }
-.edina_tm_services ul li .list_inner:hover .learn_more span {
+.ml_services ul li .list_inner:hover .learn_more span {
   width: 30px;
   background-color: #fff;
 }
-.edina_tm_services ul li .list_inner:hover .learn_more span:before,
-.edina_tm_services ul li .list_inner:hover .learn_more span:after {
+.ml_services ul li .list_inner:hover .learn_more span:before,
+.ml_services ul li .list_inner:hover .learn_more span:after {
   background-color: #fff;
 }
-.edina_tm_services ul li .list_inner:hover .learn_more {
+.ml_services ul li .list_inner:hover .learn_more {
   color: #fff;
 }
-.edina_tm_full_link {
+.ml_full_link {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1420,7 +1432,7 @@ body.dark .loader_line:after {
   z-index: 5;
 }
 
-.edina_tm_modalbox .description_wrap {
+.ml_modalbox .description_wrap {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1429,43 +1441,43 @@ body.dark .loader_line:after {
   padding: 50px;
   overflow-y: scroll;
 }
-.edina_tm_services .popup_informations {
+.ml_services .popup_informations {
   opacity: 0;
   visibility: hidden;
   position: absolute;
   z-index: -11;
   display: none;
 }
-.edina_tm_modalbox .service_title {
+.ml_modalbox .service_title {
   display: none;
 }
-.edina_tm_modalbox .description_wrap .svg {
+.ml_modalbox .description_wrap .svg {
   display: none;
 }
-.edina_tm_modalbox .description_wrap .learn_more {
+.ml_modalbox .description_wrap .learn_more {
   display: none;
 }
-.edina_tm_modalbox .description_wrap .edina_tm_full_link {
+.ml_modalbox .description_wrap .ml_full_link {
   display: none;
 }
-.edina_tm_modalbox .popup_informations {
+.ml_modalbox .popup_informations {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.edina_tm_modalbox .popup_informations .image {
+.ml_modalbox .popup_informations .image {
   position: relative;
   max-height: 450px;
   margin-bottom: 50px;
   overflow: hidden;
 }
-.edina_tm_modalbox .popup_informations .image img {
+.ml_modalbox .popup_informations .image img {
   position: relative;
   min-width: 100%;
   opacity: 0;
 }
-.edina_tm_modalbox .popup_informations .image .main {
+.ml_modalbox .popup_informations .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1475,34 +1487,34 @@ body.dark .loader_line:after {
   background-position: center;
   background-size: cover;
 }
-.edina_tm_modalbox .popup_informations h3 {
+.ml_modalbox .popup_informations h3 {
   color: #0f172a;
   font-size: 23px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-.edina_tm_modalbox .popup_informations p {
+.ml_modalbox .popup_informations p {
   margin-bottom: 30px;
   font-size: 16px;
 }
-.edina_tm_modalbox .in_list {
+.ml_modalbox .in_list {
   width: 100%;
   float: left;
   margin-bottom: 30px;
   padding-left: 20px;
 }
-.edina_tm_modalbox .in_list ul {
+.ml_modalbox .in_list ul {
   margin: 0px;
   list-style-type: none;
 }
-.edina_tm_modalbox .in_list ul li {
+.ml_modalbox .in_list ul li {
   margin: 0px 0px 15px 0px;
   width: 100%;
   float: left;
   position: relative;
   padding-left: 20px;
 }
-.edina_tm_modalbox .in_list ul li:before {
+.ml_modalbox .in_list ul li:before {
   position: absolute;
   content: "";
   width: 5px;
@@ -1512,18 +1524,18 @@ body.dark .loader_line:after {
   left: 0px;
   top: 13px;
 }
-.edina_tm_modalbox .in_list ul li:last-child {
+.ml_modalbox .in_list ul li:last-child {
   margin-bottom: 0px;
 }
-.edina_tm_modalbox .in_list ul li p {
+.ml_modalbox .in_list ul li p {
   margin-bottom: 0px;
 }
 
 /*---------------------------------------------------*/
-/*	07) EDINA CLINICS
+/*	07) MEDIALOGIS CLINICS
 /*---------------------------------------------------*/
 
-.edina_tm_clinics {
+.ml_clinics {
   width: 100%;
   height: auto;
   clear: both;
@@ -1539,7 +1551,7 @@ body.dark .loader_line:after {
     height: auto;
   }
 }
-.edina_tm_clinics .clinics_inner {
+.ml_clinics .clinics_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1582,7 +1594,7 @@ body.dark .loader_line:after {
     }
   }
 }
-.edina_tm_news {
+.ml_news {
   .my_carousel ul li .image {
     @media screen and (max-width: 1900px) {
       height: 235px;
@@ -1758,26 +1770,26 @@ body.dark .loader_line:after {
 }
 
 /*---------------------------------------------------*/
-/*	08) EDINA TESTIMONIALS
+/*	08) MEDIALOGIS TESTIMONIALS
 /*---------------------------------------------------*/
-.edina_tm_testimonials .in_list {
+.ml_testimonials .in_list {
   width: 100%;
   float: left;
   margin-bottom: 30px;
   padding-left: 20px;
 }
-.edina_tm_testimonials .in_list ul {
+.ml_testimonials .in_list ul {
   margin: 0px;
   list-style-type: none;
 }
-.edina_tm_testimonials .in_list ul li {
+.ml_testimonials .in_list ul li {
   margin: 0px 0px 15px 0px;
   width: 100%;
   float: left;
   position: relative;
   padding-left: 20px;
 }
-.edina_tm_testimonials .in_list ul li:before {
+.ml_testimonials .in_list ul li:before {
   position: absolute;
   content: "";
   width: 5px;
@@ -1787,13 +1799,13 @@ body.dark .loader_line:after {
   left: 0px;
   top: 13px;
 }
-.edina_tm_testimonials .in_list ul li:last-child {
+.ml_testimonials .in_list ul li:last-child {
   margin-bottom: 0px;
 }
-.edina_tm_testimonials .in_list ul li p {
+.ml_testimonials .in_list ul li p {
   margin-bottom: 0px;
 }
-.edina_tm_testimonials {
+.ml_testimonials {
   width: 100%;
   height: auto;
   clear: both;
@@ -1811,22 +1823,22 @@ body.dark .loader_line:after {
 .slick-dots li {
   padding: 0 15px;
 }
-.edina_tm_testimonials .list {
+.ml_testimonials .list {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   padding-top: 60px;
 }
-.edina_tm_testimonials .list ul {
+.ml_testimonials .list ul {
   margin: 0px -15px;
   list-style-type: none;
 }
-.edina_tm_testimonials .list ul li {
+.ml_testimonials .list ul li {
   margin: 0px;
   padding: 0 15px;
 }
-.edina_tm_testimonials .list ul li .list_inner {
+.ml_testimonials .list ul li .list_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1840,23 +1852,23 @@ body.dark .loader_line:after {
     margin-bottom: 10px;
   }
 }
-.edina_tm_testimonials .list .details {
+.ml_testimonials .list .details {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.edina_tm_testimonials .list .author {
+.ml_testimonials .list .author {
   display: flex;
   align-items: center;
 }
-.edina_tm_testimonials .list .image {
+.ml_testimonials .list .image {
   position: relative;
   width: 120px;
   height: 120px;
 }
-.edina_tm_testimonials .list .image .main {
+.ml_testimonials .list .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1867,27 +1879,37 @@ body.dark .loader_line:after {
   background-size: cover;
   border-radius: 6px;
 }
-.edina_tm_testimonials .list .short {
+.ml_testimonials .list .short {
   padding-left: 30px;
   @media screen and (max-width: 991px) {
     padding-left: 15px;
   }
 }
-.edina_tm_testimonials .list .short h3 {
+.ml_testimonials .list .short h3 {
   font-size: 24px;
   font-weight: 500;
 }
-.edina_tm_testimonials .list .short span {
+.ml_testimonials .list .short span {
   font-size: 16px;
   font-weight: 400;
 }
-.edina_tm_testimonials .list .text p {
-  font-size: 18px;
+.ml_testimonials .list .text {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 220px;
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+
+  @include scrollbars(#999, #fff);
+  p {
+    font-size: 18px;
+  }
 }
-.edina_tm_testimonials .owl-theme .owl-nav.disabled + .owl-dots {
+
+.ml_testimonials .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 33px;
 }
-.edina_tm_testimonials .owl-theme .owl-dots .owl-dot span {
+.ml_testimonials .owl-theme .owl-dots .owl-dot span {
   margin: 0px 10px 0px 0px;
   width: 14px;
   height: 14px;
@@ -1900,22 +1922,22 @@ body.dark .loader_line:after {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edina_tm_testimonials .owl-theme .owl-dots .owl-dot.active span {
+.ml_testimonials .owl-theme .owl-dots .owl-dot.active span {
   background-color: transparent;
   border-color: #34495e;
   width: 16px;
   height: 16px;
 }
-.edina_tm_testimonials .svg {
+.ml_testimonials .svg {
   width: 80px;
   height: 80px;
 }
 
 /*---------------------------------------------------*/
-/*	09) EDINA NEWS
+/*	09) MEDIALOGIS NEWS
 /*---------------------------------------------------*/
 
-.edina_tm_news {
+.ml_news {
   width: 100%;
   height: auto;
   clear: both;
@@ -1933,24 +1955,24 @@ body.dark .loader_line:after {
     padding-bottom: 15px;
   }
 }
-.edina_tm_news .news_inner {
+.ml_news .news_inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   padding-top: 60px;
 }
-.edina_tm_news ul li .news_details {
+.ml_news ul li .news_details {
   width: 100%;
   float: left;
   padding-top: 9px;
 }
-.edina_tm_news ul li .news_details span {
+.ml_news ul li .news_details span {
   font-size: 16px;
   display: inline-block;
   padding-bottom: 5px;
 }
-.edina_tm_news ul li .news_details span a {
+.ml_news ul li .news_details span a {
   text-decoration: none;
   color: #7e7e7e;
   position: relative;
@@ -1962,7 +1984,7 @@ body.dark .loader_line:after {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edina_tm_news ul li .news_details span a:before {
+.ml_news ul li .news_details span a:before {
   position: relative;
   content: ".";
   font-size: 40px;
@@ -1970,10 +1992,10 @@ body.dark .loader_line:after {
   color: #7e7e7e;
   padding: 0px 5px;
 }
-.edina_tm_news ul li .news_details .title {
+.ml_news ul li .news_details .title {
   line-height: 1.2;
 }
-.edina_tm_news ul li .news_details .title {
+.ml_news ul li .news_details .title {
   text-decoration: none;
   color: #34495e;
   font-size: 22px;
@@ -1981,12 +2003,12 @@ body.dark .loader_line:after {
   transition: all 0.3s ease;
 }
 
-.edina_tm_modalbox .details {
+.ml_modalbox .details {
   width: 100%;
   float: left;
   margin-bottom: 20px;
 }
-.edina_tm_modalbox .description_wrap .image {
+.ml_modalbox .description_wrap .image {
   position: relative;
   height: 450px;
   margin-bottom: 20px;
@@ -1996,11 +2018,11 @@ body.dark .loader_line:after {
     height: 240px;
   }
 }
-.edina_tm_modalbox .description_wrap .image img {
+.ml_modalbox .description_wrap .image img {
   min-width: 100%;
   opacity: 0;
 }
-.edina_tm_modalbox .description_wrap .image .main {
+.ml_modalbox .description_wrap .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -2010,24 +2032,24 @@ body.dark .loader_line:after {
   background-position: center;
   background-size: cover;
 }
-.edina_tm_modalbox .news_details {
+.ml_modalbox .news_details {
   margin-bottom: 20px;
 }
-.edina_tm_modalbox .news_details .title {
+.ml_modalbox .news_details .title {
   font-weight: 600;
   font-size: 23px;
   margin-bottom: 9px;
 }
-.edina_tm_modalbox .news_details .title a {
+.ml_modalbox .news_details .title a {
   text-decoration: none;
   color: #1a1a1a;
 }
-.edina_tm_modalbox .news_details span {
+.ml_modalbox .news_details span {
   font-size: 16px;
   display: inline-block;
   margin-bottom: 5px;
 }
-.edina_tm_modalbox .news_details span a {
+.ml_modalbox .news_details span a {
   text-decoration: none;
   color: #7e7e7e;
   position: relative;
@@ -2039,7 +2061,7 @@ body.dark .loader_line:after {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edina_tm_modalbox .news_details span a:before {
+.ml_modalbox .news_details span a:before {
   position: relative;
   content: ".";
   font-size: 40px;
@@ -2047,7 +2069,7 @@ body.dark .loader_line:after {
   color: #7e7e7e;
   padding: 0px 5px;
 }
-.edina_tm_news .main_content {
+.ml_news .main_content {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -2057,25 +2079,25 @@ body.dark .loader_line:after {
 body.modal {
   overflow-y: hidden;
 }
-.edina_tm_modalbox .main_content {
+.ml_modalbox .main_content {
   width: 100%;
   float: left;
 }
-.edina_tm_modalbox .main_content .descriptions {
+.ml_modalbox .main_content .descriptions {
   width: 100%;
   float: left;
   margin-bottom: 15px;
 }
-.edina_tm_modalbox .main_content .descriptions .bigger {
+.ml_modalbox .main_content .descriptions .bigger {
   color: #888;
   font-size: 20px;
   margin-bottom: 31px;
 }
-.edina_tm_modalbox .main_content .descriptions p {
+.ml_modalbox .main_content .descriptions p {
   margin-bottom: 22px;
   font-size: 16px;
 }
-.edina_tm_modalbox .main_content .quotebox {
+.ml_modalbox .main_content .quotebox {
   width: 100%;
   height: auto;
   clear: both;
@@ -2084,7 +2106,7 @@ body.modal {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.edina_tm_modalbox .main_content .quotebox p {
+.ml_modalbox .main_content .quotebox p {
   font-size: 20px;
   font-style: italic;
   margin-bottom: 23px;
@@ -2094,7 +2116,7 @@ body.modal {
 }
 
 /*---------------------------------------------------*/
-/*	10) EDINA CONTACT
+/*	10) MEDIALOGIS CONTACT
 /*---------------------------------------------------*/
 .contact_form label {
   /* Hide the text. */
@@ -2103,7 +2125,7 @@ body.modal {
   overflow: hidden;
   display: none;
 }
-.edina_tm_contact {
+.ml_contact {
   width: 100%;
   height: auto;
   clear: both;
@@ -2140,7 +2162,7 @@ body.modal {
     }
   }
 }
-.edina_tm_contact .extra_info {
+.ml_contact .extra_info {
   width: 100%;
   height: auto;
   clear: both;
@@ -2148,19 +2170,19 @@ body.modal {
   padding-top: 60px;
   margin-bottom: 30px;
 }
-.edina_tm_contact .extra_info .wrapper {
+.ml_contact .extra_info .wrapper {
   margin: 0px 0px 0px -30px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
-.edina_tm_contact .extra_info .wrapper > li {
+.ml_contact .extra_info .wrapper > li {
   margin: 0px 0px 30px 0px;
   flex: 0 0 auto;
   width: 33.33333333%;
   padding-left: 30px;
 }
-.edina_tm_contact .extra_info .wrapper > li .list_inner {
+.ml_contact .extra_info .wrapper > li .list_inner {
   display: flex;
   align-items: flex-start;
   background-color: #fff;
@@ -2170,74 +2192,74 @@ body.modal {
     padding: 20px;
   }
 }
-.edina_tm_contact .extra_info .in {
+.ml_contact .extra_info .in {
   margin: 0px;
   list-style-type: none;
 }
-.edina_tm_contact .extra_info .in li {
+.ml_contact .extra_info .in li {
   margin: 0px;
   width: 100%;
   float: left;
   font-size: 16px;
 }
-.edina_tm_contact .extra_info .in li :last-child {
+.ml_contact .extra_info .in li :last-child {
   margin-bottom: 0px;
 }
-.edina_tm_contact .extra_info h3 {
+.ml_contact .extra_info h3 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.edina_tm_contact .extra_info a {
+.ml_contact .extra_info a {
   text-decoration: none;
   color: #7e7e7e;
 }
-.edina_tm_contact .mainpart {
+.ml_contact .mainpart {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
 }
-.edina_tm_contact .mainpart .left {
+.ml_contact .mainpart .left {
   width: 50%;
   background-color: #fff;
   padding: 50px 45px 55px 45px;
   margin-right: 30px;
   border-radius: 6px;
 }
-.edina_tm_contact .mainpart .left .title {
+.ml_contact .mainpart .left .title {
   width: 100%;
   float: left;
   margin-bottom: 14px;
 }
-.edina_tm_contact .mainpart .left .title p {
+.ml_contact .mainpart .left .title p {
   font-size: 25px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.edina_tm_contact .mainpart .left .title span {
+.ml_contact .mainpart .left .title span {
   font-weight: 600;
   color: #1a1a1a;
 }
-.edina_tm_contact .fields {
+.ml_contact .fields {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.edina_tm_contact .first_row {
+.ml_contact .first_row {
   width: 100%;
   margin-bottom: 60px;
 }
-.edina_tm_contact .second {
+.ml_contact .second {
   width: 100%;
   margin-bottom: 60px;
 }
-.edina_tm_contact .third {
+.ml_contact .third {
   width: 100%;
   margin-bottom: 30px;
 }
-.edina_tm_contact input {
+.ml_contact input {
   width: 100%;
   height: 50px;
   border: none;
@@ -2249,12 +2271,12 @@ body.modal {
   font-family: "Poppins";
   padding-left: 0px !important;
 }
-.edina_tm_contact input:focus {
+.ml_contact input:focus {
   outline: none;
   border-bottom-color: #0f172a;
   background-color: transparent;
 }
-.edina_tm_contact textarea {
+.ml_contact textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid #cbd3d9;
@@ -2267,41 +2289,41 @@ body.modal {
   resize: none;
   padding-left: 0px !important;
 }
-.edina_tm_contact textarea:focus {
+.ml_contact textarea:focus {
   outline: none;
   border-bottom-color: #0f172a;
   background-color: transparent;
 }
-.edina_tm_contact .empty_notice {
+.ml_contact .empty_notice {
   color: #f52225;
   margin-bottom: 7px;
   display: none;
   text-align: left;
   font-weight: 500;
 }
-.edina_tm_contact .contact_error {
+.ml_contact .contact_error {
   color: #f52225;
   text-align: left;
   font-weight: 500;
 }
-.edina_tm_contact .returnmessage {
+.ml_contact .returnmessage {
   color: #3a00ff;
   margin-bottom: 7px;
   text-align: left;
   font-weight: 500;
 }
-.edina_tm_contact .edina_tm_button button {
+.ml_contact .ml_button button {
   border-radius: 6px;
   padding: 11px 33px;
   background: #fff;
 }
-.edina_tm_button {
+.ml_button {
   width: 100%;
   float: left;
   clear: both;
 }
-.edina_tm_button a,
-.edina_tm_button button {
+.ml_button a,
+.ml_button button {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 500;
@@ -2315,17 +2337,17 @@ body.modal {
     font-size: 16px;
   }
 }
-.edina_tm_button a:hover,
-.edina_tm_contact .edina_tm_button button:hover {
+.ml_button a:hover,
+.ml_contact .ml_button button:hover {
   color: #fff;
   background-color: #1a1a1a;
   border-color: #1a1a1a;
 }
-.edina_tm_contact .right {
+.ml_contact .right {
   width: 50%;
   margin-left: 30px;
 }
-.edina_tm_contact .right .google-map {
+.ml_contact .right .google-map {
   border: 5px solid #fff;
   border-radius: 6px;
   height: 100%;
@@ -2347,20 +2369,20 @@ body.modal {
 /*	 BEKER INTRO
 /*---------------------------------------------------*/
 
-.edina_tm_intro {
+.ml_intro {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.edina_tm_intro .main_title {
+.ml_intro .main_title {
   width: 100%;
   float: left;
 }
-.edina_tm_intro .main_title img {
+.ml_intro .main_title img {
   margin-bottom: 15px;
 }
-.edina_tm_intro .main_title p {
+.ml_intro .main_title p {
   font-size: 22px;
   font-weight: 500;
   color: #323232;
@@ -2368,7 +2390,7 @@ body.modal {
     font-size: 20px;
   }
 }
-.edina_tm_intro .hero .content p {
+.ml_intro .hero .content p {
   font-size: 30px;
   font-weight: 500;
   color: #fff;
@@ -2377,7 +2399,7 @@ body.modal {
 a {
   transition: all 0.3s ease;
 }
-.edina_tm_intro .edina_tm_button a {
+.ml_intro .ml_button a {
   color: #fff;
   border-color: #1473e6;
   background-color: #1473e6;
@@ -2385,7 +2407,7 @@ a {
     transform: translateY(-5px);
   }
 }
-.edina_tm_intro .mainpart {
+.ml_intro .mainpart {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -2398,25 +2420,25 @@ a {
     height: auto;
   }
 }
-.edina_tm_intro .main_title {
+.ml_intro .main_title {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   text-align: center;
 }
-.edina_tm_intro .main_title span {
+.ml_intro .main_title span {
   color: #1473e6;
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
   margin-bottom: 6px;
 }
-.edina_tm_intro .main_title h3 {
+.ml_intro .main_title h3 {
   font-size: 60px;
   font-weight: 700;
 }
-.edina_tm_intro .demo_list {
+.ml_intro .demo_list {
   width: 100%;
   height: auto;
   clear: both;
@@ -2426,10 +2448,10 @@ a {
     margin-top: 60px;
   }
 }
-.edina_tm_intro .demo_list ul {
+.ml_intro .demo_list ul {
   list-style-type: none;
 }
-.edina_tm_intro .demo_list ul li {
+.ml_intro .demo_list ul li {
   margin: 0px 0px 80px 0px;
   width: 50%;
   float: left;
@@ -2443,7 +2465,7 @@ a {
     }
   }
 }
-.edina_tm_intro .container {
+.ml_intro .container {
   max-width: 1400px;
   .slick-slide {
     padding: 0 30px;
@@ -2466,7 +2488,7 @@ a {
 .preview-sticker .logo {
   filter: invert(1);
 }
-.edina_tm_intro .demo_list ul li .list_inner {
+.ml_intro .demo_list ul li .list_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -2474,12 +2496,12 @@ a {
   position: relative;
   min-height: 250px;
 }
-.edina_tm_intro .demo_list ul li .list_inner img {
+.ml_intro .demo_list ul li .list_inner img {
   border-radius: 6px;
   background: #efefef;
   padding: 15px;
 }
-.edina_tm_intro .demo_list ul li .list_inner h3 {
+.ml_intro .demo_list ul li .list_inner h3 {
   font-size: 24px;
   font-weight: 600;
   padding-top: 30px;
@@ -2488,7 +2510,7 @@ a {
     padding-top: 20px;
   }
 }
-.edina_tm_intro .go_purchase {
+.ml_intro .go_purchase {
   width: 100%;
   height: auto;
   clear: both;
@@ -2499,15 +2521,15 @@ a {
   @media screen and (max-width: 767px) {
     padding: 100px 20px;
   }
-  .edina_tm_button a {
+  .ml_button a {
     border-color: #1473e6 !important;
   }
 }
-.edina_tm_intro .go_purchase h6 {
+.ml_intro .go_purchase h6 {
   color: #efefef;
   margin-bottom: 10px;
 }
-.edina_tm_intro .go_purchase h3 {
+.ml_intro .go_purchase h3 {
   color: #fff;
   max-width: 600px;
   font-weight: 600;
@@ -2522,7 +2544,7 @@ a {
     color: #1473e6;
   }
 }
-.edina_tm_intro .copyright {
+.ml_intro .copyright {
   width: 100%;
   height: auto;
   clear: both;
@@ -2531,11 +2553,11 @@ a {
   text-align: center;
   padding: 15px 20px;
 }
-.edina_tm_intro .copyright p {
+.ml_intro .copyright p {
   font-size: 14px;
   color: #faf9fd;
 }
-.edina_tm_intro .copyright p a {
+.ml_intro .copyright p a {
   color: #fff;
   text-decoration: none;
 
@@ -2545,61 +2567,61 @@ a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.edina_tm_intro .copyright p a:hover {
+.ml_intro .copyright p a:hover {
   color: #1473e6;
 }
 
 /*---------------------------------------------------*/
-/*	11) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	11) MEDIALOGIS MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
   .container {
     max-width: 1170px;
   }
-  .edina_tm_hero .image {
+  .ml_hero .image {
     width: 250px;
     height: 250px;
   }
 
-  .edina_tm_about .rightpart {
+  .ml_about .rightpart {
     padding-left: 120px;
   }
-  .edina_tm_about .experience {
+  .ml_about .experience {
     width: 250px;
     height: 250px;
   }
-  .edina_tm_about .experience .info h3 {
+  .ml_about .experience .info h3 {
     font-size: 35px;
   }
-  .edina_tm_about .experience .info span {
+  .ml_about .experience .info span {
     font-size: 19px;
   }
 
-  .edina_tm_services ul li .list_inner {
+  .ml_services ul li .list_inner {
     padding-right: 40px;
   }
-  .edina_tm_services ul li h3 {
+  .ml_services ul li h3 {
     font-size: 22px;
   }
-  .edina_tm_testimonials .list .short h3 {
+  .ml_testimonials .list .short h3 {
     font-size: 19px;
   }
-  .edina_tm_testimonials .list .short span {
+  .ml_testimonials .list .short span {
     font-size: 16px;
   }
-  .edina_tm_testimonials .svg {
+  .ml_testimonials .svg {
     width: 60px;
     height: 60px;
   }
-  .edina_tm_testimonials .list .image {
+  .ml_testimonials .list .image {
     width: 100px;
     height: 100px;
   }
-  .edina_tm_testimonials .list .text p {
+  .ml_testimonials .list .text p {
     font-size: 18px;
   }
-  .edina_tm_contact .mainpart .left .title p {
+  .ml_contact .mainpart .left .title p {
     font-size: 20px;
     @media (max-width: 575px) {
       br {
@@ -2610,76 +2632,76 @@ a {
 }
 
 @media (max-width: 1199px) {
-  .edina_tm_mainpart {
+  .ml_mainpart {
     padding-left: 0;
   }
 }
 @media (max-width: 1040px) {
-  .edina_tm_mobile_menu {
+  .ml_mobile_menu {
     display: block;
   }
 
-  .edina_tm_mainpart {
+  .ml_mainpart {
     padding-left: 0px;
   }
-  body .edina_tm_mainpart {
+  body .ml_mainpart {
     padding-left: 0px;
   }
-  .edina_tm_about .content {
+  .ml_about .content {
     flex-direction: column;
     align-items: baseline;
   }
-  .edina_tm_about .leftpart .info p {
+  .ml_about .leftpart .info p {
     max-width: 100%;
   }
-  .edina_tm_about .desc {
+  .ml_about .desc {
     max-width: 100%;
   }
-  .edina_tm_about .leftpart {
+  .ml_about .leftpart {
     width: 100%;
     margin-bottom: 0;
     order: 2;
   }
-  .edina_tm_about .rightpart {
+  .ml_about .rightpart {
     width: 100%;
     padding-left: 0px;
     margin-bottom: 80px;
   }
-  .edina_tm_about .experience {
+  .ml_about .experience {
     left: 50px;
   }
-  .edina_tm_services ul li {
+  .ml_services ul li {
     width: 50%;
   }
 
-  .edina_tm_contact .mainpart {
+  .ml_contact .mainpart {
     flex-direction: column;
     align-items: baseline;
   }
-  .edina_tm_contact .mainpart .left {
+  .ml_contact .mainpart .left {
     width: 100%;
     margin-right: 0px;
     margin-bottom: 50px;
   }
-  .edina_tm_contact .right {
+  .ml_contact .right {
     width: 100%;
     margin-left: 0px;
   }
 
-  .edina_tm_modalbox .close {
+  .ml_modalbox .close {
     margin-left: 10px;
   }
-  .edina_tm_modalbox .close .svg {
+  .ml_modalbox .close .svg {
     width: 25px;
     height: 25px;
   }
-  .edina_tm_modalbox .description_wrap {
+  .ml_modalbox .description_wrap {
     padding: 15px;
   }
-  .edina_tm_modalbox .popup_informations h3 {
+  .ml_modalbox .popup_informations h3 {
     font-size: 20px;
   }
-  .edina_tm_modalbox .news_details span {
+  .ml_modalbox .news_details span {
     font-size: 12px;
     line-height: 1;
   }
@@ -2687,61 +2709,61 @@ a {
     padding: 0px 20px;
   }
 
-  .edina_tm_intro .go_purchase h3 {
+  .ml_intro .go_purchase h3 {
     font-size: 40px;
   }
-  .edina_tm_intro .main_title h3 {
+  .ml_intro .main_title h3 {
     font-size: 40px;
   }
 }
 @media (max-width: 991px) {
-  .edina_tm_contact .extra_info .wrapper > li {
+  .ml_contact .extra_info .wrapper > li {
     width: 50%;
   }
 }
 @media (max-width: 768px) {
-  .edina_tm_about .wrapper {
+  .ml_about .wrapper {
     flex-direction: column;
     align-items: baseline;
   }
-  .edina_tm_contact .extra_info .wrapper {
+  .ml_contact .extra_info .wrapper {
     margin: 0px;
   }
 
-  .edina_tm_about .wrapper .left {
+  .ml_about .wrapper .left {
     width: 100%;
     padding: 0px;
     margin-bottom: 30px;
   }
-  .edina_tm_about .wrapper .right {
+  .ml_about .wrapper .right {
     width: 100%;
     padding: 0px;
   }
-  .edina_tm_about .experience {
+  .ml_about .experience {
     width: 150px;
     height: 150px;
     left: 15px;
   }
-  .edina_tm_about .experience .info {
+  .ml_about .experience .info {
     line-height: 1.2;
     h3 {
       font-size: 22px;
     }
   }
-  .edina_tm_about .experience .info span {
+  .ml_about .experience .info span {
     font-size: 13px;
   }
-  .edina_tm_hero .name {
+  .ml_hero .name {
     font-size: 36px;
   }
-  .edina_tm_hero .image {
+  .ml_hero .image {
     width: 200px;
     height: 200px;
   }
-  .edina_tm_about .about_title h3 {
+  .ml_about .about_title h3 {
     font-size: 35px;
   }
-  .edina_tm_title h3 {
+  .ml_title h3 {
     font-size: 35px;
   }
 
@@ -2776,38 +2798,38 @@ a {
     width: 15px;
     bottom: -5px;
   }
-  .edina_tm_testimonials .list ul li .list_inner {
+  .ml_testimonials .list ul li .list_inner {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .edina_tm_services ul li .list_inner {
+  .ml_services ul li .list_inner {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .edina_tm_contact .mainpart .left {
+  .ml_contact .mainpart .left {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .edina_tm_contact .extra_info .wrapper > li .list_inner {
+  .ml_contact .extra_info .wrapper > li .list_inner {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .edina_tm_intro .main_title h3 {
+  .ml_intro .main_title h3 {
     font-size: 30px;
   }
-  .edina_tm_intro .go_purchase h3 {
+  .ml_intro .go_purchase h3 {
     font-size: 28px;
     line-height: 42px;
   }
-  .edina_tm_intro .demo_list ul {
+  .ml_intro .demo_list ul {
     margin: 0px;
     margin-left: -30px;
     @media (max-width: 767px) {
       margin-left: 0;
     }
   }
-  .edina_tm_intro .demo_list ul li {
+  .ml_intro .demo_list ul li {
     padding-left: 30px;
     @media (max-width: 767px) {
       padding-left: 0;
@@ -2817,43 +2839,43 @@ a {
   }
 }
 @media (max-width: 767px) {
-  .edina_tm_contact .extra_info .wrapper > li {
+  .ml_contact .extra_info .wrapper > li {
     width: 100%;
     padding-left: 0px;
   }
-  .edina_tm_services ul {
+  .ml_services ul {
     margin: 0px;
   }
-  .edina_tm_services ul li {
+  .ml_services ul li {
     width: 100%;
     padding-left: 0px;
   }
 }
 @media (max-width: 480px) {
-  .edina_tm_testimonials .list .details {
+  .ml_testimonials .list .details {
     flex-direction: column;
     align-items: baseline;
   }
-  .edina_tm_testimonials .list .author {
+  .ml_testimonials .list .author {
     margin-bottom: 30px;
   }
-  .edina_tm_testimonials .list .image {
+  .ml_testimonials .list .image {
     width: 75px;
     height: 75px;
   }
-  .edina_tm_testimonials .list .short h3 {
+  .ml_testimonials .list .short h3 {
     font-size: 17px;
   }
-  .edina_tm_testimonials .list .short span {
+  .ml_testimonials .list .short span {
     font-size: 14px;
   }
-  .edina_tm_testimonials .list .text p {
+  .ml_testimonials .list .text p {
     font-size: 17px;
   }
-  .edina_tm_testimonials .list .details {
+  .ml_testimonials .list .details {
     margin-bottom: 25px;
   }
-  .edina_tm_hero .name {
+  .ml_hero .name {
     font-size: 32px;
   }
 }
@@ -3312,7 +3334,7 @@ a {
 // horizontal menu
 @media (min-width: 1200px) {
   .horizontal-menu {
-    .edina_tm_sidebar {
+    .ml_sidebar {
       width: 100%;
       position: static;
       height: auto;
@@ -3368,7 +3390,7 @@ a {
     }
   }
 
-  .fixed-header .edina_tm_sidebar {
+  .fixed-header .ml_sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -3407,6 +3429,6 @@ a {
   }
 }
 
-.theme-dark .fixed-header .edina_tm_sidebar {
+.theme-dark .fixed-header .ml_sidebar {
   background: #000;
 }

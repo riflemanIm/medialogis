@@ -13,7 +13,7 @@ import Address from "../../Address";
 import Map from "../../Map";
 import HeaderMobile from "../../header/HeaderMobile";
 
-const EdinaHorizontalRtl = () => {
+const MedialogisHorizontalRtl = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -74,9 +74,9 @@ const EdinaHorizontalRtl = () => {
       <About />
       {/* End Hero */}
 
-      <div className="edina_tm_services" id="service">
+      <div className="ml_services" id="service">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>What I Do</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -89,9 +89,9 @@ const EdinaHorizontalRtl = () => {
       </div>
       {/* End Services */}
 
-      <div className="edina_tm_clinics" id="clinics">
+      <div className="ml_clinics" id="clinics">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Clinics</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -104,9 +104,9 @@ const EdinaHorizontalRtl = () => {
       </div>
       {/* End Clinics */}
 
-      <div className="edina_tm_testimonials" id="testimonial">
+      <div className="ml_testimonials" id="testimonial">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Testimonials</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -123,9 +123,9 @@ const EdinaHorizontalRtl = () => {
       </div>
       {/* End Testimonial */}
 
-      <div className="edina_tm_news" id="blog">
+      <div className="ml_news" id="blog">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Blog</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -138,9 +138,9 @@ const EdinaHorizontalRtl = () => {
       </div>
       {/* End Blog */}
 
-      <div className="edina_tm_contact" id="contact">
+      <div className="ml_contact" id="contact">
         <div className="container">
-          <div className="edina_tm_title">
+          <div className="ml_title">
             <h3>Contact</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -188,4 +188,4 @@ const EdinaHorizontalRtl = () => {
   );
 };
 
-export default EdinaHorizontalRtl;
+export default MedialogisHorizontalRtl;
