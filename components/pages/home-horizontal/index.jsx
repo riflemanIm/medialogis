@@ -133,11 +133,8 @@ const MedialogisHorizontal = () => {
       <div className="ml_contact" id="contact">
         <div className="container">
           <div className="ml_title">
-            <h3>Contact</h3>
-            <p>
-              I am always looking to start on new projects. Don't hesitate to
-              reach out if you have any questions.
-            </p>
+            <h3>Contacter</h3>
+            <p>N'hésitez pas à nous contacter si vous avez des questions.</p>
           </div>
           <div className="extra_info">
             <Address />

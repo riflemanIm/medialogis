@@ -3,14 +3,11 @@ const Address = () => {
     {
       id: 1,
       iconImg: "img/address/phone.png",
-      name: "Phone",
+      name: "Tél",
       info: (
         <>
           <li>
-            <a href="Tel: +452 666 386">+452 666 386</a>
-          </li>
-          <li>
-            <a href="Tel: +465 562 226">+465 562 226</a>
+            <a href="tel: 01.55.43.00.43">01.55.43.00.43</a>
           </li>
         </>
       ),
@@ -23,10 +20,9 @@ const Address = () => {
       info: (
         <>
           <li>
-            <a href="mailto:ib-themes21@gmail.com">support@gmail.com</a>
-          </li>
-          <li>
-            <a href="mailto:ib-themes21@gmail.com">example@support.com</a>
+            <a href="mailto:medialogis@medialogis.com">
+              medialogis@medialogis.com
+            </a>
           </li>
         </>
       ),
@@ -35,14 +31,14 @@ const Address = () => {
     {
       id: 3,
       iconImg: "img/address/location.png",
-      name: "Address",
+      name: "Adresse",
       info: (
         <>
           <li>
             <p>
-              Envato 121 King St,
+              29 Rue Buffon 75005,
               <br />
-              Melbourne, Australia
+              Paris, France
             </p>
           </li>
         </>

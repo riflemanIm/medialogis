@@ -22,7 +22,7 @@ module.exports = [
 
   {
     icon: "contact",
-    itemName: "Contact",
+    itemName: "Contacter",
     itemRoute: "#contact",
     activeClass: "",
   },
