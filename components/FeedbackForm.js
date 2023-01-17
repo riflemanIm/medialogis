@@ -17,13 +17,13 @@ export default function FeedbackForm() {
         </label>
       </p>
 
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name">Nom</label>
       <input
         id="name"
         className={styles["form-field"]}
         type="text"
         name="name"
-        placeholder="Name *"
+        placeholder="Nom*"
       />
 
       <label htmlFor="email">Email</label>
@@ -41,13 +41,13 @@ export default function FeedbackForm() {
         id="Message"
         className={styles["form-field"]}
         wrap="soft"
-        name="Message"
+        name="message"
         placeholder="Message *"
         required
       ></textarea>
       <div className="ml_button">
         <button className="color" type="submit">
-          Submit
+          Soumettre
         </button>
       </div>
     </form>

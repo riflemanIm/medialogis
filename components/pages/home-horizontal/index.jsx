@@ -149,9 +149,9 @@ const MedialogisHorizontal = () => {
             >
               <div className="title">
                 <p>
-                  Fill out this form for
+                  Remplissez ce formulaire pour
                   <br />
-                  <span> new projects or partnerships.</span>
+                  <span> nouveaux projets ou partenariats.</span>
                 </p>
               </div>
               {/* End title */}

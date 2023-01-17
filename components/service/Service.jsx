@@ -59,7 +59,9 @@ const Service = () => {
           <div className="box_inner">
             <div className="description_wrap ">
               <div className="popup_informations">
-                <div className="image">
+                {/* 
+                End big image 
+               <div className="image">
                   <div
                     className="main"
                     style={{
@@ -67,10 +69,10 @@ const Service = () => {
                     }}
                   ></div>
                 </div>
-                {/* End big image */}
+                */}
 
                 <div className="description">
-                  <h3>{singleData?.popupTitle}</h3>
+                  <h2>{singleData?.popupTitle}</h2>
                   {singleData?.firstDescriptionText}
                   {singleData?.serviceListDescriptions}
                 </div>

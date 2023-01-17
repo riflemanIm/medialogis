@@ -1127,7 +1127,7 @@ body.dark .loader_line:after {
     z-index: 1;
     border-radius: 50%;
     color: #fff;
-    background-color: #34495e;
+    background-color: #003c7a;
     img {
       filter: invert(1);
     }
@@ -1439,7 +1439,12 @@ body.dark .loader_line:after {
   float: left;
   overflow: hidden;
   padding: 50px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @include scrollbars(#999, #fff);
+  h2 {
+    margin-bottom: 28px;
+  }
 }
 .ml_services .popup_informations {
   opacity: 0;
@@ -2138,7 +2143,7 @@ body.modal {
   .icon {
     width: 55px;
     height: 55px;
-    background: #34495e;
+    background: #003c7a;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2152,6 +2157,9 @@ body.modal {
   .content {
     flex: 1;
     padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     ul {
       margin: 0;
       padding: 0;
@@ -2185,6 +2193,7 @@ body.modal {
 .ml_contact .extra_info .wrapper > li .list_inner {
   display: flex;
   align-items: flex-start;
+  height: 100%;
   background-color: #fff;
   padding: 33px 35px 41px 35px;
   border-radius: 6px;

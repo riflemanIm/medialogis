@@ -2,7 +2,7 @@ const Address = () => {
   const addressContent = [
     {
       id: 1,
-      iconImg: "img/address/phone.png",
+      iconImg: "img/svg/noun-call.min.svg",
       name: "Tél",
       info: (
         <>
@@ -15,7 +15,7 @@ const Address = () => {
     },
     {
       id: 2,
-      iconImg: "img/address/email.png",
+      iconImg: "img/svg/noun-email.min.svg",
       name: "Email",
       info: (
         <>
@@ -30,7 +30,7 @@ const Address = () => {
     },
     {
       id: 3,
-      iconImg: "img/address/location.png",
+      iconImg: "img/svg/noun-location.min.svg",
       name: "Adresse",
       info: (
         <>
