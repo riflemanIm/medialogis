@@ -8,7 +8,7 @@ import clinicsData from "../../data/clinics";
 Modal.setAppElement("#__next");
 
 const Clinics = () => {
-  var settings = {
+  const settings = {
     dots: false,
     arrow: true,
     infinite: true,
