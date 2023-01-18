@@ -130,18 +130,23 @@ h6 {
 
 h1 {
   font-size: 45px;
+  line-height: 4;
 }
 h2 {
   font-size: 36px;
+  line-height: 2.6;
 }
 h3 {
   font-size: 30px;
+  line-height: 2.2;
 }
 h4 {
   font-size: 24px;
+  line-height: 2;
 }
 h5 {
   font-size: 20px;
+  line-height: 2;
 }
 h6 {
   font-size: 16px;
@@ -2713,9 +2718,7 @@ a {
   .ml_modalbox .description_wrap {
     padding: 15px;
   }
-  .ml_modalbox .popup_informations h3 {
-    font-size: 20px;
-  }
+  
   .ml_modalbox .news_details span {
     font-size: 12px;
     line-height: 1;

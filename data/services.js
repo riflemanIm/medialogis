@@ -6,10 +6,10 @@ module.exports = [
     subtitle:
       "Agenda des consulta- tions d’un médecin, planning de l’activité d’un cabinet médical ou de plusieurs cabinets faisant partie d’un réseau",
     popupImg: "img/service/1.jpg",
-    popupTitle: `Planning`,
+    popupTitle: "Planning",
     firstDescriptionText: (
       <>
-        <h4>Fonction du module</h4>
+        <h3>Fonction du module</h3>
         <p>
           Le module est conçu pour prendre en charge la planification de
           l’agenda et la gestion des rendez-vous des médecins, ainsi que la
@@ -21,7 +21,7 @@ module.exports = [
           consultation du dossier électronique du patient, la création et la
           saisie de la fiche administrative patient.
         </p>
-        <h6>Résumé des fonctionnalités</h6>
+        <h5>Résumé des fonctionnalités</h5>
         <div className="in_list">
           <ul>
             <li>
@@ -38,7 +38,7 @@ module.exports = [
                 Création de plannings types, qui déterminent l’utilisation des
                 ressources par défaut. Différents rythmes de travail peuvent
                 être pris en compte (jours pairs et impairs, premier et dernier
-                jours du mois etc.){" "}
+                jours du mois etc.)
               </p>
             </li>
           </ul>
@@ -47,8 +47,8 @@ module.exports = [
     ),
     serviceListDescriptions: (
       <>
-        <h4>Fonctionnalités et atouts</h4>
-        <h6>Accès au planning depuis tous les postes de travail</h6>
+        <h3>Fonctionnalités et atouts</h3>
+        <h5>Accès au planning depuis tous les postes de travail</h5>
         <p>
           Le module PLANNING est utilisable aussi bien par le personnel de
           l’accueil que par les spécialistes. Le médecin peut consulter son
@@ -63,7 +63,7 @@ module.exports = [
           accessibles directement lors de la saisie électronique du dossier
           médical.
         </p>
-        <h6>Personnalisation des plannings</h6>
+        <h5>Personnalisation des plannings</h5>
         <p>
           Les nombreuses possibilités de paramétrage de l’interface utilisateur
           rendent l’utilisation du module confortable et adaptée à différentes
@@ -115,10 +115,8 @@ module.exports = [
           toutes les informations administratives et médicales sur ce patient
           (identité, antécédents, traitements en cours etc.).
         </p>
-
         <br />
         <h5>Résumé des fonctionnalités</h5>
-        <br />
         <div className="in_list">
           <ul>
             <li>Gestion administrative du dossier patient</li>
@@ -178,8 +176,8 @@ module.exports = [
     serviceListDescriptions: (
       <>
         <h3>Fonctionnalités et atouts</h3>
-        <h5>Saisie rapide des antécédents du patient</h5>
         <p>
+          <h5>Saisie rapide des antécédents du patient</h5>
           Les examens, les résultats d'analyses et toutes les informations
           médicales sont saisis en créant des enregistrements qui peuvent
           adopter différentes présentations, spécialement étudiées pour tous
@@ -189,36 +187,37 @@ module.exports = [
           point au cours des nombreuses années d'utilisation du système par des
           établissements de santé. Le système dispose d'outils permettant
           d'accélérer la saisie du texte.
+          <div className="in_list">
+            <ul>
+              <li>
+                Des glossaires contextuels sont accessibles depuis les champs de
+                saisie et proposent les termes et expressions les plus
+                couramment utilisés. La structure hiérarchique des glossaires
+                permet de former automatiquement des phrases longues. Le module
+                DPE standard inclut de nombreux glossaires que l'on peut élargir
+                soi-même.
+              </li>
+              <li>
+                Le mode saisie semi-automatique vient compléter les mots
+                automatiquement au cours de la saisie en utilisant les mots
+                figurant dans le glossaire.
+              </li>
+              <li>
+                Le mode recherche permet de trouver rapidement dans le glossaire
+                les termes recherchés.
+              </li>
+              <li>
+                Une macro permet de copier les données des précédents
+                enregistrements figurant dans les antécédents et également de
+                faciliter la saisie des informations type (compte-rendus
+                d'opération, consultations médicales etc.)
+              </li>
+            </ul>
+          </div>
+          {/* End list */}
         </p>
-        <div className="in_list">
-          <ul>
-            <li>
-              Des glossaires contextuels sont accessibles depuis les champs de
-              saisie et proposent les termes et expressions les plus couramment
-              utilisés. La structure hiérarchique des glossaires permet de
-              former automatiquement des phrases longues. Le module DPE standard
-              inclut de nombreux glossaires que l'on peut élargir soi-même.
-            </li>
-            <li>
-              Le mode saisie semi-automatique vient compléter les mots
-              automatiquement au cours de la saisie en utilisant les mots
-              figurant dans le glossaire.
-            </li>
-            <li>
-              Le mode recherche permet de trouver rapidement dans le glossaire
-              les termes recherchés.
-            </li>
-            <li>
-              Une macro permet de copier les données des précédents
-              enregistrements figurant dans les antécédents et également de
-              faciliter la saisie des informations type (compte-rendus
-              d'opération, consultations médicales etc.)
-            </li>
-          </ul>
-        </div>
-        {/* End list */}
-        <h5>Saisie d'informations diverses</h5>
         <p>
+          <h5>Saisie d'informations diverses</h5>
           Le module DPE de MEDIALOG offre au médecin un large éventail d'outils
           d'aide à la saisie des données, adapté à tous les types
           d'informations.
@@ -241,10 +240,11 @@ module.exports = [
           programme permet constamment d'élargir et de perfectionner l'ensemble
           de ces outils de saisie.
         </p>
-        <h5>
-          Souplesse du paramétrage de la base de données et des écrans de saisie
-        </h5>
         <p>
+          <h5>
+            Souplesse du paramétrage de la base de données et des écrans de
+            saisie
+          </h5>
           La saisie des données s'effectue non seulement rapidement mais
           également en totale adéquation avec les exigences professionnelles des
           spécialistes.
@@ -271,8 +271,8 @@ module.exports = [
           données. Il est possible d’ajouter aux tableaux de nouveaux champs de
           différents types.
         </p>
-        <h5>Recherche intuitive et rapide d’information dans le DPE</h5>
         <p>
+          <h5>Recherche intuitive et rapide d’information dans le DPE</h5>
           Le module DPE de MEDIALOG a été spécialement conçu pour que non
           seulement la saisie, mais également la consultation et l'analyse
           ultérieures des données, soient fonctionnelles, intuitives et
@@ -298,8 +298,8 @@ module.exports = [
           Le médecin observe les résultats des analyses de sang biochimiques et
           les variations du taux de cholestérol ou de sucre dans le sang etc.
         </p>
-        <h5>Documentation CIM-10</h5>
         <p>
+          <h5>Documentation CIM-10</h5>
           Le module DPE contient la « 10ème édition de la Classification
           Internationale des Maladies » qui peut être utilisée pour la rédaction
           d’un diagnostic sous une présentation standardisée.
@@ -314,35 +314,35 @@ module.exports = [
           remplit une requête dans la base médicale Internet MEDLINE qui
           recherche des articles sur la même thématique.
         </p>
-        <h5>Documentation VIDAL®</h5>
         <p>
+          <h5>Documentation VIDAL®</h5>
           L’outil d’aide à la prescription des traitements s’appuie sur une
           interaction entre le système MEDIALOG et la base de donnée
           électronique du dictionnaire d’information sur le médicament VIDAL® .
           Le système fournit directement les informations suivantes:
+          <div className="in_list">
+            <ul>
+              <li>Description de tous les médicaments.</li>
+
+              <li>
+                Compatibilité et effets secondaires des préparations
+                médicamenteuses.
+              </li>
+
+              <li>
+                Posologie, liste des médicaments contenant des substances
+                toxiques ou narcotiques, liste des médicaments les plus forts.
+              </li>
+            </ul>
+          </div>
+          <p>
+            Une liste des médicaments, habituellement prescrits pour une maladie
+            donnée, peut être recommandée par le système.
+          </p>
         </p>
-        <div className="in_list">
-          <ul>
-            <li>Description de tous les médicaments.</li>
 
-            <li>
-              Compatibilité et effets secondaires des préparations
-              médicamenteuses.
-            </li>
-
-            <li>
-              Posologie, liste des médicaments contenant des substances toxiques
-              ou narcotiques, liste des médicaments les plus forts.{" "}
-            </li>
-          </ul>
-        </div>
         <p>
-          Une liste des médicaments, habituellement prescrits pour une maladie
-          donnée, peut être recommandée par le système.
-        </p>
-
-        <h5>Création et impression des documents</h5>
-        <p>
+          <h5>Création et impression des documents</h5>
           La création de différents types de documents (rapports, lettres,
           extraits, conclusions) fait partie du travail quotidien d’un médecin.
           Le module DPE de MEDIALOG met à sa disposition des outils facilitant
@@ -375,8 +375,8 @@ module.exports = [
         </p>
 
         <h3>Options du module DPE</h3>
-        <h5>Connexion à un dictaphone professionnel</h5>
         <p>
+          <h5>Connexion à un dictaphone professionnel</h5>
           Cette option permet aux médecins de joindre à leur notes dans le DPE
           des messages vocaux, enregistrés à l'aide d'un dictaphone
           professionnel, par exemple un dictaphone PHILIPS.
@@ -391,8 +391,8 @@ module.exports = [
           dictaphones professionnels ou d’un matériel équivalent. Notre société
           peut vous fournir le matériel PHILIPS adéquat.
         </p>
-        <h5>Export du DPE au format HTML</h5>
         <p>
+          <h5>Export du DPE au format HTML</h5>
           Les DPE créés dans MEDIALOG peuvent être exportés dans un format
           ouvert (HTML) pouvant être lu par n'importe quel ordinateur.
           <br />
