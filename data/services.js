@@ -103,7 +103,7 @@ module.exports = [
     title: "Dossier patient",
     subtitle:
       "Outil de traitement efficace des informations. Le module est facilement paramétrable et adapté à diverses spécialités médicales.",
-    popupImg: "img/service/2.jpg",
+    //popupImg: "img/service/2.jpg",
 
     popupTitle: "Dossier patient",
     firstDescriptionText: (
@@ -115,9 +115,10 @@ module.exports = [
           toutes les informations administratives et médicales sur ce patient
           (identité, antécédents, traitements en cours etc.).
         </p>
-        <img src="img/service/ui13.jpg" alt="thumb" />
-        <p> </p>
+
+        <br />
         <h5>Résumé des fonctionnalités</h5>
+        <br />
         <div className="in_list">
           <ul>
             <li>Gestion administrative du dossier patient</li>
@@ -155,6 +156,25 @@ module.exports = [
         </div>
       </>
     ),
+    slideShow: [
+      {
+        img: "img/service/ui13.jpg",
+        title: "Dossier patient éléctronique. Fenêtre de sélection du patient",
+      },
+      {
+        img: "img/service/ui1.jpg",
+        title: 'Présentation de l\'écran "Examen clinique du patient"',
+      },
+      {
+        img: "img/service/ui3.jpg",
+        title:
+          "Mode édition des écrans de saisie: facile et accessible à tout utilisateur",
+      },
+      {
+        img: "img/service/ui4.jpg",
+        title: "La structure de la base de données peut être modifiée",
+      },
+    ],
     serviceListDescriptions: (
       <>
         <h3>Fonctionnalités et atouts</h3>

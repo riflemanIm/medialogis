@@ -1027,6 +1027,9 @@ body.dark .loader_line:after {
     @media (max-width: 460px) {
       padding: 0 20px;
     }
+    .center {
+      text-align: center;
+    }
   }
 }
 .about-popup-wrapper {
@@ -1260,6 +1263,9 @@ body.dark .loader_line:after {
   padding: 120px 0px 90px 0px;
   @media screen and (max-width: 991px) {
     padding: 90px 0px 60px 0px;
+  }
+    .my_carousel ul li .image {
+    height: auto;
   }
 }
 .ml_services .service_list {
@@ -1556,7 +1562,7 @@ body.dark .loader_line:after {
     height: auto;
   }
 }
-.ml_clinics .clinics_inner {
+.ml_clinics .slideshow_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1589,7 +1595,7 @@ body.dark .loader_line:after {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  height: 420px;
+  height: auto;
   @media screen and (max-width: 1500px) {
     height: auto;
   }
@@ -2013,7 +2019,7 @@ body.dark .loader_line:after {
   float: left;
   margin-bottom: 20px;
 }
-.ml_modalbox .description_wrap .image {
+.ml_modalbox .description_wrap .popup_informations .image {
   position: relative;
   height: 450px;
   margin-bottom: 20px;
@@ -2023,11 +2029,11 @@ body.dark .loader_line:after {
     height: 240px;
   }
 }
-.ml_modalbox .description_wrap .image img {
+.ml_modalbox .description_wrap .popup_informations .image img {
   min-width: 100%;
-  opacity: 0;
+  //opacity: 0;
 }
-.ml_modalbox .description_wrap .image .main {
+.ml_modalbox .description_wrap .popup_informations .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -2995,7 +3001,7 @@ a {
   -webkit-transform: scale(0.7);
   transform: scale(0.7);
 }
-.clinics_inner {
+.slideshow_inner {
   .slick-prev,
   .slick-next {
     top: 50%;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Tilt from "react-parallax-tilt";
 import servicesData from "../../data/services";
-
+import SlideShow from "../SlideShow";
 Modal.setAppElement("#__next");
 
 const Service = () => {
@@ -18,7 +18,7 @@ const Service = () => {
   const handleModle = (id) => {
     handleBServicesData(id);
   };
-
+  console.log("singleData?.slideShow", singleData?.slideShow);
   return (
     <div className="service_list">
       <ul>
@@ -58,24 +58,29 @@ const Service = () => {
 
           <div className="box_inner">
             <div className="description_wrap ">
-              <div className="popup_informations">
-                {/* 
-                End big image 
-               <div className="image">
-                  <div
-                    className="main"
-                    style={{
-                      backgroundImage: `url(${singleData?.popupImg})`,
-                    }}
-                  ></div>
+              {/* 
+                 Big image */}
+              {singleData?.popupImg != null && (
+                <div className="popup_informations">
+                  <div className="image">
+                    <div
+                      className="main"
+                      style={{
+                        backgroundImage: `url(${singleData?.popupImg})`,
+                      }}
+                    ></div>
+                  </div>
                 </div>
-                */}
+              )}
 
-                <div className="description">
-                  <h2>{singleData?.popupTitle}</h2>
-                  {singleData?.firstDescriptionText}
-                  {singleData?.serviceListDescriptions}
-                </div>
+              <div className="description">
+                <h2>{singleData?.popupTitle}</h2>
+                {singleData?.slideShow != null && (
+                  <SlideShow slideshowData={singleData?.slideShow} />
+                )}
+                {singleData?.firstDescriptionText}
+
+                {singleData?.serviceListDescriptions}
               </div>
             </div>
           </div>

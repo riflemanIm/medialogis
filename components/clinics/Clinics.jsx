@@ -102,13 +102,15 @@ const Clinics = () => {
 
           <div className="box_inner">
             <div className="description_wrap scrollable">
-              <div className="image">
-                <div
-                  className="main"
-                  style={{
-                    backgroundImage: `url(${singleData?.clinicsImage})`,
-                  }}
-                ></div>
+              <div className="popup_informations">
+                <div className="image">
+                  <div
+                    className="main"
+                    style={{
+                      backgroundImage: `url(${singleData?.clinicsImage})`,
+                    }}
+                  ></div>
+                </div>
               </div>
               {/* End image */}
 
