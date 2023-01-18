@@ -197,7 +197,6 @@ module.exports = [
           </ul>
         </div>
         {/* End list */}
-
         <h5>Saisie d'informations diverses</h5>
         <p>
           Le module DPE de MEDIALOG offre au médecin un large éventail d'outils
@@ -251,6 +250,144 @@ module.exports = [
           Il est également possible de modifier la structure de la base de
           données. Il est possible d’ajouter aux tableaux de nouveaux champs de
           différents types.
+        </p>
+        <h5>Recherche intuitive et rapide d’information dans le DPE</h5>
+        <p>
+          Le module DPE de MEDIALOG a été spécialement conçu pour que non
+          seulement la saisie, mais également la consultation et l'analyse
+          ultérieures des données, soient fonctionnelles, intuitives et
+          informatives et que toute information stockée dans la base MEDIALOG
+          soit facilement accessible à l’utilisateur.
+          <br />
+          Le volet « résumé » est un outil important de consultation du DPE, il
+          donne les principaux indicateurs de l’état de santé du patient,
+          l’évolution de la maladie, le traitement prescrit en cours et permet
+          de visualiser rapidement n’importe quel écran du dossier.
+          <br />
+          Le médecin visualise sur un seul écran les informations relatives au
+          patient (fiche administrative, antécédents médicaux, etc.)
+          <br />
+          Le volet « liste des prescriptions » indique quels médicaments ont été
+          prescrits au patient, à quel moment et pour quelle durée, et quels
+          médicaments ont été supprimés avant la fin du traitement.
+          <br />
+          Une autre spécificité intéressante du programme est la possibilité
+          d’analyser à l’aide de graphiques ou de courbes l'évolution dans le
+          temps de tous les paramètres chiffrés.
+          <br />
+          Le médecin observe les résultats des analyses de sang biochimiques et
+          les variations du taux de cholestérol ou de sucre dans le sang etc.
+        </p>
+        <h5>Documentation CIM-10</h5>
+        <p>
+          Le module DPE contient la « 10ème édition de la Classification
+          Internationale des Maladies » qui peut être utilisée pour la rédaction
+          d’un diagnostic sous une présentation standardisée.
+          <br />
+          La possibilité de rédiger son propre diagnostic et de le relier au
+          diagnostic «officiel » de la CIM est prévue, ainsi que de nombreuses
+          autres fonctionnalités utiles.
+          <br />
+          Par exemple un médecin peut trouver dans la CIM des diagnostics en
+          effectuant une recherche par mots clés, MEDIALOG en réalise une
+          traduction anglaise à l’aide de la version anglaise de la CIM et
+          remplit une requête dans la base médicale Internet MEDLINE qui
+          recherche des articles sur la même thématique.
+        </p>
+        <h5>Documentation VIDAL®</h5>
+        <p>
+          L’outil d’aide à la prescription des traitements s’appuie sur une
+          interaction entre le système MEDIALOG et la base de donnée
+          électronique du dictionnaire d’information sur le médicament VIDAL® .
+          Le système fournit directement les informations suivantes:
+        </p>
+        <div className="in_list">
+          <ul>
+            <li>Description de tous les médicaments.</li>
+
+            <li>
+              Compatibilité et effets secondaires des préparations
+              médicamenteuses.
+            </li>
+
+            <li>
+              Posologie, liste des médicaments contenant des substances toxiques
+              ou narcotiques, liste des médicaments les plus forts.{" "}
+            </li>
+          </ul>
+        </div>
+        <p>
+          Une liste des médicaments, habituellement prescrits pour une maladie
+          donnée, peut être recommandée par le système.
+        </p>
+
+        <h5>Création et impression des documents</h5>
+        <p>
+          La création de différents types de documents (rapports, lettres,
+          extraits, conclusions) fait partie du travail quotidien d’un médecin.
+          Le module DPE de MEDIALOG met à sa disposition des outils facilitant
+          considérablement cette tâche et garantissant un archivage électronique
+          fiable de tous les documents.
+          <br />
+          Le dossier de chaque patient contient un ensemble de documents triés
+          par catégories et dotés d’attributs spécifiques. La simplicité de la
+          classification permet aux médecins de trouver rapidement les documents
+          recherchés dans les archives.
+          <br />
+          L’éditeur de texte intégré ou le logiciel Microsoft Word® peuvent être
+          utilisés indifféremment comme outils de création et de traitement de
+          texte.
+          <br />
+          Les données peuvent être copiées depuis le dossier patient et collées
+          vers le document.
+          <br />
+          Les lettres, comme les autres documents standards, peuvent être créées
+          automatiquement sur la base de modèles pré-définis. Les modèles
+          peuvent être modifiés par l’ajout de champs venant du dossier patient
+          électronique, qui seront remplis automatiquement à l'aide des données
+          présentes dans le dossier, au moment de la création du document. Les
+          documents créés à partir d’un modèle sont automatiquement joints au
+          dossier et peuvent être modifiés à la main.
+          <br />
+          La présentation d’un modèle de document est entièrement paramétrable.
+          Ci-dessus un modèle d'écran de saisie de consultation pour
+          ophtalmologues
+        </p>
+
+        <h3>Options du module DPE</h3>
+        <h5>Connexion à un dictaphone professionnel</h5>
+        <p>
+          Cette option permet aux médecins de joindre à leur notes dans le DPE
+          des messages vocaux, enregistrés à l'aide d'un dictaphone
+          professionnel, par exemple un dictaphone PHILIPS.
+          <br />
+          Une sauvegarde, sous forme écrite, de ces messages vocaux peut ensuite
+          être insérée dans le DPE par des opérateurs qui vont saisir les
+          messages en utilisant un équipement spécifique (une pédale pour fait
+          défiler le message et un casque d’écoute ou une oreillette).
+          <br />
+          Cette option pour être fonctionnelle doit être installée sur tous les
+          postes de travail des médecins et des opérateurs équipés de
+          dictaphones professionnels ou d’un matériel équivalent. Notre société
+          peut vous fournir le matériel PHILIPS adéquat.
+        </p>
+        <h5>Export du DPE au format HTML</h5>
+        <p>
+          Les DPE créés dans MEDIALOG peuvent être exportés dans un format
+          ouvert (HTML) pouvant être lu par n'importe quel ordinateur.
+          <br />
+          Le système MEDIALOG peut exporter les DPE en plusieurs langues, par
+          exemple en russe et en anglais. Le patient dispose ainsi de son
+          dossier patient qu'il peut montrer en cas d’urgence lorsqu’il se
+          trouve à l’étranger.
+          <br />
+          Le DPE au format HTML peut être sauvegardé sur tout support externe
+          (USB, CD etc.) et également être envoyé à d’autres médecins par
+          Internet.
+          <br />
+          Pour disposer de cette option, il est indispensable de l’installer sur
+          tous les postes de travail où des exports de DPE devront être réalisés
+          (habituellement les postes de l'accueil).
         </p>
       </>
     ),
