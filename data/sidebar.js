@@ -12,7 +12,7 @@ module.exports = [
     activeClass: "",
   },
   {
-    icon: "clinics",
+    icon: "mui_icon_medical_services",
     itemName: "Etablissements de sante",
     itemRoute: "#clinics",
     activeClass: "",

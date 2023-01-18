@@ -13,7 +13,7 @@ module.exports = [
     desc: (
       <>
         <p>Parce qu’il est génial!</p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>Complet pour la gestion du cabinet,</li>
             <li>
@@ -25,7 +25,7 @@ module.exports = [
             </li>
             <li>Equipe compétente, ouverte, disponible</li>
           </ul>
-        </div>
+        </p>
       </>
     ),
     delayAnimation: "100",
@@ -97,7 +97,7 @@ module.exports = [
           avec convivialité ++.
         </p>
         <p>Les Plus:</p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               Hotline +++++ : disponibilité+++, résolution rapide de tous
@@ -119,9 +119,9 @@ module.exports = [
               n’importe quel poste
             </li>
           </ul>
-        </div>
+        </p>
         <p>Les moins :</p>
-        <div className="in_list">
+        <p className="in_list">
           <u>
             <li>Quelques petits bugs comme tout logiciel utilisant Windows</li>
             <li>
@@ -129,7 +129,7 @@ module.exports = [
               ces taches répétitives a la main
             </li>
           </u>
-        </div>
+        </p>
         <p>Un grand plus pour notre cabinet de pneumologie (4 pneumologues).</p>
       </>
     ),
@@ -144,7 +144,7 @@ module.exports = [
         <p>
           Apres l’essai de 3 logiciels médicaux, je voudrais dire merci pour :
         </p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               La simplicité et la rapidité d’utilisation, importante dans notre
@@ -160,7 +160,7 @@ module.exports = [
             <li>La disponibilité en cas de problème de logiciel.</li>
             <li>Le rapport coût/qualité.</li>
           </ul>
-        </div>
+        </p>
 
         <p>
           Et surtout merci a Pneumologis d’exister, sinon, il faudrait

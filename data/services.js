@@ -22,7 +22,7 @@ module.exports = [
           saisie de la fiche administrative patient.
         </p>
         <h5>Résumé des fonctionnalités</h5>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               <p>Agenda, gestion des RDV monoposte et réseau</p>
@@ -42,7 +42,7 @@ module.exports = [
               </p>
             </li>
           </ul>
-        </div>
+        </p>
       </>
     ),
     serviceListDescriptions: (
@@ -69,7 +69,7 @@ module.exports = [
           rendent l’utilisation du module confortable et adaptée à différentes
           méthodes de travail ou différentes activités.
         </p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               <p>affichage journalier ou hebdomadaire ;</p>
@@ -93,7 +93,7 @@ module.exports = [
               </p>
             </li>
           </ul>
-        </div>
+        </p>
       </>
     ),
   },
@@ -117,7 +117,7 @@ module.exports = [
         </p>
         <br />
         <h5>Résumé des fonctionnalités</h5>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>Gestion administrative du dossier patient</li>
             <li>Recherche d'un dossier par la carte SESAM-Vitale</li>
@@ -151,7 +151,7 @@ module.exports = [
             </li>
             <li>Enregistrement sonore</li>
           </ul>
-        </div>
+        </p>
       </>
     ),
     slideShow: [
@@ -187,7 +187,7 @@ module.exports = [
           point au cours des nombreuses années d'utilisation du système par des
           établissements de santé. Le système dispose d'outils permettant
           d'accélérer la saisie du texte.
-          <div className="in_list">
+          <p className="in_list">
             <ul>
               <li>
                 Des glossaires contextuels sont accessibles depuis les champs de
@@ -213,7 +213,7 @@ module.exports = [
                 d'opération, consultations médicales etc.)
               </li>
             </ul>
-          </div>
+          </p>
           {/* End list */}
         </p>
         <p>
@@ -320,7 +320,7 @@ module.exports = [
           interaction entre le système MEDIALOG et la base de donnée
           électronique du dictionnaire d’information sur le médicament VIDAL® .
           Le système fournit directement les informations suivantes:
-          <div className="in_list">
+          <p className="in_list">
             <ul>
               <li>Description de tous les médicaments.</li>
 
@@ -334,7 +334,7 @@ module.exports = [
                 toxiques ou narcotiques, liste des médicaments les plus forts.
               </li>
             </ul>
-          </div>
+          </p>
           <p>
             Une liste des médicaments, habituellement prescrits pour une maladie
             donnée, peut être recommandée par le système.
@@ -444,7 +444,7 @@ module.exports = [
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
         </p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               <p>Email is a crucial channel in any marketing.</p>
@@ -456,7 +456,7 @@ module.exports = [
               <p>Whether you’re kicking off a new ca mpaign.</p>
             </li>
           </ul>
-        </div>
+        </p>
         {/* End list */}
         <p>
           Streets empty that are usually busy are remarkable and can evoke the
@@ -500,7 +500,7 @@ module.exports = [
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
         </p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               <p>Email is a crucial channel in any marketing.</p>
@@ -509,7 +509,7 @@ module.exports = [
               <p>Curious what to say? How to say it?</p>
             </li>
           </ul>
-        </div>
+        </p>
         {/* End list */}
         <p>
           Streets empty that are usually busy are remarkable and can evoke the
@@ -553,7 +553,7 @@ module.exports = [
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
         </p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               <p>Email is a crucial channel in any marketing.</p>
@@ -562,7 +562,7 @@ module.exports = [
               <p>Curious what to say? How to say it?</p>
             </li>
           </ul>
-        </div>
+        </p>
         {/* End list */}
         <p>
           Streets empty that are usually busy are remarkable and can evoke the
@@ -606,7 +606,7 @@ module.exports = [
           Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
           Malis cetero quem saipe, prou thendrerit voluptaria.
         </p>
-        <div className="in_list">
+        <p className="in_list">
           <ul>
             <li>
               <p>Email is a crucial channel in any marketing.</p>
@@ -615,7 +615,7 @@ module.exports = [
               <p>Curious what to say? How to say it?</p>
             </li>
           </ul>
-        </div>
+        </p>
         {/* End list */}
         <p>
           Streets empty that are usually busy are remarkable and can evoke the
