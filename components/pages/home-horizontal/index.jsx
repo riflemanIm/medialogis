@@ -76,7 +76,8 @@ const MedialogisHorizontal = () => {
 
       <Clinics />
 
-      {/*<Tarifs />
+      {/*
+      <Tarifs />
        */}
 
       <Testimonial />

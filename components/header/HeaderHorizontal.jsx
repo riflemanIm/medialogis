@@ -8,9 +8,9 @@ import logo from "../../public/img/svg/logo.svg";
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
-  name: "aaa",
-  email: "ssss@gmail.com",
-  emailRef: "mailto:ssss@gmail.com",
+  name: "",
+  email: "medialogis@medialogis.com",
+  emailRef: "mailto:medialogis@medialogis.com",
 };
 
 const HeaderHorizontal = () => {
@@ -105,16 +105,16 @@ const HeaderHorizontal = () => {
 
           <div className="author">
             <div className="inner">
-              <div className="image">
+              {/* <div className="image">
                 <div
                   className="main"
                   style={{
                     backgroundImage: "url(img/about/avatar.jpg)",
                   }}
                 ></div>
-              </div>
+              </div> */}
               <div className="short">
-                <h3>{sidebarFooterContent.name}</h3>
+                {/* <h3>{sidebarFooterContent.name}</h3> */}
                 <a href={sidebarFooterContent.emailRef}>
                   {sidebarFooterContent.email}
                 </a>
