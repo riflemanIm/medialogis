@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
 import Seo from "../components/Seo";
-import HomeSidebar from "../components/pages/home-sidebar";
+import HomeSidebar from "../components/pages/old/home-sidebar";
 
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Home Sidebar" />
+      <Seo pageTitle="MEDIALOGIS" />
       <HomeSidebar />
     </>
   );

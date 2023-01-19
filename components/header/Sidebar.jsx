@@ -49,8 +49,9 @@ const Sidebar = () => {
                 "about",
                 "service",
                 "clinics",
+                //"tarifs",
                 "testimonial",
-                "blog",
+                //"blog",
                 "contact",
               ]}
               activeNavClass="active"

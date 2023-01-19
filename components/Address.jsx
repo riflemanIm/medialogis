@@ -1,3 +1,6 @@
+import FeedbackForm from "./FeedbackForm";
+import Map from "./Map";
+
 const Address = () => {
   const addressContent = [
     {
@@ -48,28 +51,69 @@ const Address = () => {
   ];
 
   return (
-    <ul className="wrapper">
-      {addressContent.map((item) => (
-        <li
-          data-aos="fade-right"
-          data-aos-duration="1200"
-          data-aos-delay={item.animDelay}
-          key={item.id}
-        >
-          <div className="list_inner">
-            <div className="icon">
-              <img src={item.iconImg} alt="icon" />
+    <div className="ml_contact" id="contact">
+      <div className="container">
+        <div className="ml_title">
+          <h3>Contacter</h3>
+          <p>N'hésitez pas à nous contacter si vous avez des questions.</p>
+        </div>
+        <div className="extra_info">
+          <ul className="wrapper">
+            {addressContent.map((item) => (
+              <li
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay={item.animDelay}
+                key={item.id}
+              >
+                <div className="list_inner">
+                  <div className="icon">
+                    <img src={item.iconImg} alt="icon" />
+                  </div>
+                  {/* End icon */}
+                  <div className="content">
+                    <h3>{item.name}</h3>
+                    <ul>{item.info}</ul>
+                  </div>
+                  {/* End .content */}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* End Address Info */}
+        <div className="mainpart">
+          <div
+            className="left"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <div className="title">
+              <p>
+                Remplissez ce formulaire pour
+                <br />
+                <span> nouveaux projets ou partenariats.</span>
+              </p>
             </div>
-            {/* End icon */}
-            <div className="content">
-              <h3>{item.name}</h3>
-              <ul>{item.info}</ul>
+            {/* End title */}
+            <div className="fields">
+              <FeedbackForm />
             </div>
-            {/* End .content */}
+            {/* End Contact Form */}
           </div>
-        </li>
-      ))}
-    </ul>
+          <div
+            className="right"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <Map />
+          </div>
+          {/* End Map */}
+        </div>
+      </div>
+    </div>
   );
 };
 

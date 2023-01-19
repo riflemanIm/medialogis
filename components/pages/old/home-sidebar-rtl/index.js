@@ -84,20 +84,31 @@ const MedialogisHomeRtl = () => {
       </div>
       {/* End Services */}
 
-      <div className="ml_clinics" id="clinics">
+      <Clinics />
+      {/* End Clinics */}
+
+      <div className="ml_tarifs" id="tarifs">
         <div className="container">
           <div className="ml_title">
-            <h3>Clinics</h3>
+            <h3>Tarifs</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ipsum sit nibh amet egestas tellus.
+              <h6>
+                Cette grille tarifaire est réservée aux cabinets libéraux.
+              </h6>
+              Elle ne possède qu'une valeur indicative pour les établissement de
+              santé, lesquels nécessitent généralement une analyse préalable et
+              la rédaction d'un cahier des charges pour son automatisation.
+            </p>
+            <p>
+              Nous vous invitons à contacter notre équipe qui vous aidera à
+              définir les modalités de votre commande.
             </p>
           </div>
-          {/* End edian_tm_title */}
-          <Clinics />
+
+          <Tarifs />
         </div>
       </div>
-      {/* End Clinics */}
+      {/* End tarifs */}
 
       <div className="ml_testimonials" id="testimonial">
         <div className="container">
@@ -108,12 +119,8 @@ const MedialogisHomeRtl = () => {
               ipsum sit nibh amet egestas tellus.
             </p>
           </div>
-          {/* End edian_tm_title */}
-          <div className="list ">
-            <ul>
-              <Testimonial />
-            </ul>
-          </div>
+
+          <Testimonial />
         </div>
       </div>
       {/* End Testimonial */}

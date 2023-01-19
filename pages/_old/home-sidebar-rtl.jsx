@@ -1,12 +1,12 @@
 import dynamic from "next/dynamic";
 import Seo from "../components/Seo";
-import HomeHorizontalRtl from "../components/pages/home-horizontal_rtl";
+import HomeSidebarRtl from "../components/pages/home-sidebar-rtl";
 
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Medialogis Horizontal Rtl" />
-      <HomeHorizontalRtl />
+      <Seo pageTitle="MEDIALOGIS Rtl" />
+      <HomeSidebarRtl />
     </>
   );
 };

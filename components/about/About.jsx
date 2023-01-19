@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Skills from "./Skills";
 import Modal from "react-modal";
-import ModalContent from "./modal/ModalContent";
+import ModalAbout from "../modal/ModalAbout";
 
 Modal.setAppElement("#__next");
 
@@ -102,7 +102,7 @@ const About = () => {
 
           <div className="box_inner">
             <div className="description_wrap scrollable">
-              <ModalContent />
+              <ModalAbout />
             </div>
           </div>
           {/* End box inner */}

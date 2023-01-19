@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
-import HeaderHorizontal from "../../header/HeaderHorizontal";
-import Hero from "../../hero/Hero";
-import About from "../../about/About";
-import Service from "../../service/Service";
-import Clinics from "../../clinics/Clinics";
-import Testimonial from "../../testimonial/Testimonial";
-import Blog from "../../blog/Blog";
-import Contact from "../../Contact";
-import Address from "../../Address";
-import Map from "../../Map";
-import HeaderMobile from "../../header/HeaderMobile";
+import HeaderHorizontal from "../../../header/HeaderHorizontal";
+import Hero from "../../../hero/Hero";
+import About from "../../../about/About";
+import Service from "../../../service/Service";
+import Clinics from "../../../clinics/Clinics";
+import Testimonial from "../../../testimonial/Testimonial";
+import Blog from "../../../blog/Blog";
+import Contact from "../../../Contact";
+import Address from "../../../Address";
+import Map from "../../../Map";
+import HeaderMobile from "../../../header/HeaderMobile";
 
 const MedialogisHorizontalRtl = () => {
   const [isDark, setIsDark] = useState(false);
@@ -103,6 +103,29 @@ const MedialogisHorizontalRtl = () => {
         </div>
       </div>
       {/* End Clinics */}
+
+      <div className="ml_tarifs" id="tarifs">
+        <div className="container">
+          <div className="ml_title">
+            <h3>Tarifs</h3>
+            <p>
+              <h6>
+                Cette grille tarifaire est réservée aux cabinets libéraux.
+              </h6>
+              Elle ne possède qu'une valeur indicative pour les établissement de
+              santé, lesquels nécessitent généralement une analyse préalable et
+              la rédaction d'un cahier des charges pour son automatisation.
+            </p>
+            <p>
+              Nous vous invitons à contacter notre équipe qui vous aidera à
+              définir les modalités de votre commande.
+            </p>
+          </div>
+
+          <Tarifs />
+        </div>
+      </div>
+      {/* End tarifs */}
 
       <div className="ml_testimonials" id="testimonial">
         <div className="container">

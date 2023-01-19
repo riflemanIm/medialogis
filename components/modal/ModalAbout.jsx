@@ -1,11 +1,11 @@
 import React from "react";
-import Achievements from "../Achievements";
+import Achievements from "../about/Achievements";
 // import PersonalInfo from "../PersonalInfo";
 // import Experience from "../Experience";
 // import Education from "../Education";
 
-const ModalContent = () => {
+const ModalAbout = () => {
   return <Achievements />;
 };
 
-export default ModalContent;
+export default ModalAbout;

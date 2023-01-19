@@ -13,10 +13,16 @@ module.exports = [
   },
   {
     icon: "clinics",
-    itemName: "Etablissements de sante",
+    itemName: "Etablissements",
     itemRoute: "#clinics",
     activeClass: "",
   },
+  // {
+  //   icon: "",
+  //   itemName: "Tarifs",
+  //   itemRoute: "#tarifs",
+  //   activeClass: "",
+  // },
   {
     icon: "testimonial",
     itemName: "Témoignages",
