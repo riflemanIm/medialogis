@@ -37,11 +37,11 @@
   "devDependencies": {
     "netlify-plugin-cypress": "2.2.0"
   },
-  "description": "![next-on-netlify](https://user-images.githubusercontent.com/3611928/156433088-21a7cdf6-760c-4758-a3b7-9073bac5e452.png)",
+  "description": "",
   "main": "cypress.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cgsage3/cgrandasite.git"
+    "url": "git@github.com:riflemanIm/medialogis.git"
   },
   "license": "ISC"
 }
