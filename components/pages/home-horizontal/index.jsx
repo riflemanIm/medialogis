@@ -7,7 +7,7 @@ import About from "../../about/About";
 import Service from "../../service/Service";
 import Clinics from "../../clinics/Clinics";
 import Testimonial from "../../testimonial/Testimonial";
-import Tarifs from "../../tarifs/Tarifs";
+
 //import dynamic from "next/dynamic";
 
 import Address from "../../Address";
@@ -64,37 +64,22 @@ const MedialogisHorizontal = () => {
           <HeaderMobile />
         </div>
       </header>
-      {/* End mobile-header */}
 
       <HeaderHorizontal />
-      {/* End Header */}
 
       {/* <Hero />
-      End Hero */}
+       */}
 
       <About />
-      {/* End Hero */}
 
       <Service />
-      {/* End Services */}
 
       <Clinics />
-      {/* End Clinics */}
 
       {/*<Tarifs />
-       End tarifs */}
+       */}
 
-      <div className="ml_testimonials" id="testimonial">
-        <div className="container">
-          <div className="ml_title">
-            <h3>Témoignages d'utilisateurs</h3>
-            <p>Ce que les gens disent et écrivent sur nous</p>
-          </div>
-
-          <Testimonial />
-        </div>
-      </div>
-      {/* End Testimonial */}
+      <Testimonial />
 
       <Address />
     </div>

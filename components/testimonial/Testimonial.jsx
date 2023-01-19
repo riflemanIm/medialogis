@@ -24,48 +24,65 @@ export default function Testimonial() {
   };
 
   return (
-    <Slider {...settings}>
-      {testimonialContent.map((val, i) => (
-        <li
-          key={i}
-          data-aos="fade-right"
-          data-aos-duration="1200"
-          data-aos-delay={val.delayAnimation}
-        >
-          <div className="list_inner">
-            <div className="details">
-              <div className="author">
-                <div className="image">
-                  <div
-                    className="main"
-                    style={{
-                      backgroundImage: `url(img/testimonials/testimonial-${val.img}.jpg)`,
-                    }}
-                  ></div>
-                </div>
-                {/* End image */}
+    <div className="ml_testimonials" id="testimonial">
+      <div className="container">
+        <div className="ml_title">
+          <h3>Témoignages d'utilisateurs</h3>
+          <p>Ce que les gens disent et écrivent sur nous</p>
+        </div>
+        {/* End edian_tm_title */}
+        <div className="list ">
+          <ul>
+            <Slider {...settings}>
+              {testimonialContent.map((val, i) => (
+                <li
+                  key={i}
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  data-aos-delay={val.delayAnimation}
+                >
+                  <div className="list_inner">
+                    <div className="details">
+                      <div className="author">
+                        <div className="image">
+                          <div
+                            className="main"
+                            style={{
+                              backgroundImage: `url(img/testimonials/testimonial-${val.img}.jpg)`,
+                            }}
+                          ></div>
+                        </div>
+                        {/* End image */}
 
-                <div className="short">
-                  <h3>{val.name}</h3>
-                  <span>{val.designation}</span>
-                </div>
-                {/* End short description */}
-              </div>
-              {/* End author */}
+                        <div className="short">
+                          <h3>{val.name}</h3>
+                          <span>{val.designation}</span>
+                        </div>
+                        {/* End short description */}
+                      </div>
+                      {/* End author */}
 
-              <div className="icon">
-                <img className="svg" src="img/svg/quote.svg" alt="quote" />
-              </div>
-              {/* End right quote icon */}
-            </div>
+                      <div className="icon">
+                        <img
+                          className="svg"
+                          src="img/svg/quote.svg"
+                          alt="quote"
+                        />
+                      </div>
+                      {/* End right quote icon */}
+                    </div>
 
-            <div className="text">
-              <p>{val.desc}</p>
-            </div>
-            {/* End description */}
-          </div>
-        </li>
-      ))}
-    </Slider>
+                    <div className="text">
+                      <p>{val.desc}</p>
+                    </div>
+                    {/* End description */}
+                  </div>
+                </li>
+              ))}
+            </Slider>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
