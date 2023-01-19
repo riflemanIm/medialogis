@@ -13,7 +13,7 @@ const previewDemo = [
   {
     id: 2,
     img: "3",
-    title: "Home Sidebar",
+    title: "MEDIALOGIS",
     routerPath: "/home-sidebar",
 
     delayAnimation: "50",
@@ -28,13 +28,13 @@ const previewDemo = [
   {
     id: 4,
     img: "4",
-    title: "Home Sidebar (RTL)",
+    title: "MEDIALOGIS (RTL)",
     routerPath: "/home-sidebar-rtl",
     delayAnimation: "50",
   },
 ];
 
-var settings = {
+const settings = {
   dots: true,
   infinite: true,
   speed: 500,

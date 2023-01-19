@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
-import Sidebar from "../../header/Sidebar";
-import Hero from "../../hero/Hero";
-import About from "../../about/About";
-import Service from "../../service/Service";
-import Clinics from "../../clinics/Clinics";
-import Testimonial from "../../testimonial/Testimonial";
-import Blog from "../../blog/Blog";
-import Contact from "../../Contact";
-import Address from "../../Address";
-import Map from "../../Map";
-import HeaderMobile from "../../header/HeaderMobile";
+import Sidebar from "../../../header/Sidebar";
+import Hero from "../../../hero/Hero";
+import About from "../../../about/About";
+import Service from "../../../service/Service";
+import Clinics from "../../../clinics/Clinics";
+import Testimonial from "../../../testimonial/Testimonial";
+import Blog from "../../../blog/Blog";
+import Contact from "../../../Contact";
+import Address from "../../../Address";
+import Map from "../../../Map";
+import HeaderMobile from "../../../header/HeaderMobile";
 
 const MedialogisHomeSidebar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -98,6 +98,8 @@ const MedialogisHomeSidebar = () => {
         </div>
       </div>
       {/* End Clinics */}
+
+      <Tarifs />
 
       <div className="ml_testimonials" id="testimonial">
         <div className="container">

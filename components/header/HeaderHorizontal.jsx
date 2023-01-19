@@ -68,6 +68,8 @@ const HeaderHorizontal = () => {
                 "about",
                 "service",
                 "clinics",
+                //"tarifs",
+
                 "testimonial",
                 "contact",
               ]}
