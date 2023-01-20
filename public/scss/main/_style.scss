@@ -2865,7 +2865,7 @@ a {
     transition: 0.5s;
   }
   &:hover {
-    background: #023b7e;
+    background: #2880b9;
     border-color: #fff;
     &::after {
       filter: invert(1);
@@ -2875,7 +2875,7 @@ a {
 .slick-prev {
   @media screen and (max-width: 1599px) {
     left: 0;
-    background: #023b7e;
+    background: #2880b9;
     border-color: #fff;
     &::after {
       filter: invert(1);
@@ -2896,7 +2896,7 @@ a {
 .slick-next {
   @media screen and (max-width: 1599px) {
     right: 0;
-    background: #023b7e;
+    background: #2880b9;
     border-color: #fff;
     &::after {
       filter: invert(1);
