@@ -4,7 +4,7 @@ import ScrollspyNav from "react-scrollspy-nav";
 import sidebarContent from "../../data/sidebar";
 import Image from "next/image";
 import logo from "../../public/img/logo/logo_medialogis.png";
-
+import logo2 from "../../public/img/logo/logo_medialogis_white.png";
 // sidebar footer bottom content
 const sidebarFooterContent = {
   name: "Nelson",
@@ -35,6 +35,12 @@ const Sidebar = () => {
               <Image
                 className="logo_light"
                 src={logo}
+                alt="brand"
+                height={32}
+              />
+              <Image
+                className="logo_dark"
+                src={logo2}
                 alt="brand"
                 height={32}
               />

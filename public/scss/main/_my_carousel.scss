@@ -1,0 +1,201 @@
+.my_carousel {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.my_carousel ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.my_carousel ul li {
+  margin: 0px;
+}
+.my_carousel ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.my_carousel ul li .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: auto;
+  @media screen and (max-width: 1500px) {
+    height: auto;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1) translateZ(0);
+    }
+  }
+}
+
+.my_carousel ul li .image img {
+  position: relative;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.my_carousel ul li .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.my_carousel ul li .list_inner:hover .image .main {
+  transform: scale(1.1) translateZ(0);
+}
+.my_carousel ul .details {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  text-decoration: none;
+}
+.my_carousel ul .details h3 {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.my_carousel ul .details span {
+  text-decoration: none;
+  color: #7e7e7e;
+  font-size: 16px;
+  font-weight: 400;
+}
+.my_carousel .prev_button,
+.my_carousel .next_button {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px solid #eb3d00;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -43px;
+  z-index: 6;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.my_carousel .prev_button:hover,
+.my_carousel .next_button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: #000;
+}
+.my_carousel .prev_button {
+  left: -33px;
+}
+.my_carousel .next_button {
+  right: -33px;
+}
+.my_carousel .prev_button span,
+.my_carousel .next_button span {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #7e7e7e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.my_carousel .prev_button:hover span,
+.my_carousel .next_button:hover span {
+  background-color: #fff;
+}
+.my_carousel .prev_button span:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #7e7e7e;
+  left: -2px;
+  top: -8px;
+  transform: rotate(-45deg);
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.my_carousel .prev_button span:after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #7e7e7e;
+  left: -2px;
+  bottom: -8px;
+  transform: rotate(45deg);
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.my_carousel .next_button span:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #7e7e7e;
+  right: -2px;
+  top: -8px;
+  transform: rotate(45deg);
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.my_carousel .next_button span:after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #7e7e7e;
+  right: -2px;
+  bottom: -8px;
+  transform: rotate(-45deg);
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.my_carousel .prev_button:hover span:before,
+.my_carousel .prev_button:hover span:after,
+.my_carousel .next_button:hover span:before,
+.my_carousel .next_button:hover span:after {
+  background-color: #fff;
+}
