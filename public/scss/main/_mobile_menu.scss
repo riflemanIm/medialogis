@@ -1,0 +1,39 @@
+/*---------------------------------------------------*/
+/*	02) MEDIALOGIS MOBILE MENU
+/*---------------------------------------------------*/
+
+.ml_mobile_menu {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 10;
+}
+.ml_mobile_menu .my_trigger {
+  line-height: 1;
+  position: relative;
+  right: -10px;
+}
+.ml_mobile_menu .mobile_menu_inner {
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  background-color: #fff;
+  padding: 15px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+}
+.ml_mobile_menu .mobile_in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ml_mobile_menu .mobile_in .logo img {
+  max-width: 100px;
+}
