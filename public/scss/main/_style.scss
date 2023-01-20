@@ -496,14 +496,17 @@ body.dark .loader_line:after {
   font-weight: 800;
   line-height: 1.6;
 }
+.ml_modalbox .description_wrap h2 {
+  margin: 35px 0 15px 0;
+}
 .ml_modalbox .description_wrap h3 {
-  line-height: 2.4;
+  margin: 25px 0 15px 0;
 }
 .ml_modalbox .description_wrap h4 {
-  line-height: 2.2;
+  margin: 20px 0 10px 0;
 }
 .ml_modalbox .description_wrap h5 {
-  line-height: 2;
+  margin: 20px 0 10px 0;
 }
 .ml_modalbox .service_title {
   display: none;
