@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/img/svg/logo.svg";
+import logo from "../../public/img/logo/logo_medialogis.png";
 
 const HeaderMobile = () => {
   return (
