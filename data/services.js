@@ -418,55 +418,59 @@ module.exports = [
     title: "Prescriptions",
     subtitle:
       "Prescription des médica- ments et création rapide et simplifiée des ordonnances au sein du dossier patient électronique.",
-    popupImg: "img/service/3.jpg",
-    popupTitle: `Branding & Design Breakdown In Cinema 4D`,
+    //popupImg: "img/service/3.jpg",
+    popupTitle: "Prescriptions",
     firstDescriptionText: (
       <>
+        <h3>Fonction du module</h3>
         <p>
-          Just because we cant get out and about like we normally would, doesn’t
-          mean we have to taking pictures. There’s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          Le module sert à faciliter la prescription des médicaments et la
+          création des ordonnances et à les enregistrer dans le dossier patient
+          électronique.
         </p>
         <p>
-          Most photographers love to shoot the unusual, and you don’t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
-        </p>
-      </>
-    ),
-    serviceListDescriptions: (
-      <>
-        <h3>What Is Branding & Design?</h3>
-        <p>
-          Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
-          Malis cetero quem saipe, prou thendrerit voluptaria.
-        </p>
-        <p className="in_list">
-          <ul>
+          <h5>Résumé des fonctionnalités</h5>
+          <ul className="in_list">
+            <li>Rédaction et édition d'ordonnance ALD, non-ALD (?)</li>
+            <li>Modèles d'ordonnances utiles</li>
             <li>
-              <p>Email is a crucial channel in any marketing.</p>
-            </li>
-            <li>
-              <p>Curious what to say? How to say it?</p>
-            </li>
-            <li>
-              <p>Whether you’re kicking off a new ca mpaign.</p>
+              Aide à la prescription : intégration avec la base de données de
+              médicaments VIDAL
             </li>
           </ul>
         </p>
-        {/* End list */}
         <p>
-          Streets empty that are usually busy are remarkable and can evoke the
-          sense of historical pictures from before the invention of the
-          motorcar. Other things that are different at the moment will be queues
-          to get into stores and the lines marked out on the floor to show how
-          far apart we should be.
+          <h5>Documentation VIDAL®</h5>
+          L’outil d’aide à la prescription des traitements s’appuie sur une
+          interaction entre le système MEDIALOG et la base de donnée
+          électronique du dictionnaire d’information sur le médicament VIDAL® .
+          Le système fournit directement les informations suivantes :
+          <br />
+          Description de tous les médicaments. <br />
+          Compatibilité et effets secondaires des préparations médicamenteuses.
+          <br />
+          Posologie, liste des médicaments contenant des substances toxiques ou
+          narcotiques, liste des médicaments les plus forts.
+          <br />
+          Liste des médicaments recommandés par la CIM-10 selon le diagnostic
+          porté sur le patient.
+        </p>
+        <p>
+          Une liste des médicaments, habituellement prescrits pour une maladie
+          donnée, peut être recommandée par le système.
+          <br />
+          Le volet « liste des prescriptions » du dossier patient électronique
+          indique quels médicaments ont été prescrits au patient, à quel moment
+          et pour quelle durée, et quels médicaments ont été supprimés avant la
+          fin du traitement.
+          <br />
+          Les ordonnances peuvent être rédigées à partir de modèles dans
+          lesquels l'utilisateur entre uniquement les paramètres voulus : par
+          exemple les doses et la fréquence de prise du médicament.
         </p>
       </>
     ),
+    serviceListDescriptions: null,
   },
   {
     id: 4,
@@ -474,15 +478,19 @@ module.exports = [
     title: "Comptabilité/FSE",
     subtitle:
       "Enregistrement et facturation des actes médicaux, télétrans- mission des FSE, suivi automatique des paiements via les retours Noémie.",
-    popupImg: "img/service/4.jpg",
-    popupTitle: `Mobile App Design is the trending Part of Graphics`,
+    //popupImg: "img/service/4.jpg",
+    popupTitle: `Comptabilité/FSE`,
     firstDescriptionText: (
       <>
+        <h3>Fonction du module</h3>
         <p>
-          Just because we cant get out and about like we normally would, doesn’t
-          mean we have to taking pictures. There’s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          Le module sert à la facturation des actes ainsi qu'à la tenue des
+          comptes avec les tiers (assurances, mutuelles et personnes physiques)
+          et à la télétransmission des FSE.
+          <br />
+          L’utilisation de ce module renforce efficacement le contrôle de
+          l’activité économique et optimise sa planification dans les
+          établissements de santé.
         </p>
         <p>
           Most photographers love to shoot the unusual, and you don’t get much
@@ -491,33 +499,266 @@ module.exports = [
           about these lockdown days that are worth photographing now we can
           remember them when it is all over.
         </p>
+        <p>
+          <h5>Résumé des fonctionnalités</h5>
+          <ul className="in_list">
+            <li>
+              <h6>
+                Comptabilité complète (recettes, dépenses, différés, tiers
+                payant, édition de la 2035, rapprochement bancaire, grand livre,
+                balances)
+              </h6>
+              <ul>
+                <li>Paiement par carte bancaire</li>
+                <li>Traçabilité et opposabilité des actes</li>
+                <li>
+                  Création de la déclaration fiscale 2035 et 2036 ( ? A
+                  préciser)
+                </li>
+                <li>
+                  Vérification les encaissements pour la période souhaitée
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h6>Télétransmission:</h6>
+              <ul>
+                <li>Facturation de l'acte</li>
+                <li>
+                  Création de la feuille de Soins Electronique (Agrément du 1.40
+                  SESAM-Vitale)
+                </li>
+                <li>
+                  FSE 1.40, CCAM V13 (это новая Classification Commune des Actes
+                  Médicaux, нужно выяснить, поддерживает ли ее фр Медиалог –
+                  похоже, это нужно тк у нескольких конкурентов декларировано:
+                  Аксилог, Сежедим)
+                </li>
+                <li>Télétransmission des FSE</li>
+                <li>Gestion des accusés de réception logique (ARL)</li>
+                <li>
+                  Prise en compte de la Couverture Médicale Universelle (CMU)
+                </li>
+                <li>Gestion des retours Noémie (?! À préciser)</li>
+                <li>Intégration avec le logiciel de gestion de cabinet</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <h5>Gestion des grilles de tarifs des actes</h5>
+          <p>
+            Le programme prévoit la création et la gestion de diverses grilles
+            de tarifs : celles de l'établissement mais aussi celles d'autres
+            prestataires (par exemple celles des laboratoires vers lesquels les
+            patients sont orientés).
+          </p>
+          Vue générale "Grille de tarifs des actes".L’historique des tarifs est
+          conservé, les actes peuvent former des lots et comprendre une liste de
+          consommables.
+          <br />
+          Chaque acte peut être rattaché à différentes catégories de tarifs,
+          applicables à des groupes différents de patients. Un historique des
+          tarifs est créé séparément pour chaque catégorie de tarif. Lorsqu’un
+          acte est dispensé, le tarif applicable à la date de réalisation de
+          l'acte est automatiquement sélectionné.
+          <br />
+          Les actes peuvent être regroupés pour faciliter leur classement dans
+          l'interface utilisateur et dans les états statistiques.
+          <br />
+          Les actes sont également rassemblés en lots de prestations, qui
+          constituent les éléments de base des garanties médicales, par exemple
+          "soins ambulatoires" ou "soins de stomatologie".
+          <br />
+          Il est possible de poser des limites en fonction du nombre d'actes, de
+          l’âge ou du sexe du patient pour contrôler la réalisation d'un acte
+          (contrôle d'admissibilité). Tous les actes peuvent être classés comme
+          "archivés" s’ils ne sont plus pratiqués, temporairement ou
+          définitivement.
+          <br />
+          ???Une liste de consommables peut être rattachée à chaque acte et les
+          articles consommés sont alors sortis du stock à chaque fois qu’un acte
+          est dispensé. Ces informations sont ensuite utilisées pour comparer
+          les consommations réelles par service avec le volume d'actes réalisé.
+          Cette évaluation des dépenses de consommables par acte permet
+          d'estimer le coût de revient d’un traitement (par exemple le coût d'un
+          cas médical)
+        </p>
+        <p>
+          <h5></h5>
+          Le contrat est le document qui décrit les conditions de règlement des
+          actes pour les patients qui y sont rattachés. <br />
+          ??????????????????????????????????????????????????????????????????????
+        </p>
+        <p>
+          <h5>Enregistrement des actes dispensés</h5>
+          <p>
+            Les soins dispensés au patient et les médicaments administrés sont
+            enregistrés sur une fiche d'activité. L’ajout d’actes sur la fiche
+            d'activité entraîne d’une part la vérification de la possibilité de
+            dispenser ces actes au patient en fonction de son contrat, et
+            d'autre part la détermination du tarif des actes et de la
+            répartition de leur prise en charge. Il est possible de savoir quel
+            est le contrat et quelles sont les garanties médicales de chaque
+            patient. Cette information est accessible au moment de la rédaction
+            de la fiche d'activité et permet de répartir la somme à payer entre
+            les tiers payants et le patient. Le prix des actes est renseigné
+            soit à partir des informations figurant dans les garanties
+            médicales, soit à partir des grilles de tarifs, le choix dépendant
+            du type de tarif paramétré par défaut.
+          </p>
+          <p>
+            La fiche d'activité avec la liste des actes dispensés et des
+            médicaments délivrés. Le médecin ou l'opérateur qui crée la fiche
+            d'activité, saisit obligatoirement la ventilation du règlement entre
+            le patient et les tiers payants.
+            <br />
+            Le tarif des actes est modifiable au moment de la rédaction de la
+            fiche d'activité, il est également possible de saisir des réductions
+            de tarif ou des suppléments individuellement pour chaque acte. La
+            somme totale à régler est calculée automatiquement dans la devise de
+            la grille de tarif. Les actes pratiqués peuvent être enregistrés
+            soit par le personnel de l'accueil, soit par les médecins
+            directement dans l'interface du dossier patient électronique, soit
+            par le personnel du service comptable (notamment lorsque les postes
+            de travail des médecins ne sont pas équipés du programme).
+          </p>
+          <p>
+            Enregistrement des actes dispensés dans le dossier patient
+            électronique.
+          </p>
+        </p>
+
+        <p>
+          <h5>Edition de la facture et règlement</h5>
+          <p>
+            La facture est éditée automatiquement par le programme. Une facture
+            séparée est créée pour les actes qui doivent être réglés par le
+            patient. Lors de l’édition de la facture du patient, il est possible
+            de visualiser une liste complète des actes non réglés et les actes
+            peuvent être regroupés par consultation sur cette liste. A la
+            demande du patient, il est possible d'éditer une ou plusieurs
+            factures, et également de modifier les débiteurs prenant en charge
+            le règlement, si ces modifications restent compatibles avec les
+            dispositions contractuelles.
+          </p>
+
+          <p>
+            Lors de l'édition de la facture, l'opérateur peut inclure
+            automatiquement tous les actes déjà dispensés et non encore facturés
+            ou en sélectionner seulement certains manuellement.
+            <br />
+            Une fois la facture éditée, elle peut être soit validée soit
+            supprimée. En cas de validation, un numéro unique est attribué à la
+            facture et les actes qui y figurent ne peuvent plus être ni modifiés
+            ni supprimés. Une fois le règlement enregistré, une facture validée
+            ne peut plus être éditée. Les soins à facturer à des tiers payants
+            font l'objet d'une facturation globale pour tous les patients pour
+            une période donnée ou sont facturés selon une répartition prévue
+            dans les contrats. Dans l'interface de règlement, l'enregistrement
+            des paiements du patient et des tiers payants se fait dans des
+            comptes individuels. Différents moyens de paiement sont disponibles
+            : espèces, carte de crédit, virement etc. Des comptes individuels
+            dans différentes devises sont tenus pour les patients et les tiers
+            payants; des écritures de virement d'un compte vers un autre sont
+            possibles avec une conversion automatique d'une devise en une autre.
+            Le programme permet d'éditer une balance client.
+          </p>
+        </p>
+
+        <p>
+          <h5>Rapports financiers</h5>
+          <p>
+            Les données du module Facturation et règlements peuvent être
+            récupérées et analysées dans le module de statistique. Les données
+            de toutes les listes peuvent servir aux requêtes et les liens
+            nécessaires entre les listes sont créés automatiquement. La majorité
+            des rapports demandés peut être générée en seulement quelques
+            minutes.
+          </p>
+
+          <p>
+            Dans ce rapport, le chiffre d'affaires de chaque médecin est
+            calculé, puis un total par service et ces chiffres sont regroupés
+            par codes analytiques des contrats.
+          </p>
+        </p>
+
+        <p>
+          <h5>FSE</h5>
+          <p>
+            La Feuille de Soins Électronique (ou FSE) remplace la traditionnelle
+            feuille de soins papier. Comment le Professionnel de Santé créé-t-il
+            une Feuille de Soins Electronique ?
+            <ol>
+              <li>
+                Le Professionnel de Santé introduit, en début de journée, sa
+                carte CPS dans le lecteur et saisi son code personnel. La carte
+                CPS est utilisée pour contrôler l'accès aux informations privées
+                de l'assuré (prise en charge, etc), à un réseau ou à des bases
+                de données médicales.
+              </li>
+              <li>
+                Après une consultation ou un acte médical, le Professionnel de
+                santé lit la carte Vitale du patient au moyen de son lecteur. Il
+                peut ainsi vérifier les droits à l'assurance maladie de son
+                patient.
+              </li>
+              <li>
+                Il créé rapidement une Feuille de Soins Électronique au moyen de
+                MEDIALOGIS et des informations de la carte Vitale.
+                [соответствующие скриншоты из Медиалога]
+              </li>
+              <li>
+                MEDIALOGIS s'occupe de chiffrer les données privées du patient
+                et de signer électroniquement la FSE. Cette signature garantit
+                l'intégrité des données entre le moment de la signature et le
+                traitement de la FSE par le régime d'Assurance Maladie. En fin
+                de journée, MEDIALOGIS s'occupe de rassembler les Feuilles de
+                Soins Électroniques en lots, de les mettre en forme et de les
+                télétransmettre vers l'Assurance Maladie. Pour plus de détails
+                sur la télétransmission des FSE et sur SESAM-VITALE, nous vous
+                invitons à consulter la rubrique Généralités sur Sésam-Vitale de
+                notre site [переход]
+              </li>
+            </ol>
+          </p>
+
+          <p>
+            Dans ce rapport, le chiffre d'affaires de chaque médecin est
+            calculé, puis un total par service et ces chiffres sont regroupés
+            par codes analytiques des contrats.
+          </p>
+        </p>
       </>
     ),
     serviceListDescriptions: (
       <>
-        <h3>What Is Mobile App Design?</h3>
+        <h3>Options du module COMPTABILITE/FSE</h3>
         <p>
-          Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
-          Malis cetero quem saipe, prou thendrerit voluptaria.
+          <h5>Option "Caisse"</h5>
+          L'option permet de relier un terminal de caisse aux postes de travail.
+          Toutes les opérations enregistrées par le terminal sont alors
+          utilisées pour entrer automatiquement les mouvements financiers dans
+          les comptes de tiers individuels. Le poste de travail de la caisse
+          présente des fonctionnalités standards, la clôture de la session est
+          sélectionnée dans un menu et cette opération génère un rapport de
+          caisse journalier.
         </p>
-        <p className="in_list">
-          <ul>
-            <li>
-              <p>Email is a crucial channel in any marketing.</p>
-            </li>
-            <li>
-              <p>Curious what to say? How to say it?</p>
-            </li>
-          </ul>
-        </p>
-        {/* End list */}
         <p>
-          Streets empty that are usually busy are remarkable and can evoke the
-          sense of historical pictures from before the invention of the
-          motorcar. Other things that are different at the moment will be queues
-          to get into stores and the lines marked out on the floor to show how
-          far apart we should be.
+          Toutes les factures non réglées apparaissent en "paiement à recevoir".
+          Lorsque le terminal de caisse est en service, le règlement de la
+          facture s'accompagne de l'impression d'un reçu.
         </p>
+        <h5>Option "Intégration avec l'informatique de la comptabilité"</h5>
+        <p>
+          L'option permet d'exporter les écritures ou les pièces comptables vers
+          le système informatique du service comptable, au format souhaité. Le
+          paramétrage approfondi du chargement des données et du format du
+          fichier d'export est l'avantage majeur de ce module. Cette souplesse
+          du paramétrage permet de prendre en compte toutes les exigences du
+          service comptable.
+        </p>{" "}
       </>
     ),
   },

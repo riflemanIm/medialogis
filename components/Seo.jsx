@@ -4,7 +4,7 @@ const Seo = ({ pageTitle, font }) => (
   <>
     <Head>
       <title>
-        {pageTitle && `${pageTitle} || Système d'information médical}`}
+        {pageTitle && `${pageTitle} || Système d'information médical`}
       </title>
 
       <meta
