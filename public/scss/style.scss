@@ -1,10 +1,23 @@
 // Style Scss
 @import "main/typography";
-@import "main/_mobile";
+@import "main/_modale";
 @import "main/_mobile_menu";
 @import "main/dark";
 @import "main/404";
 @import "main/swicher";
 @import "main/rtl";
+
 @import "main/style";
+@import "main/sidebar";
+
+//@import "main/intro";
+//@import "main/hero";
+@import "main/about";
+@import "main/service";
+@import "main/clinics";
+@import "main/tarifs";
+//@import "main/news";
+@import "main/contacts";
+
+@import "main/testimonials";
 @import "main/my_carousel";

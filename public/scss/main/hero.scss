@@ -1,0 +1,163 @@
+/*---------------------------------------------------*/
+/*	04) MEDIALOGIS HERO
+/*---------------------------------------------------*/
+
+.ml_mainpart {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-left: 320px;
+  transition: all 0.5s ease;
+  @media screen and (min-width: 1200px) and (max-width: 1500px) {
+    padding-left: 288px;
+  }
+}
+
+.ml_hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  background-color: #f5f8fc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .ml_button {
+    margin-top: 25px;
+    a {
+      border-radius: 30px;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+.ml_hero .hello {
+  color: rgb(180, 118, 118);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.ml_hero .content {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.ml_hero .content > div {
+  padding: 150px 20px 20px 20px;
+}
+.ml_hero .image {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 27px;
+  opacity: 1;
+  visibility: visible;
+  left: 0px;
+  transition: all 1s ease;
+}
+
+.ml_hero .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+}
+.ml_hero .image:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  background-color: #e2e2e2;
+  border-radius: 100%;
+}
+.ml_hero .name {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0 12px;
+}
+.ml_hero .extra {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  left: 0px;
+  transition-delay: 0.8s;
+  transition: all 1s ease;
+}
+
+.ml_hero .text {
+  max-width: 500px;
+  text-align: left;
+  margin: 0px auto 32px auto;
+  font-size: 17px;
+  @media screen and (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+.ml_hero .social ul {
+  margin: 0px;
+  list-style-type: none;
+  list-style: none;
+}
+.ml_hero .social ul li {
+  margin: 0px;
+  display: inline-block;
+}
+.ml_hero .social ul li a {
+  text-decoration: none;
+  color: #e7e7e7;
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  padding: 0px 15px;
+  &:hover {
+    transform: translateY(-3px);
+    svg {
+      color: #333;
+      transition: all 0.3s ease;
+    }
+  }
+  svg {
+    fill: transparent;
+    color: #888;
+    width: 22px;
+    height: 22px;
+  }
+}
+.ml_hero .social ul li a:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #e5e5e5;
+  top: 0px;
+  right: 0px;
+}
+.ml_hero .social ul li:last-child a:after {
+  display: none;
+}
+.ml_hero .social ul li .svg {
+  width: 19px;
+  height: 19px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,78 @@
+/*---------------------------------------------------*/
+/*	09) MEDIALOGIS NEWS
+/*---------------------------------------------------*/
+
+.ml_news {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 120px 0px;
+  @media screen and (max-width: 991px) {
+    padding: 90px 0px;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 90px 0px 110px;
+  }
+  .my_carousel ul li .image {
+    @media screen and (max-width: 1900px) {
+      height: 235px;
+    }
+    @media screen and (max-width: 1500px) {
+      height: 225px;
+    }
+  }
+}
+
+.news_inner.my_carousel ul li {
+  @media screen and (max-width: 575px) {
+    padding-bottom: 15px;
+  }
+}
+.ml_news .news_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 60px;
+}
+.ml_news ul li .news_details {
+  width: 100%;
+  float: left;
+  padding-top: 9px;
+}
+.ml_news ul li .news_details span {
+  font-size: 16px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.ml_news ul li .news_details span a {
+  text-decoration: none;
+  color: #7e7e7e;
+  position: relative;
+  display: inline-block;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ml_news ul li .news_details span a:before {
+  position: relative;
+  content: ".";
+  font-size: 40px;
+  top: -3px;
+  color: #7e7e7e;
+  padding: 0px 5px;
+}
+.ml_news ul li .news_details .title {
+  line-height: 1.2;
+}
+.ml_news ul li .news_details .title {
+  text-decoration: none;
+  color: #34495e;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}

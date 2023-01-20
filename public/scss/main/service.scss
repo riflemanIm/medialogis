@@ -1,0 +1,207 @@
+/*---------------------------------------------------*/
+/*	06) MEDIALOGIS SERVICE
+/*---------------------------------------------------*/
+
+.ml_services {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #f5f8fc;
+  padding: 120px 0px 90px 0px;
+  @media screen and (max-width: 991px) {
+    padding: 90px 0px 60px 0px;
+  }
+  .my_carousel ul li .image {
+    height: auto;
+  }
+}
+.ml_services .content {
+  display: flex;
+  align-items: flex-start;
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+.ml_services .content .leftpart {
+  flex-grow: 1;
+}
+.ml_services .content .rightpart {
+  justify-self: flex-end;
+}
+.ml_services .tarifs {
+  width: 100%;
+  float: left;
+}
+.ml_services .service_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 60px;
+}
+.ml_services ul {
+  margin: 0px 0px 0px -30px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ml_services ul li {
+  margin: 0px 0px 30px 0px;
+  width: 33%;
+  padding-left: 30px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+.ml_services ul li .list_inner {
+  width: 100%;
+  height: 100%;
+  min-height: 405px;
+  @media screen and (max-width: 1599px) {
+    min-height: 420px;
+  }
+  clear: both;
+  float: left;
+  position: relative;
+  background-color: #fff;
+  padding: 50px 100px 45px 50px;
+  border-radius: 6px;
+
+  .hover {
+    position: relative;
+    z-index: 5;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #2880b9;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: inherit;
+    transition: 0.7s;
+    backface-visibility: hidden;
+  }
+  &:hover {
+    &::before {
+      transform: scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ml_services ul li .list_inner:hover {
+  .svg,
+  .service_title,
+  .learn_more {
+    animation: slideLeft 0.7s ease-in-out 0s 1 normal none running !important;
+  }
+}
+.ml_services ul li .svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.ml_services ul li .list_inner:hover .svg {
+  color: #fff;
+  filter: invert(1);
+}
+.ml_services ul li .list_inner:hover .svg.custom {
+  stroke: #fff;
+}
+
+.ml_services ul li h3 {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.ml_services ul li .list_inner:hover h3 {
+  color: #fff;
+}
+.ml_services ul li .learn_more {
+  text-decoration: none;
+  color: #7e7e7e;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ml_services ul li .learn_more span {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background-color: #7e7e7e;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 14px;
+  border-radius: 50px;
+
+  transition: all 0.7s ease;
+}
+.ml_services ul li .learn_more span:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 2px;
+  background-color: #7e7e7e;
+  transform: rotate(45deg);
+  right: 0px;
+  top: -2px;
+  border-radius: 50px;
+  transition: all 0.7s ease;
+}
+.ml_services ul li .learn_more span:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 2px;
+  background-color: #7e7e7e;
+  transform: rotate(-45deg);
+  right: 0px;
+  bottom: -2px;
+  border-radius: 50px;
+  transition: all 0.7s ease;
+}
+.ml_services ul li .list_inner:hover .learn_more span {
+  width: 30px;
+  background-color: #fff;
+}
+.ml_services ul li .list_inner:hover .learn_more span:before,
+.ml_services ul li .list_inner:hover .learn_more span:after {
+  background-color: #fff;
+}
+.ml_services ul li .list_inner:hover .learn_more {
+  color: #fff;
+}
+.ml_services .popup_informations {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -11;
+  display: none;
+}
