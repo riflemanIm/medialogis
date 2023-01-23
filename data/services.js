@@ -769,51 +769,35 @@ module.exports = [
     subtitle:
       "Constitution de requêtes en mode visualisé et création de rapports via la base de données MEDIALOGIS.",
     popupImg: "img/service/4.jpg",
-    popupTitle: `Mobile App Design is the trending Part of Graphics`,
+    popupTitle: "Statistiques",
     firstDescriptionText: (
       <>
         <p>
-          Just because we cant get out and about like we normally would, doesn’t
-          mean we have to taking pictures. There’s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          Le module « Statistiques » représente un outil de constitution
+          visualisée de requêtes et de création de rapports via la base de
+          données « MEDIALOGIS ». Le module permet de créer et de traiter les
+          rapports de tout niveau de complexité (rapports de gestion,
+          financiers, de statistique médicale, de comptabilité des stocks)
+          moyennant un éditeur visuel intégré.
         </p>
         <p>
-          Most photographers love to shoot the unusual, and you don’t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          <h5>Résumé des fonctionnalités</h5>
+          <p className="in_list">
+            <ul>
+              <li>
+                Moteur d’analyse et de synthèse qui permet d’extraire les
+                informations nécessaires de la base de données
+              </li>
+              <li>
+                Surveillance généralisée de la patientèle en fonction de
+                différents critères
+              </li>
+            </ul>
+          </p>
         </p>
       </>
     ),
-    serviceListDescriptions: (
-      <>
-        <h3>What Is Mobile App Design?</h3>
-        <p>
-          Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
-          Malis cetero quem saipe, prou thendrerit voluptaria.
-        </p>
-        <p className="in_list">
-          <ul>
-            <li>
-              <p>Email is a crucial channel in any marketing.</p>
-            </li>
-            <li>
-              <p>Curious what to say? How to say it?</p>
-            </li>
-          </ul>
-        </p>
-        {/* End list */}
-        <p>
-          Streets empty that are usually busy are remarkable and can evoke the
-          sense of historical pictures from before the invention of the
-          motorcar. Other things that are different at the moment will be queues
-          to get into stores and the lines marked out on the floor to show how
-          far apart we should be.
-        </p>
-      </>
-    ),
+    serviceListDescriptions: null,
   },
   {
     id: 6,
@@ -822,50 +806,30 @@ module.exports = [
     subtitle:
       "Intégraion dans le dossier patient électronique des images de tout type et traitement adéquat de l’information visuelle.",
     popupImg: "img/service/4.jpg",
-    popupTitle: `Mobile App Design is the trending Part of Graphics`,
+    popupTitle: "Fonction du module",
     firstDescriptionText: (
       <>
         <p>
-          Just because we cant get out and about like we normally would, doesn’t
-          mean we have to taking pictures. There’s still plenty you can do,
-          provided you are prepared to use some imagination. Here are a few
-          ideas to keep you shooting until normal life resumes.
+          Le module d’imagerie médicale permet d’intégrer dans le dossier
+          patient électronique des images de tout type et offre plusieurs
+          possibilités de traitement de l’information visuelle. Un archivage
+          structuré des images peut être réalisé.
         </p>
         <p>
-          Most photographers love to shoot the unusual, and you don’t get much
-          more unusual than These Unprecedented Times. Right now everything
-          counts as out of the ordinary. There are a number of remarkable things
-          about these lockdown days that are worth photographing now we can
-          remember them when it is all over.
+          <h5>Résumé des fonctionnalités</h5>
+          <p className="in_list">
+            <ul>
+              <li>
+                Connexion directe à l'appareillage médical via le protocole
+                DICOM
+              </li>
+              <li>Editeur d'images </li>
+              <li>PACS intégré au logiciel</li>
+            </ul>
+          </p>
         </p>
       </>
     ),
-    serviceListDescriptions: (
-      <>
-        <h3>What Is Mobile App Design?</h3>
-        <p>
-          Nullam blandit constituto eam ne, te nam ignota vituper.atoribus.
-          Malis cetero quem saipe, prou thendrerit voluptaria.
-        </p>
-        <p className="in_list">
-          <ul>
-            <li>
-              <p>Email is a crucial channel in any marketing.</p>
-            </li>
-            <li>
-              <p>Curious what to say? How to say it?</p>
-            </li>
-          </ul>
-        </p>
-        {/* End list */}
-        <p>
-          Streets empty that are usually busy are remarkable and can evoke the
-          sense of historical pictures from before the invention of the
-          motorcar. Other things that are different at the moment will be queues
-          to get into stores and the lines marked out on the floor to show how
-          far apart we should be.
-        </p>
-      </>
-    ),
+    serviceListDescriptions: null,
   },
 ];
