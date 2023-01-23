@@ -7,7 +7,7 @@ export default function Faq() {
     <div className="ml_faq" id="faq">
       <div className="container">
         <div className="ml_title">
-          <h3>FAQ</h3>
+          <h2>FAQ</h2>
           <p>Vous trouverez ici les réponses à la plupart des questions</p>
         </div>
 
