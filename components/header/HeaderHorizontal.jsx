@@ -75,7 +75,7 @@ const HeaderHorizontal = () => {
                 "service",
                 "clinics",
                 //"tarifs",
-
+                "faq",
                 "testimonial",
                 "contact",
               ]}

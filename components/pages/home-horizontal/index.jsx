@@ -7,7 +7,7 @@ import About from "../../about/About";
 import Service from "../../service/Service";
 import Clinics from "../../clinics/Clinics";
 import Testimonial from "../../testimonial/Testimonial";
-
+import Faq from "../../faq/Faq";
 //import dynamic from "next/dynamic";
 
 import Address from "../../Address";
@@ -79,6 +79,8 @@ const MedialogisHorizontal = () => {
       {/*
       <Tarifs />
        */}
+
+      <Faq />
 
       <Testimonial />
 
