@@ -4,7 +4,7 @@ import faqContent from "../../data/faq";
 
 export default function Faq() {
   return (
-    <div className="ml_faq">
+    <div className="ml_faq" id="faq">
       <div className="container">
         <div className="ml_title">
           <h3>Faq</h3>
@@ -12,12 +12,12 @@ export default function Faq() {
         </div>
 
         {faqContent.map((head) => (
-          <>
-            <div key={head.id} className="head">
-              <h4>{head.title}</h4>
+          <React.Fragment key={head.id}>
+            <div className="head">
+              <h3>{head.title}</h3>
             </div>
 
-            {head.items.map((row) => (
+            {/* {head.items.map((row) => (
               <div class="table">
                 <div key={row.id} className="item">
                   {row?.name && <h6>{row?.name}</h6>}
@@ -27,8 +27,8 @@ export default function Faq() {
                   {row?.price} {row?.price && "€"}
                 </div>
               </div>
-            ))}
-          </>
+            ))} */}
+          </React.Fragment>
         ))}
       </div>
     </div>

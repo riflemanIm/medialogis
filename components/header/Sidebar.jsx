@@ -56,6 +56,7 @@ const Sidebar = () => {
                 "service",
                 "clinics",
                 //"tarifs",
+                "faq",
                 "testimonial",
                 //"blog",
                 "contact",

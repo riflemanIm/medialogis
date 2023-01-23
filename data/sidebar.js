@@ -6,13 +6,13 @@ module.exports = [
     activeClass: "active",
   },
   {
-    icon: "human",
+    icon: "service",
     itemName: "Médecin Libéral",
     itemRoute: "#service",
     activeClass: "",
   },
   {
-    icon: "clinics",
+    icon: "health_and_safety",
     itemName: "Etablissements",
     itemRoute: "#clinics",
     activeClass: "",
@@ -24,14 +24,20 @@ module.exports = [
   //   activeClass: "",
   // },
   {
-    icon: "testimonial",
+    icon: "rate_review",
     itemName: "Témoignages",
     itemRoute: "#testimonial",
     activeClass: "",
   },
+  {
+    icon: "faq",
+    itemName: "FAQ",
+    itemRoute: "#faq",
+    activeClass: "",
+  },
 
   {
-    icon: "contact",
+    icon: "perm_phone_msg",
     itemName: "Contacter",
     itemRoute: "#contact",
     activeClass: "",
