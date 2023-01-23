@@ -18,7 +18,6 @@ export default function Success() {
           <Link href="/">
             <a>home page</a>
           </Link>
-          .
         </p>
       </main>
 

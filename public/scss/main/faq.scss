@@ -9,20 +9,32 @@
   float: left;
   padding-bottom: 170px;
   padding-top: 120px;
+  background-color: #f5f8fc;
   @media screen and (max-width: 991px) {
     padding-bottom: 140px;
     padding-top: 90px;
   }
 }
-.ml_faq .about_title {
+.ml_faq .ml_title {
   width: 100%;
-  float: left;
+  //float: left;
 }
-.ml_faq .about_title h3 {
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1;
+.ml_faq .title {
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
+.ml_faq .group {
+  padding-left: 22px;
+  margin-bottom: 22px;
+
+  border-left: 2px dashed #ddd;
+}
+
+// .ml_faq .about_title h3 {
+//   font-size: 45px;
+//   font-weight: 700;
+//   line-height: 1;
+// }
 
 .ml_faq .content {
   width: 100%;

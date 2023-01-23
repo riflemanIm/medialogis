@@ -4,6 +4,7 @@ module.exports = [
     title: "Medialogis. Combien ça coute ?",
     groups: [
       {
+        id: 1,
         gr_name: "Politique des prix",
         gr_questions: [
           {
@@ -21,6 +22,7 @@ module.exports = [
     title: "Medialogis. Comment l’installer ? Comment le paramétrer ?",
     groups: [
       {
+        id: 1,
         gr_name: "Installation et paramétrage du logiciel",
         gr_questions: [
           {
@@ -28,7 +30,7 @@ module.exports = [
             question:
               "Je viens d’installer Médialogis et je ne retrouve pas les patients du cabinet",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   Médialogis a été démarré sur une autre base de données que
                   celle du cabinet. Il suffit de redéfinir correctement le
@@ -47,7 +49,7 @@ module.exports = [
                       la base de données à utiliser (il est possible d’accéder à
                       un serveur sur le réseau en passant par le voisinage
                       réseau) et double cliquer sur le fichier « Automedi.ver »
-                      recherché ;{" "}
+                      recherché ;
                     </li>
                     <li>
                       Valider la fenêtre de sélection d’une base de données et
@@ -66,7 +68,7 @@ module.exports = [
                   au-dessus de la touche Ctrl) enfoncée juste après avoir double
                   cliqué sur l’icône de Médialogis.
                 </p>
-              </>
+              </p>
             ),
           },
           {
@@ -119,8 +121,8 @@ module.exports = [
             answer: (
               <p>
                 Non, vous pouvez seulement supprimer la consultation et en créer
-                une nouvelle à la bonne date.{" "}
-                <span style="color: red;">
+                une nouvelle à la bonne date.
+                <span>
                   Attention, la suppression d’une date de consultation entraîne
                   la suppression de toutes les données saisies sur cette date.
                 </span>
@@ -145,20 +147,20 @@ module.exports = [
             id: 5,
             question: "Comment archiver un dossier patient ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   L’archivage d’un dossier patient se fait en le transférant
-                  dans le groupe « Archive »:{" "}
+                  dans le groupe « Archive »:
                 </p>
                 <div className="in_list">
                   <ul>
                     <li>Ouvrez le dossier patient à archiver ;</li>
                     <li>
-                      Accédez à la fiche patient (touche de raccourci « F7 ») ;{" "}
+                      Accédez à la fiche patient (touche de raccourci « F7 ») ;
                     </li>
                     <li>
                       Ouvrez la liste déroulante « Groupe » et cliquez sur «
-                      Archive » ;{" "}
+                      Archive » ;
                     </li>
                     <li>
                       Cochez la case « Dossier archivé » (vous pouvez aussi
@@ -166,7 +168,7 @@ module.exports = [
                     </li>
                   </ul>
                 </div>
-              </>
+              </p>
             ),
           },
         ],
@@ -185,7 +187,7 @@ module.exports = [
             id: 2,
             question: "Comment imprimer tout ou partie du dossier patient ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   La solution la plus simple est de créer un courrier dans le
                   traitement de textes de Médialogis. Cliquez sur le bouton «
@@ -210,7 +212,7 @@ module.exports = [
                   effectuant préalablement une sélection des données à copier à
                   l’aide de la souris.
                 </p>
-              </>
+              </p>
             ),
           },
           {
@@ -218,13 +220,11 @@ module.exports = [
             question:
               "Je veux transférer les courriers écrits sous Word dans le dossier patient",
             answer: (
-              <>
+              <p className="answer">
                 <p>Deux solutions existent:</p>
                 <div className="in_list">
                   <ul>
-                    <li>
-                      Insérer le courrier comme un « document importé » ;{" "}
-                    </li>
+                    <li>Insérer le courrier comme un « document importé » ;</li>
                     <li>
                       Retrouver le courrier dans la liste des courriers du
                       dossier.
@@ -257,7 +257,7 @@ module.exports = [
                   refaire la mise en forme du document, paragraphes et polices,
                   récupérer les en-têtes et pieds de page…
                 </p>
-              </>
+              </p>
             ),
           },
           {
@@ -278,7 +278,7 @@ module.exports = [
             question:
               "Comment puis-je avoir un glossaire différent des autres membres du cabinet ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   Il est possible, pour chaque champ du logiciel, d’avoir un
                   glossaire personnel. Vous devez :
@@ -286,13 +286,13 @@ module.exports = [
                 <div className="in_list">
                   <ol>
                     <li>
-                      ouvrir l’éditeur de glossaire en cliquant sur le bouton «{" "}
+                      ouvrir l’éditeur de glossaire en cliquant sur le bouton «
                       <img
                         src="/img/ico_gif/faq01.gif"
                         width="28"
                         height="28"
-                      />{" "}
-                      »;{" "}
+                      />
+                      »;
                     </li>
                     <li>
                       cochez la case « Glossaire personnel » du bas de la
@@ -302,7 +302,7 @@ module.exports = [
                     <li>Valider la fenêtre.</li>
                   </ol>
                 </div>
-              </>
+              </p>
             ),
           },
           {
@@ -310,7 +310,7 @@ module.exports = [
             question:
               "Comment puis-je communiquer un/des glossaires à des confrères ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   Il est possible d’enregistrer le glossaire de chaque champ du
                   logiciel sur le support physique de votre choix (disque dur
@@ -320,27 +320,27 @@ module.exports = [
                 <div className="in_list">
                   <ul>
                     <li>
-                      Ouvrir l’éditeur de glossaire en cliquant sur le bouton «{" "}
+                      Ouvrir l’éditeur de glossaire en cliquant sur le bouton «
                       <img
                         src="/img/ico_gif/faq01.gif"
                         width="28"
                         height="28"
-                      />{" "}
-                      » ;{" "}
+                      />
+                      » ;
                     </li>
                     <li>
-                      Cliquer sur le bouton «{" "}
+                      Cliquer sur le bouton «
                       <img
                         src="/img/ico_gif/faq02.gif"
                         width="25"
                         height="22"
-                      />{" "}
-                      » ;{" "}
+                      />
+                      » ;
                     </li>
                     <li>
                       Utiliser la fenêtre « Enregistrer sous » pour préciser le
                       lieu (une disquette par exemple) et le nom du fichier
-                      texte (le nom utilisé par défaut est le nom du champ) ;{" "}
+                      texte (le nom utilisé par défaut est le nom du champ) ;
                     </li>
                     <li>Valider la fenêtre ;</li>
                     <li>Refermer l’éditeur de glossaire ;</li>
@@ -352,14 +352,14 @@ module.exports = [
                   </ul>
                 </div>
                 <p></p>
-              </>
+              </p>
             ),
           },
           {
             id: 3,
             question: "Comment puis-je importer le glossaire d’un confrère ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   Il n’est pas possible de récupérer tous les glossaires en une
                   seule manipulation. En revanche, il est possible de récupérer
@@ -371,22 +371,22 @@ module.exports = [
                 <div className="in_list">
                   <ul>
                     <li>
-                      Ouvrir l’éditeur de glossaire en cliquant sur le bouton «{" "}
+                      Ouvrir l’éditeur de glossaire en cliquant sur le bouton «
                       <img
                         src="/img/ico_gif/faq01.gif"
                         width="28"
                         height="28"
-                      />{" "}
-                      » ;{" "}
+                      />
+                      » ;
                     </li>
                     <li>
-                      Cliquer sur le bouton «{" "}
+                      Cliquer sur le bouton «
                       <img
                         src="/img/ico_gif/faq03.gif"
                         width="25"
                         height="25"
-                      />{" "}
-                      » ;{" "}
+                      />
+                      » ;
                     </li>
                     <li>
                       Utiliser la fenêtre « Ouvrir » pour accéder au lieu
@@ -402,14 +402,14 @@ module.exports = [
                     </li>
                   </ul>
                 </div>
-              </>
+              </p>
             ),
           },
           {
             id: 4,
             question: "Puis-je avoir le même glossaire pour plusieurs champs ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
                   Oui, il s’agit des glossaires attachés. Le principal avantage
                   des glossaires attachés est le report automatique des
@@ -443,7 +443,7 @@ module.exports = [
                 que le glossaire du champ « cible ». Répéter les 5 points pour
                 lier un troisième champ aux deux précédents et ainsi de suite.
                 <p></p>
-              </>
+              </p>
             ),
           },
         ],
@@ -456,15 +456,17 @@ module.exports = [
 
     groups: [
       {
-        gr_name: "        Questions/réponses sur Sésam-Vitale",
+        id: 1,
+        gr_name: "Questions/réponses sur Sésam-Vitale",
         gr_questions: [
           {
             id: 1,
-            question: "",
+            question:
+              "Comment ouvrir un dossier patient à l’aide de la carte Sésam vitale ?",
             answer: (
-              <>
+              <p className="answer">
                 <p>
-                  Cliquer sur le bouton «{" "}
+                  Cliquer sur le bouton «
                   <img src="/img/ico_gif/faq01.gif" width="23" height="26" /> »
                   pour afficher la fenêtre de sélection d’un dossier :
                 </p>
@@ -474,7 +476,7 @@ module.exports = [
                 </div>
 
                 <p>
-                  Cliquer sur le bouton «{" "}
+                  Cliquer sur le bouton «
                   <img src="/img/ico_gif/faq04.gif" width="77" height="39" /> »
                   pour lancer la lecture de la carte Vitale du patient. La carte
                   doit donc être insérée dans le lecteur avant de cliquer sur ce
@@ -506,7 +508,7 @@ module.exports = [
                 <p>
                   Vous avez la possibilité de lancer une nouvelle lecture de la
                   carte en cas d’erreur lors de la sélection du patient en
-                  cliquant sur le bouton «{" "}
+                  cliquant sur le bouton «
                   <img src="/img/ico_gif/faq08.gif" width="90" height="21" /> ».
                   Si le dossier du patient existe déjà mais n’a pas été reconnu
                   lors de la lecture de la carte Vitale, fermer la fenêtre,
@@ -518,7 +520,7 @@ module.exports = [
                   ouvrir automatiquement le dossier.
                 </p>
                 <p>
-                  Cliquer sur le bouton «{" "}
+                  Cliquer sur le bouton «
                   <img src="/img/ico_gif/faq09.gif" width="90" height="21" /> »
                   pour créer le dossier de ce nouveau patient. On obtient la
                   fenêtre de création d’un dossier patient sur laquelle les nom
@@ -547,7 +549,7 @@ module.exports = [
                   se nomme « Caisse de TEST ». Si cet organisme a déjà été créé
                   et figure dans la liste de gauche, la sélectionner dans la
                   liste et valider la fenêtre. Dans le cas contraire, il est
-                  nécessaire de créer la caisse et en cliquant sur «{" "}
+                  nécessaire de créer la caisse et en cliquant sur «
                   <img src="/img/ico_gif/faq14.gif" width="91" height="20" /> »
                   pour afficher la fenêtre de création d’une caisse :
                 </p>
@@ -567,7 +569,7 @@ module.exports = [
                   champs sont facultatifs. Valider la fenêtre pour achever la
                   création du dossier.
                 </p>
-              </>
+              </p>
             ),
           },
           {
@@ -582,6 +584,11 @@ module.exports = [
           },
           {
             id: 4,
+            question: "",
+            answer: "",
+          },
+          {
+            id: 5,
             question: "",
             answer: "",
           },
@@ -654,40 +661,40 @@ module.exports = [
       },
     ],
   },
-  {
-    id: 5,
-    title: "",
-    groups: [
-      {
-        gr_name: "",
-        gr_questions: [
-          {
-            id: 1,
-            question: "",
-            answer: "",
-          },
-          {
-            id: 2,
-            question: "",
-            answer: "",
-          },
-          {
-            id: 3,
-            question: "",
-            answer: "",
-          },
-          {
-            id: 4,
-            question: "",
-            answer: "",
-          },
-          {
-            id: 5,
-            question: "",
-            answer: "",
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   title: "",
+  //   groups: [
+  //     {
+  //       id: 1,gr_name: "",
+  //       gr_questions: [
+  //         {
+  //           id: 1,
+  //           question: "",
+  //           answer: "",
+  //         },
+  //         {
+  //           id: 2,
+  //           question: "",
+  //           answer: "",
+  //         },
+  //         {
+  //           id: 3,
+  //           question: "",
+  //           answer: "",
+  //         },
+  //         {
+  //           id: 4,
+  //           question: "",
+  //           answer: "",
+  //         },
+  //         {
+  //           id: 5,
+  //           question: "",
+  //           answer: "",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
 ];

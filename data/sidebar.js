@@ -24,15 +24,15 @@ module.exports = [
   //   activeClass: "",
   // },
   {
-    icon: "rate_review",
-    itemName: "Témoignages",
-    itemRoute: "#testimonial",
-    activeClass: "",
-  },
-  {
     icon: "faq",
     itemName: "FAQ",
     itemRoute: "#faq",
+    activeClass: "",
+  },
+  {
+    icon: "rate_review",
+    itemName: "Témoignages",
+    itemRoute: "#testimonial",
     activeClass: "",
   },
 
