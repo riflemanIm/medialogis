@@ -15,7 +15,6 @@ const MyAccordion = ({ title, children }) => {
     >
       <AccordionItem>
         {({ open }) => {
-          console.log("open", open);
           return (
             <>
               <AccordionHeader className="title" as="a">
@@ -29,7 +28,7 @@ const MyAccordion = ({ title, children }) => {
                 />
               </AccordionHeader>
 
-              <AccordionBody>{children}</AccordionBody>
+              <AccordionBody className="body">{children}</AccordionBody>
             </>
           );
         }}

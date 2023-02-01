@@ -30,12 +30,12 @@ module.exports = [
             question:
               "Je viens d’installer Médialogis et je ne retrouve pas les patients du cabinet",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   Médialogis a été démarré sur une autre base de données que
                   celle du cabinet. Il suffit de redéfinir correctement le
                   chemin vers la base de données à utiliser :
-                </p>
+                </div>
                 <div className="in_list">
                   <ul>
                     <li>
@@ -61,14 +61,14 @@ module.exports = [
                     </li>
                   </ul>
                 </div>
-                <p>
+                <div>
                   Si la fenêtre de démarrage ne s’affiche pas au lancement de
                   Médialogis, vous pouvez l’obtenir en maintenant la touche «
                   Shift » (la flèche des majuscules à gauche du clavier,
                   au-dessus de la touche Ctrl) enfoncée juste après avoir double
                   cliqué sur l’icône de Médialogis.
-                </p>
-              </p>
+                </div>
+              </div>
             ),
           },
           {
@@ -119,14 +119,14 @@ module.exports = [
             id: 2,
             question: "Puis-je changer la date de la consultation ?",
             answer: (
-              <p>
+              <div>
                 Non, vous pouvez seulement supprimer la consultation et en créer
                 une nouvelle à la bonne date.
                 <span>
                   Attention, la suppression d’une date de consultation entraîne
                   la suppression de toutes les données saisies sur cette date.
                 </span>
-              </p>
+              </div>
             ),
           },
           {
@@ -147,11 +147,11 @@ module.exports = [
             id: 5,
             question: "Comment archiver un dossier patient ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   L’archivage d’un dossier patient se fait en le transférant
                   dans le groupe « Archive »:
-                </p>
+                </div>
                 <div className="in_list">
                   <ul>
                     <li>Ouvrez le dossier patient à archiver ;</li>
@@ -168,7 +168,7 @@ module.exports = [
                     </li>
                   </ul>
                 </div>
-              </p>
+              </div>
             ),
           },
         ],
@@ -187,8 +187,8 @@ module.exports = [
             id: 2,
             question: "Comment imprimer tout ou partie du dossier patient ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   La solution la plus simple est de créer un courrier dans le
                   traitement de textes de Médialogis. Cliquez sur le bouton «
                   Lettres patient », décochez la case de votre traitement de
@@ -205,14 +205,14 @@ module.exports = [
                   Renouvelez l’opération en prenant « Consultations » dans la
                   liste déroulante. Ceci fait, il ne reste qu’à imprimer le
                   document.
-                </p>
+                </div>
 
-                <p>
+                <div>
                   Il est possible de restreindre les données à coller en
                   effectuant préalablement une sélection des données à copier à
                   l’aide de la souris.
-                </p>
-              </p>
+                </div>
+              </div>
             ),
           },
           {
@@ -220,8 +220,8 @@ module.exports = [
             question:
               "Je veux transférer les courriers écrits sous Word dans le dossier patient",
             answer: (
-              <p className="answer">
-                <p>Deux solutions existent:</p>
+              <div className="answer">
+                <div>Deux solutions existent:</div>
                 <div className="in_list">
                   <ul>
                     <li>Insérer le courrier comme un « document importé » ;</li>
@@ -232,7 +232,7 @@ module.exports = [
                   </ul>
                 </div>
 
-                <p>
+                <div>
                   La première solution est la plus simple mais elle a
                   l’inconvénient de classer le document dans la liste des «
                   Images et documents intégrés dans le dossier » et non dans
@@ -246,9 +246,9 @@ module.exports = [
                   doit être effectuée dans le dossier du patient. Validez la
                   fenêtre. Le document figure dans la liste et il est possible
                   de la visualiser à tout moment.
-                </p>
+                </div>
 
-                <p>
+                <div>
                   La seconde solution est plus compliquée. Il s’agit de créer un
                   courrier vierge (soit dans notre traitement de texte, soit
                   dans celui que vous avez paramétré) et d’utiliser les
@@ -256,8 +256,8 @@ module.exports = [
                   insérer votre document d’origine. Vous devrez probablement
                   refaire la mise en forme du document, paragraphes et polices,
                   récupérer les en-têtes et pieds de page…
-                </p>
-              </p>
+                </div>
+              </div>
             ),
           },
           {
@@ -278,11 +278,11 @@ module.exports = [
             question:
               "Comment puis-je avoir un glossaire différent des autres membres du cabinet ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   Il est possible, pour chaque champ du logiciel, d’avoir un
                   glossaire personnel. Vous devez :
-                </p>
+                </div>
                 <div className="in_list">
                   <ol>
                     <li>
@@ -302,7 +302,7 @@ module.exports = [
                     <li>Valider la fenêtre.</li>
                   </ol>
                 </div>
-              </p>
+              </div>
             ),
           },
           {
@@ -310,13 +310,13 @@ module.exports = [
             question:
               "Comment puis-je communiquer un/des glossaires à des confrères ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   Il est possible d’enregistrer le glossaire de chaque champ du
                   logiciel sur le support physique de votre choix (disque dur
                   local ou réseau, disquette…).
-                </p>
-                <p>Vous devez :</p>
+                </div>
+                <div>Vous devez :</div>
                 <div className="in_list">
                   <ul>
                     <li>
@@ -351,23 +351,23 @@ module.exports = [
                     <li>Diffuser le fichier aux personnes intéressées.</li>
                   </ul>
                 </div>
-                <p></p>
-              </p>
+                <div></div>
+              </div>
             ),
           },
           {
             id: 3,
             question: "Comment puis-je importer le glossaire d’un confrère ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   Il n’est pas possible de récupérer tous les glossaires en une
                   seule manipulation. En revanche, il est possible de récupérer
                   un à un les glossaires intéressants. Votre confrère doit vous
                   fournir une disquette, cédérom… sur lequel il a enregistré
                   l’ensemble des glossaires souhaités.
-                </p>
-                <p>Vous devez ensuite :</p>
+                </div>
+                <div>Vous devez ensuite :</div>
                 <div className="in_list">
                   <ul>
                     <li>
@@ -402,21 +402,21 @@ module.exports = [
                     </li>
                   </ul>
                 </div>
-              </p>
+              </div>
             ),
           },
           {
             id: 4,
             question: "Puis-je avoir le même glossaire pour plusieurs champs ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   Oui, il s’agit des glossaires attachés. Le principal avantage
                   des glossaires attachés est le report automatique des
                   modifications apportées à l’un glossaire sur l’ensemble des
                   glossaires qui lui sont attachés.
-                </p>
-                <p>Pour attacher deux glossaires entre eux, il suffit :</p>
+                </div>
+                <div>Pour attacher deux glossaires entre eux, il suffit :</div>
                 <div className="in_list">
                   <ul>
                     <li>
@@ -442,8 +442,8 @@ module.exports = [
                 Le glossaire du champ en cours prend aussitôt le même contenu
                 que le glossaire du champ « cible ». Répéter les 5 points pour
                 lier un troisième champ aux deux précédents et ainsi de suite.
-                <p></p>
-              </p>
+                <div></div>
+              </div>
             ),
           },
         ],
@@ -464,18 +464,18 @@ module.exports = [
             question:
               "Comment ouvrir un dossier patient à l’aide de la carte Sésam vitale ?",
             answer: (
-              <p className="answer">
-                <p>
+              <div className="answer">
+                <div>
                   Cliquer sur le bouton «
                   <img src="/img/ico_gif/faq01.gif" width="23" height="26" /> »
                   pour afficher la fenêtre de sélection d’un dossier :
-                </p>
+                </div>
 
                 <div align="center">
                   <img src="/img/ico_gif/faq05.jpg" width="555" height="436" />
                 </div>
 
-                <p>
+                <div>
                   Cliquer sur le bouton «
                   <img src="/img/ico_gif/faq04.gif" width="77" height="39" /> »
                   pour lancer la lecture de la carte Vitale du patient. La carte
@@ -483,29 +483,29 @@ module.exports = [
                   bouton. Après quelques instants liés au temps de traitement du
                   lecteur, une fenêtre liste les patients inscrits sur la carte
                   :
-                </p>
+                </div>
 
                 <div align="center">
                   <img src="/img/ico_gif/faq06.gif" width="405" height="243" />
                 </div>
 
-                <p>
+                <div>
                   Sélectionner le patient souhaité et cliquer sur « Ok » (un
                   double-clique sur le patient a le même effet. Si le dossier du
                   patient existe déjà, Médialogis SQL l’ouvre automatiquement
                   sans autre manipulation.
-                </p>
-                <p>
+                </div>
+                <div>
                   S’il s’agit d’un patient ne possédant pas déjà de dossier, on
                   obtient une nouvelle fenêtre reprenant l’intégralité des
                   données inscrites sur la carte :
-                </p>
+                </div>
 
                 <div align="center">
                   <img src="/img/ico_gif/faq07.gif" width="442" height="419" />
                 </div>
 
-                <p>
+                <div>
                   Vous avez la possibilité de lancer une nouvelle lecture de la
                   carte en cas d’erreur lors de la sélection du patient en
                   cliquant sur le bouton «
@@ -518,33 +518,33 @@ module.exports = [
                   nom, prénom, et date de naissance. Une seconde lecture de la
                   carte à partir de la fenêtre de sélection d’un dossier devrait
                   ouvrir automatiquement le dossier.
-                </p>
-                <p>
+                </div>
+                <div>
                   Cliquer sur le bouton «
                   <img src="/img/ico_gif/faq09.gif" width="90" height="21" /> »
                   pour créer le dossier de ce nouveau patient. On obtient la
                   fenêtre de création d’un dossier patient sur laquelle les nom
                   et prénom du patient sont déjà indiqués :
-                </p>
+                </div>
 
                 <div align="center">
                   <img src="/img/ico_gif/faq10.gif" width="308" height="134" />
                 </div>
 
-                <p>
+                <div>
                   Corriger le groupe et la date de la première consultation si
                   nécessaire puis valider la fenêtre. Si la caisse de sécurité
                   sociale du patient n’a pas déjà été référencée, on obtient une
                   fenêtre listant l’ensemble des caisses déjà créées dans
                   Médialogis SQL, et indiquant la caisse mentionnée sur la carte
                   Vitale du patient :
-                </p>
+                </div>
 
                 <div align="center">
                   <img src="/img/ico_gif/faq12.gif" width="388" height="412" />
                 </div>
 
-                <p>
+                <div>
                   Sur cet exemple, la caisse du patient possède le code 999 et
                   se nomme « Caisse de TEST ». Si cet organisme a déjà été créé
                   et figure dans la liste de gauche, la sélectionner dans la
@@ -552,13 +552,13 @@ module.exports = [
                   nécessaire de créer la caisse et en cliquant sur «
                   <img src="/img/ico_gif/faq14.gif" width="91" height="20" /> »
                   pour afficher la fenêtre de création d’une caisse :
-                </p>
+                </div>
 
                 <div align="center">
                   <img src="/img/ico_gif/faq13.gif" width="337" height="364" />
                 </div>
 
-                <p>
+                <div>
                   Le code caisse et code centre ne doivent pas être modifiés car
                   ils sont issus de la carte Vitale du patient. Il est
                   nécessaire de compléter/modifier le code de l’organisme (10
@@ -568,8 +568,8 @@ module.exports = [
                   taux, base de remboursement et nom de l’organisme. Les autres
                   champs sont facultatifs. Valider la fenêtre pour achever la
                   création du dossier.
-                </p>
-              </p>
+                </div>
+              </div>
             ),
           },
           {
