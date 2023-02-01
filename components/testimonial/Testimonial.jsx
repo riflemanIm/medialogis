@@ -72,9 +72,7 @@ export default function Testimonial() {
                       {/* End right quote icon */}
                     </div>
 
-                    <div className="text">
-                      <p>{val.desc}</p>
-                    </div>
+                    <div className="text">{val.desc}</div>
                     {/* End description */}
                   </div>
                 </li>

@@ -12,8 +12,8 @@ module.exports = [
     designation: "Pneumologis",
     desc: (
       <>
-        <p>Parce qu’il est génial!</p>
-        <p className="in_list">
+        <div>Parce qu’il est génial!</div>
+        <div className="in_list">
           <ul>
             <li>Complet pour la gestion du cabinet,</li>
             <li>
@@ -25,7 +25,7 @@ module.exports = [
             </li>
             <li>Equipe compétente, ouverte, disponible</li>
           </ul>
-        </p>
+        </div>
       </>
     ),
     delayAnimation: "100",
@@ -36,19 +36,19 @@ module.exports = [
     designation: "Pneumologis",
     desc: (
       <>
-        <p>
+        <div>
           J’utilise Pneumologis depuis le début. C’est un plaisir de travailler
           avec un outil si fiable et agréablement conçu pour et par des
           pneumologues. Son utilisation a éclairé ma pratique et m ‘a permis,
           j’en suis convaincu, de conserver mon intérêt et mon dynamisme intact
           donc plus le plus grand bénéfice du patient.
-        </p>
-        <p>
+        </div>
+        <div>
           Enfin l’équipe de Pneumologis est compétente, sympathique et
           disponible. Je ne suis jamais reste en « rideau » plus d’une heure ou
           deux malgré les nombreuses évolutions qui ont eu lieu depuis le
           début."
-        </p>
+        </div>
       </>
     ),
     delayAnimation: "200",
@@ -58,29 +58,26 @@ module.exports = [
     name: "Docteur Bernard Le Brozec LIBOURNE",
     designation: "Pneumologue",
     desc: (
-      <>
-        <p>
-          Apres de nombreuses années d’utilisation de Pneumologis sans aucun
-          soutien papier, je ne peux que me dire satisfait du logiciel ou bien
-          je passerais pour un pneumologue masochiste. En fait ma satisfaction
-          est tirée de mes expériences (purement professionnelles !) avec les
-          nouvelles secrétaires et deux remplaçantes. Nos jeunes collègues ont
-          été capables de compulser et de compléter un dossier au bout d’une
-          heure d’apprentissage. Certes elles sont jeunes et l’esprit vif, mais
-          cette rapidité d’adaptation est à partager avec la convivialité et
-          l’ergonomie logique du logiciel. Quant aux secrétaires, il leur a
-          fallu une demi-journée pour maitriser les fonctions essentielles :
-          courrier, prise de rendez vous, encaissement et télétransmission. Le
-          confort apporte par PNEUMOLOGIS fait oublie (partiellement) la
-          pénibilité de la profession. Il permet par ailleurs de mieux connaitre
-          l’activité réelle du cabinet. En un clic, le nombre exact de patients
-          consultant pour la première fois durant une période déterminée. Deux
-          clics : la prévalence de la BPCO par rapport à d’autres pathologies,
-          etc... Le Pneumo devient un véritable gestionnaire de son cabinet.
-          Mais pour être Pneumo-logique, il vaut mieux l’essayer...
-        </p>
-        <p></p>
-      </>
+      <div>
+        Apres de nombreuses années d’utilisation de Pneumologis sans aucun
+        soutien papier, je ne peux que me dire satisfait du logiciel ou bien je
+        passerais pour un pneumologue masochiste. En fait ma satisfaction est
+        tirée de mes expériences (purement professionnelles !) avec les
+        nouvelles secrétaires et deux remplaçantes. Nos jeunes collègues ont été
+        capables de compulser et de compléter un dossier au bout d’une heure
+        d’apprentissage. Certes elles sont jeunes et l’esprit vif, mais cette
+        rapidité d’adaptation est à partager avec la convivialité et l’ergonomie
+        logique du logiciel. Quant aux secrétaires, il leur a fallu une
+        demi-journée pour maitriser les fonctions essentielles : courrier, prise
+        de rendez vous, encaissement et télétransmission. Le confort apporte par
+        PNEUMOLOGIS fait oublie (partiellement) la pénibilité de la profession.
+        Il permet par ailleurs de mieux connaitre l’activité réelle du cabinet.
+        En un clic, le nombre exact de patients consultant pour la première fois
+        durant une période déterminée. Deux clics : la prévalence de la BPCO par
+        rapport à d’autres pathologies, etc... Le Pneumo devient un véritable
+        gestionnaire de son cabinet. Mais pour être Pneumo-logique, il vaut
+        mieux l’essayer...
+      </div>
     ),
     delayAnimation: "300",
   },
@@ -90,14 +87,14 @@ module.exports = [
     designation: "Pneumologue",
     desc: (
       <>
-        <p>
+        <div>
           Nous utilisons Pneumologis depuis 4 ans. Apres avoir essaye plusieurs
           logiciels, c’est celui qui correspondait a une très bonne adaptation a
           notre cahier des charges (largement confirme au cours de l’évolution),
           avec convivialité ++.
-        </p>
-        <p>Les Plus:</p>
-        <p className="in_list">
+        </div>
+        <div>Les Plus:</div>
+        <div className="in_list">
           <ul>
             <li>
               Hotline +++++ : disponibilité+++, résolution rapide de tous
@@ -119,18 +116,20 @@ module.exports = [
               n’importe quel poste
             </li>
           </ul>
-        </p>
-        <p>Les moins :</p>
-        <p className="in_list">
-          <u>
+        </div>
+        <div>Les moins:</div>
+        <div className="in_list">
+          <ul>
             <li>Quelques petits bugs comme tout logiciel utilisant Windows</li>
             <li>
-              La crainte : se faire voler l’informatique... et refaire toutes
-              ces taches répétitives a la main
+              La crainte: se faire voler l’informatique... et refaire toutes ces
+              taches répétitives a la main
             </li>
-          </u>
-        </p>
-        <p>Un grand plus pour notre cabinet de pneumologie (4 pneumologues).</p>
+          </ul>
+        </div>
+        <div>
+          Un grand plus pour notre cabinet de pneumologie (4 pneumologues).
+        </div>
       </>
     ),
     delayAnimation: "400",
@@ -141,10 +140,10 @@ module.exports = [
     designation: "Pneumologue",
     desc: (
       <>
-        <p>
+        <div>
           Apres l’essai de 3 logiciels médicaux, je voudrais dire merci pour :
-        </p>
-        <p className="in_list">
+        </div>
+        <div className="in_list">
           <ul>
             <li>
               La simplicité et la rapidité d’utilisation, importante dans notre
@@ -160,13 +159,12 @@ module.exports = [
             <li>La disponibilité en cas de problème de logiciel.</li>
             <li>Le rapport coût/qualité.</li>
           </ul>
-        </p>
-
-        <p>
+        </div>
+        <div>
           Et surtout merci a Pneumologis d’exister, sinon, il faudrait
           l’inventer...Mais ce programme n’est pas fige et nous sommes la, en
           communauté, pour le faire progresser en fonction de nos besoins.
-        </p>
+        </div>
       </>
     ),
     delayAnimation: "500",

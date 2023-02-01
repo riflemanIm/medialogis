@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export"
+    "export": "next export",
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
@@ -33,6 +34,7 @@
     "react-transition-group": "^4.4.5",
     "react-typed": "^1.2.0",
     "sass": "^1.57.1",
+    "sharp": "^0.31.3",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

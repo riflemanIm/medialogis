@@ -26,8 +26,21 @@
 .ml_faq .group {
   padding-left: 22px;
   margin-bottom: 22px;
-
   border-left: 2px dashed #ddd;
+}
+.ml_faq .group h5 {
+  margin-bottom: 8px;
+}
+
+.ml_faq .group .body {
+  margin-bottom: 8px;
+  margin-left: 12px;
+}
+.ml_faq .group .body .in_list {
+  width: 100%;
+  float: left;
+  margin-bottom: 6px;
+  padding-left: 20px;
 }
 
 // .ml_faq .about_title h3 {
