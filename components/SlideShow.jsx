@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import ReactTooltip from "react-tooltip";
 import Slider from "react-slick";
 
 Modal.setAppElement("#__next");
@@ -59,17 +58,9 @@ const SlideShow = ({ slideshowData }) => {
                       alt={item.title}
                     />
 
-                    <ReactTooltip
-                      id={"data-for" + inx}
-                      place="bottom"
-                      type="light"
-                      effect="float"
-                      className="tooltip-wrapper"
-                    >
-                      <div>
-                        <h5>{item.title}</h5>
-                      </div>
-                    </ReactTooltip>
+                    <div>
+                      <h5>{item.title}</h5>
+                    </div>
                   </div>
                 </div>
               </div>
