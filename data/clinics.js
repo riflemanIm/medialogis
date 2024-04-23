@@ -4,7 +4,7 @@ module.exports = [
     tooltipId: "product",
     clinicsImage: "img/clinics/1.jpg",
     clinicsLink: "https://www.behance.net/ib-themes",
-    title: "Behance Profile",
+    title: "Sésam-Vitale",
     meta: "Product",
     clientName: "Alvaro Morata",
     category: "Behance Shoot",
@@ -12,19 +12,14 @@ module.exports = [
     projectDescriptions: (
       <>
         <p>
-          We live in a world where we need to move quickly and iterate on our
-          ideas as flexibly as possible. Building mockups strikes the ideal
-          balance between true-life representation of the end product and ease
-          of modification.
+          Le système Sésam-Vitale a été mis en place afin d’optimiser et de
+          sécuriser les échanges d’informations entre la Sécurité Sociale et les
+          différents intervenants.
         </p>
 
-        <p>
-          Mockups are useful both for the creative phase of the project - for
-          instance when you&lsquo;re trying to figure out your user flows or the
-          proper visual hierarchy - and the production phase when they will
-          represent the target product. Making mockups a part of your creative
-          and development process allows you to quickly and easily ideate.
-        </p>
+        <a href="www.sesam-vitale.fr" target="_blank">
+          www.sesam-vitale.fr
+        </a>
       </>
     ),
   },
