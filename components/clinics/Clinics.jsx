@@ -2,11 +2,9 @@ import { useState } from "react";
 import Modal from "react-modal";
 import ReactTooltip from "react-tooltip";
 import Slider from "react-slick";
-import Social from "../Social";
+//import Social from "../Social";
 import clinicsData from "../../data/clinics";
 import ModalTarifs from "../modal/ModalTarifs";
-
-Modal.setAppElement("#__next");
 
 const Clinics = () => {
   const settings = {
@@ -22,7 +20,7 @@ const Clinics = () => {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           arrow: false,
           autoplay: false,
           draggable: true,
@@ -91,23 +89,11 @@ const Clinics = () => {
                           src={item.clinicsImage}
                           data-tip
                           data-for={item.tooltipId}
-                          alt="clinics"
+                          alt={item.title}
                         />
-
-                        <ReactTooltip
-                          id={item.tooltipId}
-                          place="bottom"
-                          type="light"
-                          effect="float"
-                          className="tooltip-wrapper"
-                        >
-                          <div>
-                            <h5>{item.title}</h5>
-                            <span>{item.meta}</span>
-                          </div>
-                        </ReactTooltip>
                       </div>
                     </div>
+                    <span>{item?.title}</span>
                   </div>
                 </li>
               ))}
@@ -145,27 +131,41 @@ const Clinics = () => {
                   {/* End image */}
 
                   <div className="clinics_content-inner">
-                    <div className="left-content">
-                      <h2 className="title"> {singleData?.title}</h2>
-                      {singleData?.projectDescriptions}
-                    </div>
-                    <div className="right-content">
+                    <div className="full-content">
+                      <h2 className="title">{singleData?.title}</h2>
+                      {singleData?.description}
+                      {singleData?.clinicsLink && (
+                        <p style={{ textAlign: "right" }}>
+                          <a
+                            href={singleData?.clinicsLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {singleData?.clinicsLink.replace(
+                              /^https:\/\//i,
+                              ""
+                            )}
+                          </a>
+                        </p>
+                      )}
+
+                      {/* <div className="right-content">
                       <ul className="list">
                         <li>
-                          <h5>Client</h5>
-                          <span>{singleData?.clientName}</span>
+                          <h5>Partner</h5>
+                          <span>{singleData?.partnerName}</span>
                         </li>
-                        {/* End list */}
+
                         <li>
                           <h5>Category</h5>
                           <span>{singleData?.category}</span>
                         </li>
-                        {/* End list */}
+
                         <li>
                           <h5>Data</h5>
                           <span>{singleData?.date}</span>
                         </li>
-                        {/* End list */}
+
                         <li>
                           <h5>Link</h5>
                           <span>
@@ -178,16 +178,16 @@ const Clinics = () => {
                             </a>
                           </span>
                         </li>
-                        {/* End list */}
+
                         <li className="news_share d-blok">
                           <h5>Share</h5>
                           <Social />
                         </li>
-                        {/* End list */}
                       </ul>
+                    </div> */}
                     </div>
+                    {/* End .portfoiol_content-inner */}
                   </div>
-                  {/* End .portfoiol_content-inner */}
                 </div>
               </div>
               {/* End box inner */}

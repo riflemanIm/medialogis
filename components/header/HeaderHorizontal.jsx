@@ -55,13 +55,13 @@ const HeaderHorizontal = () => {
                 className="logo_light"
                 src={logo}
                 alt="brand"
-                height={50}
+                height={32}
               />
               <Image
                 className="logo_dark"
                 src={logo2}
                 alt="brand"
-                height={50}
+                height={32}
               />
             </Link>
           </div>

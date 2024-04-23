@@ -214,7 +214,6 @@ module.exports = [
               </li>
             </ul>
           </p>
-          {/* End list */}
         </p>
         <p>
           <h5>Saisie d'informations diverses</h5>
