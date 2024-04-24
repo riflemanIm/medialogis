@@ -13,7 +13,7 @@ const Clinics = () => {
     infinite: true,
     speed: 800,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: false,
     draggable: false,
     responsive: [
@@ -85,15 +85,19 @@ const Clinics = () => {
                         onClick={() => handleModle(item?.id)}
                         className="details"
                       >
-                        <img
-                          src={item.clinicsImage}
-                          data-tip
-                          data-for={item.tooltipId}
-                          alt={item.title}
-                        />
+                        <h5 style={{ marginBottom: 18 }}>{item?.title}</h5>
+
+                        <p>
+                          <a
+                            href={item?.clinicsLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item?.clinicsLink.replace(/^https:\/\//i, "")}
+                          </a>
+                        </p>
                       </div>
                     </div>
-                    <span>{item?.title}</span>
                   </div>
                 </li>
               ))}
@@ -118,7 +122,7 @@ const Clinics = () => {
 
               <div className="box_inner">
                 <div className="description_wrap scrollable">
-                  <div className="popup_informations">
+                  {/* <div className="popup_informations">
                     <div className="image">
                       <div
                         className="main"
@@ -127,7 +131,7 @@ const Clinics = () => {
                         }}
                       ></div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* End image */}
 
                   <div className="clinics_content-inner">
@@ -195,6 +199,78 @@ const Clinics = () => {
             {/* End modal box news */}
           </Modal>
           {/* End modal  */}
+        </div>
+
+        <div className="ml_title">
+          <h3 style={{ marginTop: 32 }}>Déclarer votre fichier patients</h3>
+          <h5>La CNIL</h5>
+          <p>
+            La Commission Nationale de l’Informatique et des Libertés a pour
+            mission essentielle de protéger la vie privée et les libertés
+            individuelles ou publiques. Elle est chargée de veiller au respect
+            de la loi "Informatique et libertés". Cette loi vous oblige à
+            déclarer l’existence de votre fichier informatique de dossiers
+            patients.
+            <br />
+            <a href=" www.cnil.fr"> www.cnil.fr</a>
+          </p>
+
+          <h5>Vous trouverez également :</h5>
+          <div class="in_list">
+            <ul>
+              <li>
+                <a
+                  target="_annexe"
+                  href="https://www.declaration.cnil.fr/declarations/declaration/declarant.display.action"
+                  class="lien"
+                >
+                  procédure et une aide
+                </a>{" "}
+                à la déclaration,
+              </li>
+              <li>
+                le détail de vos{" "}
+                <a
+                  target="_annexe"
+                  href="http://www.cnil.fr/vos-droits/vos-droits/"
+                  class="lien"
+                >
+                  droits
+                </a>{" "}
+                et{" "}
+                <a
+                  target="_annexe"
+                  href="http://www.cnil.fr/vos-obligations/vos-obligations/"
+                  class="lien"
+                >
+                  obligations
+                </a>
+                ,
+              </li>
+              <li>
+                des modèles de{" "}
+                <a
+                  target="_annexe"
+                  href="http://www.cnil.fr/vos-obligations/informations-legales/"
+                  class="lien"
+                >
+                  mentions légales
+                </a>
+                ,
+              </li>
+              <li>
+                le «{" "}
+                <a
+                  target="_annexe"
+                  href="https://www.declaration.cnil.fr/declarations/declaration/help.display_manual.action"
+                  class="lien"
+                >
+                  mode d'emploi
+                </a>{" "}
+                ».
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
