@@ -1,1 +1,3 @@
-# Medialogis on Next.js
+# Medialogis
+
+React, Next.js
