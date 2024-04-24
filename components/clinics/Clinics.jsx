@@ -20,7 +20,8 @@ const Clinics = () => {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           arrow: false,
           autoplay: false,
           draggable: true,
