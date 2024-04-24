@@ -7,8 +7,8 @@ const HeaderMobile = () => {
     <>
       <div className="logo">
         <Link href="/">
-          <Image className="logo_light" src={logo} alt="brand" height={42} />
-          <Image className="logo_dark" src={logo2} alt="brand" height={42} />
+          <Image className="logo_light" src={logo} alt="brand" height={32} />
+          <Image className="logo_dark" src={logo2} alt="brand" height={32} />
         </Link>
       </div>
       {/* End .logo */}

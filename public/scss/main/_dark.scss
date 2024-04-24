@@ -108,10 +108,10 @@
 .theme-dark .ml_services,
 .theme-dark .ml_clinics,
 .theme-dark .ml_faq,
-.theme-dark .ml_testimonials {   
-  
+.theme-dark .ml_testimonials {
   background-color: #191c26;
 }
+
 .theme-dark .ml_services ul li .list_inner {
   background-color: #000;
 }
@@ -127,6 +127,12 @@
 
 .theme-dark .ml_services ul li .learn_more {
   color: #a9afc3;
+}
+.theme-dark .my_carousel ul .details {
+  background-color: #2c2c2c;
+  &:hover {
+    background-color: #292929;
+  }
 }
 .theme-dark .my_carousel ul .details span a {
   color: #a9afc3;
