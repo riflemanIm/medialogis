@@ -84,25 +84,6 @@ const Address = () => {
         {/* End Address Info */}
         <div className="mainpart">
           <div
-            className="left"
-            data-aos="fade-right"
-            data-aos-duration="1200"
-            data-aos-delay="300"
-          >
-            <div className="title">
-              <p>
-                Remplissez ce formulaire pour
-                <br />
-                <span> nouveaux projets ou partenariats.</span>
-              </p>
-            </div>
-            {/* End title */}
-            <div className="fields">
-              <FeedbackForm />
-            </div>
-            {/* End Contact Form */}
-          </div>
-          <div
             className="right"
             data-aos="fade-right"
             data-aos-duration="1200"
