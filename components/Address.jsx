@@ -39,7 +39,7 @@ const Address = () => {
         <>
           <li>
             <p>
-              29 Rue Buffon 75005,
+              29B Rue Buffon 75005,
               <br />
               Paris, France
             </p>

@@ -5,7 +5,7 @@ module.exports = [
     title: "Planning",
     subtitle:
       "Agenda des consulta- tions d’un médecin, planning de l’activité d’un cabinet médical ou de plusieurs cabinets faisant partie d’un réseau",
-    popupImg: "img/service/1.jpg",
+    //popupImg: "img/service/1.jpg",
     popupTitle: "Planning",
     firstDescriptionText: (
       <>
@@ -767,7 +767,7 @@ module.exports = [
     title: "Statistiques",
     subtitle:
       "Constitution de requêtes en mode visualisé et création de rapports via la base de données MEDIALOGIS.",
-    popupImg: "img/service/4.jpg",
+    //popupImg: "img/service/4.jpg",
     popupTitle: "Statistiques",
     firstDescriptionText: (
       <>
@@ -804,7 +804,7 @@ module.exports = [
     title: "Imagerie médicale",
     subtitle:
       "Intégraion dans le dossier patient électronique des images de tout type et traitement adéquat de l’information visuelle.",
-    popupImg: "img/service/4.jpg",
+    //popupImg: "img/service/4.jpg",
     popupTitle: "Fonction du module",
     firstDescriptionText: (
       <>
