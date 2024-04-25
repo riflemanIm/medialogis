@@ -44,15 +44,16 @@ export default function Testimonial() {
                   <div className="list_inner">
                     <div className="details">
                       <div className="author">
-                        <div className="image">
-                          <div
+                        {/*<div className="image">
+                          
+                         <div
                             className="main"
                             style={{
                               backgroundImage: `url(img/testimonials/testimonial-${val.img}.jpg)`,
                             }}
                           ></div>
                         </div>
-                        {/* End image */}
+                         End image */}
 
                         <div className="short">
                           <h3>{val.name}</h3>

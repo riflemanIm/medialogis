@@ -109,10 +109,10 @@
   border-radius: 6px;
 }
 .ml_testimonials .list .short {
-  padding-left: 30px;
-  @media screen and (max-width: 991px) {
-    padding-left: 15px;
-  }
+  // padding-left: 30px;
+  // @media screen and (max-width: 991px) {
+  //   padding-left: 15px;
+  // }
 }
 .ml_testimonials .list .short h3 {
   font-size: 24px;
@@ -125,7 +125,7 @@
 .ml_testimonials .list .text {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 220px;
+  height: 420px;
   scrollbar-width: thin;
   scrollbar-color: #999 #fff;
 
