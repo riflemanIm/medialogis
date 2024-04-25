@@ -13,7 +13,7 @@ const Seo = ({ pageTitle, font }) => (
       />
       <meta
         name="description"
-        content="MEDIALOGIS S.A - Système d'information médical"
+        content="MEDIALOGIS - Système d'information médical"
       />
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />

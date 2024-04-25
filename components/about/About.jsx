@@ -16,7 +16,7 @@ const About = () => {
     <div className="ml_about" id="about">
       <div className="container">
         <div className="about_title">
-          <h3>MEDIALOGIS S.A</h3>
+          <h3>MEDIALOGIS</h3>
         </div>
         <div className="content">
           <div
@@ -75,7 +75,7 @@ const About = () => {
                 data-aos-delay="300"
               >
                 <div className="info">
-                  <h3>+ De 20 Ans</h3>
+                  <h3>+ De 25 Ans</h3>
                   <span> D'Expérience</span>
                 </div>
               </div>
