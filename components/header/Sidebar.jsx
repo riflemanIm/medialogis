@@ -32,18 +32,8 @@ const Sidebar = () => {
         <div className="sidebar_inner">
           <div className="logo">
             <Link href="/">
-              <Image
-                className="logo_light"
-                src={logo}
-                alt="brand"
-                height={42}
-              />
-              <Image
-                className="logo_dark"
-                src={logo2}
-                alt="brand"
-                height={42}
-              />
+              <Image className="logo_light" src={logo} alt="brand" />
+              <Image className="logo_dark" src={logo2} alt="brand" />
             </Link>
           </div>
           {/* End .logo */}
