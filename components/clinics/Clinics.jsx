@@ -48,13 +48,13 @@ const Clinics = () => {
   return (
     <div className="ml_clinics" id="clinics">
       <div className="container">
-        <div className="content">
-          <div
-            className="leftpart"
-            data-aos="fade-right"
-            data-aos-duration="1200"
-            data-aos-delay="100"
-          >
+        <div
+          className="content"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          data-aos-delay="100"
+        >
+          <div className="leftpart">
             <div className="ml_title">
               <h3>Les établissements de santé</h3>
               <p>
@@ -68,33 +68,14 @@ const Clinics = () => {
                 l’établissement de santé. Résultat : un traitement médical d’une
                 qualité élevée.
               </p>
-              <div
-                style={{
-                  width: "100%",
-                  textAlign: "center",
-                  display: "flex",
-                  justifyContent: "center",
-                  marginBottom: 32,
-                }}
-              >
-                <div
-                  style={{
-                    backgroundColor: "#fff",
-                    borderRadius: 24,
-                    backgroundImage: "url(img/scheme8.jpg)",
-                    backgroundPosition: "center center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "562px  519px",
-                    margin: 24,
-                    width: 562,
-                    height: 519,
-                  }}
-                />
+              <div style={{ margin: "32px 0" }}>
+                <ModalTarifs />
               </div>
             </div>
           </div>
+
           <div className="rightpart">
-            <ModalTarifs />
+            <img src="img/scheme8.jpg" className="partners" />
           </div>
         </div>
 
@@ -225,75 +206,82 @@ const Clinics = () => {
           {/* End modal  */}
         </div>
 
-        <div className="ml_title">
-          <h3 style={{ marginTop: 32 }}>Déclarer votre fichier patients</h3>
-          <h5>La CNIL</h5>
-          <p>
-            La Commission Nationale de l’Informatique et des Libertés a pour
-            mission essentielle de protéger la vie privée et les libertés
-            individuelles ou publiques. Elle est chargée de veiller au respect
-            de la loi "Informatique et libertés". Cette loi vous oblige à
-            déclarer l’existence de votre fichier informatique de dossiers
-            patients.
-            <br />
-            <a href=" www.cnil.fr"> www.cnil.fr</a>
-          </p>
+        <div className="clinics_content-inner">
+          <div className="left-content">
+            <div className="ml_title">
+              <h3 style={{ marginTop: 32 }}>Déclarer votre fichier patients</h3>
+              <h5>La CNIL</h5>
+              <p>
+                La Commission Nationale de l’Informatique et des Libertés a pour
+                mission essentielle de protéger la vie privée et les libertés
+                individuelles ou publiques. Elle est chargée de veiller au
+                respect de la loi "Informatique et libertés". Cette loi vous
+                oblige à déclarer l’existence de votre fichier informatique de
+                dossiers patients.
+                <br />
+                <a href=" www.cnil.fr"> www.cnil.fr</a>
+              </p>
 
-          <h5>Vous trouverez également :</h5>
-          <div class="in_list">
-            <ul>
-              <li>
-                <a
-                  target="_annexe"
-                  href="https://www.declaration.cnil.fr/declarations/declaration/declarant.display.action"
-                  class="lien"
-                >
-                  procédure et une aide
-                </a>{" "}
-                à la déclaration,
-              </li>
-              <li>
-                le détail de vos{" "}
-                <a
-                  target="_annexe"
-                  href="http://www.cnil.fr/vos-droits/vos-droits/"
-                  class="lien"
-                >
-                  droits
-                </a>{" "}
-                et{" "}
-                <a
-                  target="_annexe"
-                  href="http://www.cnil.fr/vos-obligations/vos-obligations/"
-                  class="lien"
-                >
-                  obligations
-                </a>
-                ,
-              </li>
-              <li>
-                des modèles de{" "}
-                <a
-                  target="_annexe"
-                  href="http://www.cnil.fr/vos-obligations/informations-legales/"
-                  class="lien"
-                >
-                  mentions légales
-                </a>
-                ,
-              </li>
-              <li>
-                le «{" "}
-                <a
-                  target="_annexe"
-                  href="https://www.declaration.cnil.fr/declarations/declaration/help.display_manual.action"
-                  class="lien"
-                >
-                  mode d'emploi
-                </a>{" "}
-                ».
-              </li>
-            </ul>
+              <h5>Vous trouverez également :</h5>
+              <div class="in_list">
+                <ul>
+                  <li>
+                    <a
+                      target="_annexe"
+                      href="https://www.declaration.cnil.fr/declarations/declaration/declarant.display.action"
+                      class="lien"
+                    >
+                      procédure et une aide
+                    </a>{" "}
+                    à la déclaration,
+                  </li>
+                  <li>
+                    le détail de vos{" "}
+                    <a
+                      target="_annexe"
+                      href="http://www.cnil.fr/vos-droits/vos-droits/"
+                      class="lien"
+                    >
+                      droits
+                    </a>{" "}
+                    et{" "}
+                    <a
+                      target="_annexe"
+                      href="http://www.cnil.fr/vos-obligations/vos-obligations/"
+                      class="lien"
+                    >
+                      obligations
+                    </a>
+                    ,
+                  </li>
+                  <li>
+                    des modèles de{" "}
+                    <a
+                      target="_annexe"
+                      href="http://www.cnil.fr/vos-obligations/informations-legales/"
+                      class="lien"
+                    >
+                      mentions légales
+                    </a>
+                    ,
+                  </li>
+                  <li>
+                    le «{" "}
+                    <a
+                      target="_annexe"
+                      href="https://www.declaration.cnil.fr/declarations/declaration/help.display_manual.action"
+                      class="lien"
+                    >
+                      mode d'emploi
+                    </a>{" "}
+                    ».
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="right-content">
+            <ModalTarifs />
           </div>
         </div>
       </div>

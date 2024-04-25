@@ -111,7 +111,10 @@
 .theme-dark .ml_testimonials {
   background-color: #191c26;
 }
-
+.theme-dark .ml_clinics img.partners {
+  background-color: #1b1b1b;
+  filter: invert(1);
+}
 .theme-dark .ml_services ul li .list_inner {
   background-color: #000;
 }
@@ -287,10 +290,10 @@
   border: 3px solid #111;
 }
 .theme-dark .ml_modalbox .box_inner {
-  background-color: #12161f;
+  background-color: #3e4351;
 }
 .theme-dark .ml_modalbox .description_wrap {
-  background: #12161f;
+  background: #3e4351;
 }
 .theme-dark .ml_modalbox .about-list .value {
   color: #fff;
