@@ -36,13 +36,13 @@ const Sidebar = () => {
                 className="logo_light"
                 src={logo}
                 alt="brand"
-                height={32}
+                height={42}
               />
               <Image
                 className="logo_dark"
                 src={logo2}
                 alt="brand"
-                height={32}
+                height={42}
               />
             </Link>
           </div>
