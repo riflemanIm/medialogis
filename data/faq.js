@@ -688,13 +688,46 @@ module.exports = [
           },
           {
             id: 6,
-            question: "",
-            answer: "",
+            question:
+              "Puis-je télétransmettre les FSE si je n’ai pas la carte du professionnel de santé (CPS) ? ",
+            answer:
+              "La CPS est nécessaire pour le formatage des lots de factures qui utilise le lecteur de cartes Sésam-Vitale et effectue la sécurisation à partir de la carte CPS et du code porteur. Il est impossible de formater les lots sans CPS. En revanche, il est possible de préparer les fichiers à télétransmettre, de les envoyer et de recevoir les ARL disponibles sans CPS sur les réseaux Internet n’utilisant pas l’identification par une lecture de la carte CPS. ",
           },
           {
             id: 7,
-            question: "",
-            answer: "",
+            question:
+              "L’acte saisi sur l’écran « Règlement » ne se retrouve pas sur la FSE",
+            answer: (
+              <div class="answer">
+                <p>Il s’agit d’un problème de paramétrage :</p>
+                <div className="in_list">
+                  <ol>
+                    <li>
+                      <u>
+                        La codification de l’acte dans Médialogis SQL est
+                        incomplète ou incorrecte:
+                      </u>
+                      l’option « Paramètres comptabilité » du menu «
+                      Comptabilité » affiche la liste des actes. La dernière
+                      colonne de cette liste se nomme « Code pour FSE » et
+                      permet d’indiquer la codification de l’acte pour le
+                      système des FSE. Vous devez compléter cette codification
+                      conformément à ce système ;
+                    </li>
+                    <li>
+                      <u>
+                        L’acte utilise une codification non reconnue par le
+                        module FSE de RESIP:
+                      </u>{" "}
+                      il faut alors créer cet acte{" "}
+                      <u>dans la liste des actes</u> de la fonction FSE de
+                      RESIP.
+                    </li>
+                    <p></p>
+                  </ol>
+                </div>
+              </div>
+            ),
           },
           {
             id: 8,

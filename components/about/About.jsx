@@ -27,7 +27,7 @@ const About = () => {
           >
             <div className="info">
               <p>
-                Fruit de plus de 20 années de collaboration étroite avec des
+                Fruit de plus de 25 années de collaboration étroite avec des
                 praticiens, MEDIALOGIS est une solution complète destinée aux
                 médecins libéraux. S’adaptant aux besoins de chacun, MEDIALOGIS
                 est également une gamme de produits qui se décline en fonction
