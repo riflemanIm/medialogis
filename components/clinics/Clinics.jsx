@@ -68,6 +68,29 @@ const Clinics = () => {
                 l’établissement de santé. Résultat : un traitement médical d’une
                 qualité élevée.
               </p>
+              <div
+                style={{
+                  width: "100%",
+                  textAlign: "center",
+                  display: "flex",
+                  justifyContent: "center",
+                  marginBottom: 32,
+                }}
+              >
+                <div
+                  style={{
+                    backgroundColor: "#fff",
+                    borderRadius: 24,
+                    backgroundImage: "url(img/scheme8.jpg)",
+                    backgroundPosition: "center center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "562px  519px",
+                    margin: 24,
+                    width: 562,
+                    height: 519,
+                  }}
+                />
+              </div>
             </div>
           </div>
           <div className="rightpart">

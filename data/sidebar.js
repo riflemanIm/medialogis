@@ -1,7 +1,7 @@
 module.exports = [
   {
     icon: "home",
-    itemName: "Home",
+    itemName: "Acceuil",
     itemRoute: "#about",
     activeClass: "active",
   },

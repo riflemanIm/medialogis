@@ -574,23 +574,117 @@ module.exports = [
           },
           {
             id: 2,
-            question: "",
-            answer: "",
+            question:
+              "Je me suis trompé de caisse lors du choix de la caisse du patient faisant suite à la lecture de sa carte Sésam-Vitale",
+            answer: (
+              <div className="answer">
+                <div>Vous devez:</div>
+                <div className="in_list">
+                  <ol>
+                    <li>
+                      Supprimer l’association code Sésam-Vitale organisme de
+                      tiers payant : sélectionnez l’option « Paramètres
+                      comptabilité » du menu « Comptabilité ». Accédez à
+                      l’onglet « Tiers payant », double-cliquez sur l’organisme
+                      incorrectement associé et supprimer les code caisse et
+                      centre inscrits. Fermez les fenêtres ;
+                    </li>
+                    <li>
+                      Corriger l’organisme indiqué sur la fiche patient en lui
+                      affectant le bon organisme.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            ),
           },
           {
             id: 3,
-            question: "",
-            answer: "",
+            question:
+              "Que faire si la lecture de la carte Vitale du patient n’ouvre pas son dossier mais affiche le contenu de la carte ?",
+            answer: (
+              <div class="faq_answer">
+                <div>Cela signifie:</div>
+                <div className="in_list">
+                  <ul>
+                    <li>
+                      qu’il s’agit d’un nouveau patient (dans ce cas créer le
+                      dossier en cliquant sur «{" "}
+                      <img
+                        src="/img/ico_gif/faq09.gif"
+                        width="90"
+                        height="21"
+                      />{" "}
+                      ») ;
+                    </li>
+                    <li>
+                      ou que les indications de la carte diffèrent de celles de
+                      la fiche patient. Il est nécessaire de corriger les
+                      données de la fiche patient pour les rendre conforme à
+                      celles de la carte Vitale :
+                      <div className="in_list">
+                        <ol>
+                          <li>
+                            Noter sur papier le nom, prénom et date de naissance
+                            affichés dans la fenêtre « Informations sur la carte
+                            » ;
+                          </li>
+                          <li>Ouvrir manuellement le dossier ;</li>
+                          <li>
+                            Accéder à la fiche patient et corriger les données
+                            pour obtenir le même nom, prénom et date de
+                            naissance que la carte Vitale ;
+                          </li>
+                          <li>
+                            Refaire une ouverture du dossier à partir de la
+                            carte Vitale du patient pour vérifier que le patient
+                            est bien retrouvé.
+                          </li>
+                        </ol>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            ),
           },
           {
             id: 4,
-            question: "",
-            answer: "",
+            question:
+              "Puis-je créer une FSE si je n’ai pas la carte du professionnel de santé (CPS) ?",
+            answer: (
+              <div class="answer">
+                <p>
+                  La création de FSE sans CPS n’est pas permise. Vous devez
+                  impérativement disposer d’une carte de professionnel de santé.
+                  Cependant, il est possible de créer une FSE avec une carte
+                  employée en désynchronisant la FSE. Il suffit de l’indiquer en
+                  cochant la case « Désynchronisation de la FSE » lors de la
+                  création de la FSE. La FSE devra ensuite être synchronisée
+                  avec la CPS pour pouvoir être télétransmise (voir option «
+                  Télétransmission des FSE » du menu « Transfert »).
+                </p>
+              </div>
+            ),
           },
           {
             id: 5,
-            question: "",
-            answer: "",
+            question:
+              "Puis-je créer une FSE si je n’ai pas la carte Vitale du patient ?",
+            answer: (
+              <div class="faq_answer">
+                <p>
+                  La création de FSE sans carte Vitale du patient est permise,
+                  il s’agit du mode sécurisé sans carte Vitale. Il suffit de
+                  l’indiquer en cochant la case « Sans carte bénéficiaire » lors
+                  de la création de la FSE. Vous devrez saisir tous les
+                  renseignements nécessaires à la création d’une FSE. La plupart
+                  de ces renseignements sont inscrits sur la carte papier de
+                  sécurité sociale du patient mais il est difficile de les
+                  retrouver.
+                </p>
+              </div>
+            ),
           },
           {
             id: 6,
