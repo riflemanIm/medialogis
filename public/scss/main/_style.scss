@@ -1395,6 +1395,9 @@ body.modal {
         border-bottom: none;
         padding: 0;
         height: auto;
+        img {
+          max-height: 50px;
+        }
       }
 
       .author {

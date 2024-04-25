@@ -33,7 +33,7 @@ const HeaderHorizontal = () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
-  //  console.log("navbar", navbar);
+  console.log("click", click, "navbar", navbar);
   return (
     <div className={`horizontal-menu ${navbar ? "fixed-header" : ""}`}>
       <div className="mob-header">
@@ -51,18 +51,8 @@ const HeaderHorizontal = () => {
         <div className="sidebar_inner">
           <div className="logo">
             <Link href="/">
-              <Image
-                className="logo_light"
-                src={logo}
-                alt="brand"
-                height={click ? 32 : 50}
-              />
-              <Image
-                className="logo_dark"
-                src={logo2}
-                alt="brand"
-                height={click ? 32 : 50}
-              />
+              <img className="logo_light" src={logo.src} alt="brand" />
+              <img className="logo_dark" src={logo2.src} alt="brand" />
             </Link>
           </div>
           {/* End .logo */}
