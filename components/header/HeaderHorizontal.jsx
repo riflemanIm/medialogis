@@ -9,8 +9,8 @@ import logo2 from "../../public/img/logo/logo_medialogis_white.png";
 // sidebar footer bottom content
 const sidebarFooterContent = {
   name: "",
-  email: "medialogis@medialogis.com",
-  emailRef: "mailto:medialogis@medialogis.com",
+  email: "medialogis@medialogis.co",
+  emailRef: "mailto:medialogis@medialogis.co",
 };
 
 const HeaderHorizontal = () => {
