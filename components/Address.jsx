@@ -23,8 +23,8 @@ const Address = () => {
       info: (
         <>
           <li>
-            <a href="mailto:medialogis@medialogis.co">
-              medialogis@medialogis.co
+            <a href="mailto:medialogis@medialogis.com">
+              medialogis@medialogis.com
             </a>
           </li>
         </>
