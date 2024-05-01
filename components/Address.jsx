@@ -93,6 +93,13 @@ const Address = () => {
           </div>
           {/* End Map */}
         </div>
+
+        <div className="copy" style={{ textAlign: "center", margin: 65 }}>
+          <p>
+            &copy; MEDIALOGIS {new Date().getFullYear()}. Tous les droits sont
+            réservés.
+          </p>
+        </div>
       </div>
     </div>
   );

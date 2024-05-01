@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: 1,
-    title: "Medialogis. Combien ça coute?",
+    title: "Medialogis. Combien ça coute ?",
     groups: [
       {
         id: 1,
@@ -9,7 +9,7 @@ module.exports = [
         gr_questions: [
           {
             id: 1,
-            question: "MQuel est le prix de MEDIALOGIS?",
+            question: "Quel est le prix de MEDIALOGIS ?",
             answer:
               "Tout établissement de santé ayant sa spécificité, une analyse préalable est recommandée. Nous vous invitons à contacter notre équipe qui vous aidera à définir les modalités de votre commande et en estimer le prix. Vous pouvez également consulter notre grille tarifaire sur tarifs.",
           },
@@ -19,7 +19,7 @@ module.exports = [
   },
   {
     id: 2,
-    title: "Medialogis. Comment l’installer? Comment le paramétrer?",
+    title: "Medialogis. Comment l’installer ? Comment le paramétrer ?",
     groups: [
       {
         id: 1,
@@ -80,20 +80,20 @@ module.exports = [
           },
           {
             id: 3,
-            question: "Comment puis-je modifier mon mot de passe?",
+            question: "Comment puis-je modifier mon mot de passe ?",
             answer:
               "Ouvrez Médialogis, sélectionnez votre nom d’utilisateur et validez la fenêtre de sélection d’un dossier patient. Appuyez sur la touche de raccourci clavier « F5 » pour accéder à la fiche médecin et cliquez sur le bouton « Code d’accès ». Saisissez le code dans chacune des deux zones de saisies et validez la fenêtre.",
           },
           {
             id: 4,
-            question: "Comment puis-je supprimer mon mot de passe?",
+            question: "Comment puis-je supprimer mon mot de passe ?",
             answer:
               "Ouvrez Médialogis, sélectionnez votre nom d’utilisateur et validez la fenêtre de sélection d’un dossier patient. Appuyez sur la touche de raccourci clavier « F5 » pour accéder à la fiche médecin et cliquez sur le bouton « Code d’accès ». Validez directement la fenêtre sans saisir de mot de passe. Validez ensuite le message de confirmation.",
           },
           {
             id: 5,
             question:
-              "La mise à jour de ma version modifie t’elle mes données?",
+              "La mise à jour de ma version modifie t’elle mes données ?",
             answer:
               "Nous mettons régulièrement des mises à jour à votre disposition par le biais de notre programme spécifique nommé LiveUpdate. Ces mises à jour permettent de faire évoluer votre version afin de vous fournir les dernières fonctionnalités et améliorer encore votre confort d’utilisation. Ces mises à jour ne concernent que le programme et les données dites « systèmes » du logiciel. Elles ne modifient en aucun cas ni les données de vos dossiers patients, ni votre configuration (écrans, tables de données, planning…). Vous devez donc exécuter régulièrement LiveUpdate et systématiquement mettre à jour votre logiciel à chaque évolution proposée.",
           },
@@ -103,7 +103,7 @@ module.exports = [
   },
   {
     id: 3,
-    title: "Medialogis. Comment l’utiliser?",
+    title: "Medialogis. Comment l’utiliser ?",
     groups: [
       {
         id: 1,
@@ -111,13 +111,13 @@ module.exports = [
         gr_questions: [
           {
             id: 1,
-            question: "Puis-je supprimer un dossier patient?",
+            question: "Puis-je supprimer un dossier patient ?",
             answer:
               "Il est possible de supprimer un dossier tant qu’il ne contient aucune donnée comptable. Il suffit d’afficher la fenêtre de sélection des dossiers patients, de sélectionner le dossier à supprimer, et de cliquer sur le bouton « Supprimer ». La suppression sera refusée si des données comptables ont été saisies, ou si l'utilisateur n'a pas les droits nécessaires (voir la configuration des médecins, utilisateurs du manuel de l'utilisateur).",
           },
           {
             id: 2,
-            question: "Puis-je changer la date de la consultation?",
+            question: "Puis-je changer la date de la consultation ?",
             answer: (
               <div>
                 Non, vous pouvez seulement supprimer la consultation et en créer
@@ -145,7 +145,7 @@ module.exports = [
           },
           {
             id: 5,
-            question: "Comment archiver un dossier patient?",
+            question: "Comment archiver un dossier patient ?",
             answer: (
               <div className="answer">
                 <div>
@@ -185,7 +185,7 @@ module.exports = [
           },
           {
             id: 2,
-            question: "Comment imprimer tout ou partie du dossier patient?",
+            question: "Comment imprimer tout ou partie du dossier patient ?",
             answer: (
               <div className="answer">
                 <div>
@@ -276,7 +276,7 @@ module.exports = [
           {
             id: 1,
             question:
-              "Comment puis-je avoir un glossaire différent des autres membres du cabinet?",
+              "Comment puis-je avoir un glossaire différent des autres membres du cabinet ?",
             answer: (
               <div className="answer">
                 <div>
@@ -308,7 +308,7 @@ module.exports = [
           {
             id: 2,
             question:
-              "Comment puis-je communiquer un/des glossaires à des confrères?",
+              "Comment puis-je communiquer un/des glossaires à des confrères ?",
             answer: (
               <div className="answer">
                 <div>
@@ -357,7 +357,7 @@ module.exports = [
           },
           {
             id: 3,
-            question: "Comment puis-je importer le glossaire d’un confrère?",
+            question: "Comment puis-je importer le glossaire d’un confrère ?",
             answer: (
               <div className="answer">
                 <div>
@@ -407,7 +407,7 @@ module.exports = [
           },
           {
             id: 4,
-            question: "Puis-je avoir le même glossaire pour plusieurs champs?",
+            question: "Puis-je avoir le même glossaire pour plusieurs champs ?",
             answer: (
               <div className="answer">
                 <div>
@@ -462,7 +462,7 @@ module.exports = [
           {
             id: 1,
             question:
-              "Comment ouvrir un dossier patient à l’aide de la carte Sésam vitale?",
+              "Comment ouvrir un dossier patient à l’aide de la carte Sésam vitale ?",
             answer: (
               <div className="answer">
                 <div>
@@ -601,7 +601,7 @@ module.exports = [
           {
             id: 3,
             question:
-              "Que faire si la lecture de la carte Vitale du patient n’ouvre pas son dossier mais affiche le contenu de la carte?",
+              "Que faire si la lecture de la carte Vitale du patient n’ouvre pas son dossier mais affiche le contenu de la carte ?",
             answer: (
               <div class="faq_answer">
                 <div>Cela signifie:</div>
@@ -651,7 +651,7 @@ module.exports = [
           {
             id: 4,
             question:
-              "Puis-je créer une FSE si je n’ai pas la carte du professionnel de santé (CPS)?",
+              "Puis-je créer une FSE si je n’ai pas la carte du professionnel de santé (CPS) ?",
             answer: (
               <div class="answer">
                 <p>
@@ -670,7 +670,7 @@ module.exports = [
           {
             id: 5,
             question:
-              "Puis-je créer une FSE si je n’ai pas la carte Vitale du patient?",
+              "Puis-je créer une FSE si je n’ai pas la carte Vitale du patient ?",
             answer: (
               <div class="faq_answer">
                 <p>
@@ -689,7 +689,7 @@ module.exports = [
           {
             id: 6,
             question:
-              "Puis-je télétransmettre les FSE si je n’ai pas la carte du professionnel de santé (CPS)? ",
+              "Puis-je télétransmettre les FSE si je n’ai pas la carte du professionnel de santé (CPS) ? ",
             answer:
               "La CPS est nécessaire pour le formatage des lots de factures qui utilise le lecteur de cartes Sésam-Vitale et effectue la sécurisation à partir de la carte CPS et du code porteur. Il est impossible de formater les lots sans CPS. En revanche, il est possible de préparer les fichiers à télétransmettre, de les envoyer et de recevoir les ARL disponibles sans CPS sur les réseaux Internet n’utilisant pas l’identification par une lecture de la carte CPS. ",
           },
@@ -835,7 +835,7 @@ module.exports = [
           {
             id: 11,
             question:
-              "Comment imprimer la quittance de la FSE que je viens de créer?",
+              "Comment imprimer la quittance de la FSE que je viens de créer ?",
             answer: (
               <div class="answer">
                 <p>
@@ -977,7 +977,7 @@ module.exports = [
           },
           {
             id: 13,
-            question: "Comment créer une FSE avec une CMU?",
+            question: "Comment créer une FSE avec une CMU ?",
             answer: (
               <div class="answer">
                 <p>
@@ -1035,7 +1035,7 @@ module.exports = [
                   Si la caisse complémentaire indiquée (ici la CMU) n’est pas
                   renseignée sur la fiche patient, vous obtenez un message « La
                   Caisse Complémentaire n’est pas définie. Souhaitez-vous la
-                  renseigner? ». Cliquer sur « OK ». La fenêtre de sélection de
+                  renseigner ? ». Cliquer sur « OK ». La fenêtre de sélection de
                   la caisse complémentaire apparaît. Sélectionner la caisse «
                   CMU » dans la liste (la créer si besoin) et valider la
                   fenêtre. Le traitement est terminé.
@@ -1053,7 +1053,7 @@ module.exports = [
           },
           {
             id: 14,
-            question: "Comment faire un titre médecin?",
+            question: "Comment faire un titre médecin ?",
             answer: (
               <div class="answer">
                 <p>
@@ -1087,7 +1087,7 @@ module.exports = [
           },
           {
             id: 15,
-            question: "Comment faire un tiers payant?",
+            question: "Comment faire un tiers payant ?",
             answer: (
               <div class="answer">
                 <p>
@@ -1139,7 +1139,7 @@ module.exports = [
           },
           {
             id: 16,
-            question: "Comment tarifer un dépassement?",
+            question: "Comment tarifer un dépassement ?",
             answer: (
               <div class="answer">
                 <p>
@@ -1418,7 +1418,7 @@ module.exports = [
         gr_questions: [
           {
             id: 1,
-            question: "Qu'est-ce que la CPS?",
+            question: "Qu'est-ce que la CPS ?",
             answer: (
               <div class="answer">
                 <p>
@@ -1464,7 +1464,7 @@ module.exports = [
           },
           {
             id: 2,
-            question: "Qui y a droit?",
+            question: "Qui y a droit ?",
             answer: (
               <div class="answer">
                 <p>
@@ -1524,7 +1524,7 @@ module.exports = [
           },
           {
             id: 3,
-            question: "A quoi sert-elle?",
+            question: "A quoi sert-elle ?",
             answer: (
               <div class="faq_answer">
                 <p>La CPS permet :</p>
@@ -1569,7 +1569,7 @@ module.exports = [
           },
           {
             id: 4,
-            question: "Que contient la CPS?",
+            question: "Que contient la CPS ?",
             answer: (
               <div class="faq_answer">
                 <p>
@@ -1617,7 +1617,7 @@ module.exports = [
           },
           {
             id: 5,
-            question: "Comment l'utiliser?",
+            question: "Comment l'utiliser ?",
             answer: (
               <div class="faq_answer">
                 <p>
@@ -1666,7 +1666,7 @@ module.exports = [
           },
           {
             id: 6,
-            question: "La CPS permet-elle de garantir le secret médical?",
+            question: "La CPS permet-elle de garantir le secret médical ?",
             answer: (
               <div class="faq_answer">
                 <p>
@@ -1690,7 +1690,7 @@ module.exports = [
           {
             id: 7,
             question:
-              "Que faire en cas de changement de situation d'exercice, de perte, de vol?",
+              "Que faire en cas de changement de situation d'exercice, de perte, de vol ?",
             answer: (
               <div class="faq_answer">
                 <p>Si votre situation a changé</p>
@@ -1940,7 +1940,7 @@ module.exports = [
   },
   {
     id: 5,
-    title: "Medialogis. Qu’est-ce qu’il faut pour qu’il fonctionne?",
+    title: "Medialogis. Qu’est-ce qu’il faut pour qu’il fonctionne ?",
     groups: [
       {
         id: 1,
@@ -1949,9 +1949,9 @@ module.exports = [
           {
             id: 1,
             question:
-              "Quelle est la configuration recommandée pour utiliser MEDIALOGIS?",
+              "Quelle est la configuration recommandée pour utiliser MEDIALOGIS ?",
             answer:
-              "Quelle est la configuration recommandée pour utiliser MEDIALOGIS?",
+              "Quelle est la configuration recommandée pour utiliser MEDIALOGIS ?",
           },
         ],
       },
