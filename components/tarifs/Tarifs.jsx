@@ -27,7 +27,7 @@ export default function Tarifs() {
             </div>
 
             {head.items.map((row) => (
-              <div class="table">
+              <div className="table">
                 <div key={row.id} className="item">
                   {row?.name && <h6>{row?.name}</h6>}
                   <p>{row?.descr}</p>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import ReactTooltip from "react-tooltip";
 import Slider from "react-slick";
 //import Social from "../Social";
 import clinicsData from "../../data/clinics";
@@ -223,13 +222,13 @@ const Clinics = () => {
               </p>
 
               <h5>Vous trouverez également :</h5>
-              <div class="in_list">
+              <div className="in_list">
                 <ul>
                   <li>
                     <a
                       target="_annexe"
                       href="https://www.declaration.cnil.fr/declarations/declaration/declarant.display.action"
-                      class="lien"
+                      className="lien"
                     >
                       procédure et une aide
                     </a>{" "}
@@ -240,7 +239,7 @@ const Clinics = () => {
                     <a
                       target="_annexe"
                       href="http://www.cnil.fr/vos-droits/vos-droits/"
-                      class="lien"
+                      className="lien"
                     >
                       droits
                     </a>{" "}
@@ -248,7 +247,7 @@ const Clinics = () => {
                     <a
                       target="_annexe"
                       href="http://www.cnil.fr/vos-obligations/vos-obligations/"
-                      class="lien"
+                      className="lien"
                     >
                       obligations
                     </a>
@@ -259,7 +258,7 @@ const Clinics = () => {
                     <a
                       target="_annexe"
                       href="http://www.cnil.fr/vos-obligations/informations-legales/"
-                      class="lien"
+                      className="lien"
                     >
                       mentions légales
                     </a>
@@ -270,7 +269,7 @@ const Clinics = () => {
                     <a
                       target="_annexe"
                       href="https://www.declaration.cnil.fr/declarations/declaration/help.display_manual.action"
-                      class="lien"
+                      className="lien"
                     >
                       mode d'emploi
                     </a>{" "}
