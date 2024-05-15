@@ -603,7 +603,7 @@ module.exports = [
             question:
               "Que faire si la lecture de la carte Vitale du patient n’ouvre pas son dossier mais affiche le contenu de la carte ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <div>Cela signifie:</div>
                 <div className="in_list">
                   <ul>
@@ -653,7 +653,7 @@ module.exports = [
             question:
               "Puis-je créer une FSE si je n’ai pas la carte du professionnel de santé (CPS) ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   La création de FSE sans CPS n’est pas permise. Vous devez
                   impérativement disposer d’une carte de professionnel de santé.
@@ -672,7 +672,7 @@ module.exports = [
             question:
               "Puis-je créer une FSE si je n’ai pas la carte Vitale du patient ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   La création de FSE sans carte Vitale du patient est permise,
                   il s’agit du mode sécurisé sans carte Vitale. Il suffit de
@@ -698,7 +698,7 @@ module.exports = [
             question:
               "L’acte saisi sur l’écran « Règlement » ne se retrouve pas sur la FSE",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>Il s’agit d’un problème de paramétrage :</p>
                 <div className="in_list">
                   <ol>
@@ -734,7 +734,7 @@ module.exports = [
             question:
               "En lecture de carte médecin ou patient, j’obtiens un message « Pas de réponse du lecteur lors d’un échange »",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>Il s’agit :</p>
                 <div className="in_list">
                   <ol>
@@ -795,7 +795,7 @@ module.exports = [
             id: 9,
             question: "Je me suis trompé sur la FSE et souhaite la modifier",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 La modification d’une FSE est impossible. Vous devez la
                 supprimer et la refaire.
               </div>
@@ -805,7 +805,7 @@ module.exports = [
             id: 10,
             question: "Je me suis trompé sur la FSE et souhaite la supprimer",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   La suppression d’une FSE se fait à partir du tableau de bord
                   des FSE, où à partir de l’écran de règlement. Pour y parvenir,
@@ -837,7 +837,7 @@ module.exports = [
             question:
               "Comment imprimer la quittance de la FSE que je viens de créer ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   Après création de la FSE, si vous souhaitez obtenir une
                   quittance, cliquez sur le bouton « Détail » de l’écran «
@@ -851,7 +851,7 @@ module.exports = [
             question:
               "Médialogis SQL ne parvient pas à télétransmettre les FSE et j’obtiens des messages d’erreur lors de la connexion à Internet",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   Il s’agit généralement d’une anomalie de paramétrage de la
                   connexion au réseau et à la boîte aux lettres des FSE.
@@ -979,7 +979,7 @@ module.exports = [
             id: 13,
             question: "Comment créer une FSE avec une CMU ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   La Complémentaire Maladie Universelle (CMU) est considérée par
                   la sécurité sociale comme une caisse complémentaire identifiée
@@ -1055,7 +1055,7 @@ module.exports = [
             id: 14,
             question: "Comment faire un titre médecin ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   Le titre médecin se fait à partir du bouton «{" "}
                   <img src="/img/ico_gif/faq21.gif" width="79" height="53" /> »
@@ -1089,7 +1089,7 @@ module.exports = [
             id: 15,
             question: "Comment faire un tiers payant ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   Sur la FSE, cliquer sur le bouton « TP (Aucun) » pour afficher
                   la fenêtre de sélection du tiers payant :
@@ -1141,7 +1141,7 @@ module.exports = [
             id: 16,
             question: "Comment tarifer un dépassement ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   Jusqu'à présent, le programme de RESIP ne permettait pas
                   d'automatiser les dépassements d'honoraires. Ce défaut, majeur
@@ -1166,7 +1166,7 @@ module.exports = [
             question:
               "J’obtiens un message « Le mode de règlement n’a pas été saisi » quand je valide la FSE mais j’ai fait un tiers payant intégral",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   Le programme de RESIP ne calcule les montants affectés aux
                   tiers payants qu’après validation de la FSE. Quand vous
@@ -1190,7 +1190,7 @@ module.exports = [
             id: 18,
             question: "Exécuter CPS-GESTION sur un ordinateur PC (Windows)",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>On a besoin du programme CPS-GESTION pour :</p>
                 <div className="in_list">
                   <ul>
@@ -1420,7 +1420,7 @@ module.exports = [
             id: 1,
             question: "Qu'est-ce que la CPS ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   La CPS est une carte à microprocesseur, un support
                   personnalisé permettant à son porteur, le professionnel de
@@ -1466,7 +1466,7 @@ module.exports = [
             id: 2,
             question: "Qui y a droit ?",
             answer: (
-              <div class="answer">
+              <div className="answer">
                 <p>
                   La CPS est réservée aux professionnels de santé réglementés
                   par le Code de la Santé Publique :
@@ -1526,7 +1526,7 @@ module.exports = [
             id: 3,
             question: "A quoi sert-elle ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>La CPS permet :</p>
                 <div className="in_list">
                   <ul>
@@ -1571,7 +1571,7 @@ module.exports = [
             id: 4,
             question: "Que contient la CPS ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   Les données relatives à l'identification du professionnel de
                   santé :{" "}
@@ -1619,7 +1619,7 @@ module.exports = [
             id: 5,
             question: "Comment l'utiliser ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   Son utilisation est simple: la CPS est compatible avec les
                   environnements informatiques usuels. Elle ne nécessite que
@@ -1668,7 +1668,7 @@ module.exports = [
             id: 6,
             question: "La CPS permet-elle de garantir le secret médical ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   La CPS est un élément essentiel de sécurisation de tous les
                   systèmes contenant des informations médicales et
@@ -1692,7 +1692,7 @@ module.exports = [
             question:
               "Que faire en cas de changement de situation d'exercice, de perte, de vol ?",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>Si votre situation a changé</p>
                 <p>
                   Vous devez en informer, selon la nature de la modification :
@@ -1738,7 +1738,7 @@ module.exports = [
             id: 8,
             question: "Si vous avez perdu votre CPS",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>Dès que vous constatez la perte ou le vol,</p>
                 <div className="in_list">
                   <ul>
@@ -1761,7 +1761,7 @@ module.exports = [
             id: 9,
             question: "Si vous avez oublié votre code",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   <strong>
                     Informez aussitôt le centre de gestion du GIP "CPS" : 01 44
@@ -1780,7 +1780,7 @@ module.exports = [
             id: 10,
             question: "Si votre lecteur de carte ne peut plus lire votre CPS",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   Votre carte a dû être endommagée accidentellement, vous pouvez
                   immédiatement joindre le centre de gestion du GIP "CPS" : 01
@@ -1794,7 +1794,7 @@ module.exports = [
             question:
               "Si vous avez bloqué votre carte suite à 3 présentations successives d’un code porteur erroné",
             answer: (
-              <div class="faq_answer">
+              <div className="answer">
                 <p>
                   Cette fiche donne la procédure à suivre pour débloquer cette
                   carte.
